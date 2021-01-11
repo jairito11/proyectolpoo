@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Autores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Paterno</th>
+      <th>Materno</th>
+      <th>Nacionalidad</th>
+      <th>Lengua</th>
+      <th>Religion</th>
+      <th>Distinciones</th>
+      <th>Fecha de nacimiento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @autores.each do |autor| %>
+      <tr>
+        <td><%= autor.nombre %></td>
+        <td><%= autor.paterno %></td>
+        <td><%= autor.materno %></td>
+        <td><%= autor.nacionalidad %></td>
+        <td><%= autor.lengua %></td>
+        <td><%= autor.religion %></td>
+        <td><%= autor.distinciones %></td>
+        <td><%= autor.fechaNacimiento %></td>
+        <td><%= link_to 'Show', autor %></td>
+        <td><%= link_to 'Edit', edit_autor_path(autor) %></td>
+        <td><%= link_to 'Destroy', autor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Autor', new_autor_path %>

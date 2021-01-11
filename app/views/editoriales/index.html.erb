@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Editoriales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Isin</th>
+      <th>Industria</th>
+      <th>Formalegal</th>
+      <th>Fundador</th>
+      <th>Sede</th>
+      <th>Fundacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @editoriales.each do |editorial| %>
+      <tr>
+        <td><%= editorial.nombre %></td>
+        <td><%= editorial.tipo %></td>
+        <td><%= editorial.isin %></td>
+        <td><%= editorial.industria %></td>
+        <td><%= editorial.formaLegal %></td>
+        <td><%= editorial.fundador %></td>
+        <td><%= editorial.sede %></td>
+        <td><%= editorial.fundacion %></td>
+        <td><%= link_to 'Show', editorial %></td>
+        <td><%= link_to 'Edit', edit_editorial_path(editorial) %></td>
+        <td><%= link_to 'Destroy', editorial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Editorial', new_editorial_path %>

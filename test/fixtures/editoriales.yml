@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  tipo: MyString
+  isin: MyString
+  industria: MyString
+  formaLegal: MyString
+  fundador: MyString
+  sede: MyString
+  fundacion: 2021-01-10
+
+two:
+  nombre: MyString
+  tipo: MyString
+  isin: MyString
+  industria: MyString
+  formaLegal: MyString
+  fundador: MyString
+  sede: MyString
+  fundacion: 2021-01-10

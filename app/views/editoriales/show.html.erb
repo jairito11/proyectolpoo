@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @editorial.nombre %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @editorial.tipo %>
+</p>
+
+<p>
+  <strong>Isin:</strong>
+  <%= @editorial.isin %>
+</p>
+
+<p>
+  <strong>Industria:</strong>
+  <%= @editorial.industria %>
+</p>
+
+<p>
+  <strong>Formalegal:</strong>
+  <%= @editorial.formaLegal %>
+</p>
+
+<p>
+  <strong>Fundador:</strong>
+  <%= @editorial.fundador %>
+</p>
+
+<p>
+  <strong>Sede:</strong>
+  <%= @editorial.sede %>
+</p>
+
+<p>
+  <strong>Fundacion:</strong>
+  <%= @editorial.fundacion %>
+</p>
+
+<%= link_to 'Edit', edit_editorial_path(@editorial) %> |
+<%= link_to 'Back', editoriales_path %>
