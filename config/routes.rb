@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :carreras
   resources :idiomas
   resources :generos
   resources :editoriales

@@ -689,3 +689,54 @@ Processing by IdiomasController#index as HTML
 Completed 200 OK in 276ms (Views: 256.1ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:25:10 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[35m (2.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCarrera Load (10.5ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  Rendered carreras/index.html.erb within layouts/application (620.8ms)
+Completed 200 OK in 3007ms (Views: 2280.8ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/carreras/new" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:25:17 -0600
+Processing by CarrerasController#new as HTML
+  Rendering carreras/new.html.erb within layouts/application
+  Rendered carreras/_form.html.erb (203.1ms)
+  Rendered carreras/new.html.erb within layouts/application (214.2ms)
+Completed 200 OK in 702ms (Views: 560.5ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:29:40 -0600
+Processing by CarrerasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QbPGM1gtEZnyZm51Zlacjhj7n0Xibz9P/mAsdumACThvFDiBEhMaYS4K9BOpzUd8ZZSwwzKRkDTmRINhaY7b/A==", "carrera"=>{"clave"=>"15002", "nombre"=>"Ingenieria en Computación", "descripcion"=>"Sistemas automatizados", "campus"=>"Facultad de Ingeniería", "municipio"=>"Toluca", "estado"=>"Estado de México", "pais"=>"México", "coordinador"=>"Marcelo Romero Huertas"}, "commit"=>"Create Carrera"}
+  [1m[35m (1.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/carreras_controller.rb:30
+  [1m[36mCarrera Create (40.6ms)[0m  [1m[32mINSERT INTO `carreras` (`clave`, `nombre`, `descripcion`, `campus`, `municipio`, `estado`, `pais`, `coordinador`) VALUES (15002, 'Ingenieria en Computación', 'Sistemas automatizados', 'Facultad de Ingeniería', 'Toluca', 'Estado de México', 'México', 'Marcelo Romero Huertas')[0m
+  ↳ app/controllers/carreras_controller.rb:30
+  [1m[35m (114.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/carreras_controller.rb:30
+Redirected to http://localhost:3000/carreras/1
+Completed 302 Found in 268ms (ActiveRecord: 156.9ms)
+
+
+Started GET "/carreras/1" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:29:40 -0600
+Processing by CarrerasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarrera Load (3.7ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:67
+  Rendering carreras/show.html.erb within layouts/application
+  Rendered carreras/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 350ms (Views: 306.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:29:42 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (2.1ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  Rendered carreras/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 276ms (Views: 245.6ms | ActiveRecord: 2.1ms)
+
+
