@@ -1,0 +1,39 @@
+	<table>
+		<tr>
+			<th><%= f.label 'Fecha de prestamo' %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :fechaPrestamo %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Hora de prestamo' %></th>
+			<td><%= f.text_field :horaPrestamo %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Tipo' %></th>
+			<td><%= f.text_field :tipo %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Fecha de entrega' %></th>
+			<td><%= f.text_field :fechaEntrega %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Hora de entrega' %></th>
+			<td><%= f.text_field :horaEntrega %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Libro' %></th>
+			<td><%= f.select :libro_id, @libros.collect{|e| [e.titulo,e.isbn]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Persona' %></th>
+			<td><%= f.select :persona_id, @personas.collect{|e| [e.nombre,e.paterno]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>
+		
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>

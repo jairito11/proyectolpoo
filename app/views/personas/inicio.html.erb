@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<h1>Personas</h1>
+<table>
+	<tr>
+		<td>Curp</td>
+		<td>Nombre</td>
+		<td>Paterno</td>
+		<td>Materno</td>
+		<td>Sexo</td>
+		<td>Telefono</td>
+		<td>Dirección</td>
+		<td>Rol</td>
+		<td>Especialidad</td>
+	</tr>
+    <% @personas.each do |persona| %>	
+		<tr>
+			<td><%= persona.curp %></td>
+			<td><%= persona.nombre %></td>
+			<td><%= persona.paterno %></td>
+			<td><%= persona.materno %></td>
+			<td><%= persona.sexo %></td>
+			<td><%= persona.telefono %></td>
+			<td><%= persona.direccion %></td>
+			<td><%= persona.rol.rol %></td>
+			<td><%= persona.especialidad.nombre %></td> 
+			<td><%= link_to 'Mostrar', mostrar_personas_path(persona.id) %></td>
+			<td><%= link_to 'Editar', editar_personas_path(persona.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_personas_path(persona.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nueva Persona", nuevo_personas_path %>

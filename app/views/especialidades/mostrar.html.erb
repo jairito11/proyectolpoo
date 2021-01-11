@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Clave:</strong>
+  <%= @especialidad.clave %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @especialidad.nombre %>
+</p>
+
+<p>
+  <strong>Descripción:</strong>
+  <%= @especialidad.descripcion %>
+</p>
+
+<p>
+  <strong>Carrera:</strong>
+  <%= @especialidad.carrera.nombre %>
+</p>
+
+<%= link_to 'Editar', editar_especialidades_path(@especialidad) %> |
+<%= link_to 'Regresar', inicio_especialidades_path %>

@@ -1,0 +1,6 @@
+<h1>Editar Persona</h1>
+
+<%= form_with(model: @persona,id: 'formulario_persona',url: editar_personas_path, local: true) do |f| %>
+	<%= render 'formulario', persona: @persona, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_personas_path %>

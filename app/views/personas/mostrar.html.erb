@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Curp:</strong>
+  <%= @persona.curp %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @persona.nombre %>
+</p>
+
+<p>
+  <strong>Paterno:</strong>
+  <%= @persona.paterno %>
+</p>
+
+<p>
+  <strong>Materno:</strong>
+  <%= @persona.materno %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @persona.sexo %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @persona.telefono %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @persona.direccion %>
+</p>
+
+<p>
+  <strong>Rol:</strong>
+  <%= @persona.rol.rol %>
+</p>
+
+<p>
+  <strong>Especialidad:</strong>
+  <%= @persona.especialidad.nombre %>
+</p>
+
+<%= link_to 'Editar', editar_personas_path(@persona) %> |
+<%= link_to 'Regresar', inicio_personas_path %>

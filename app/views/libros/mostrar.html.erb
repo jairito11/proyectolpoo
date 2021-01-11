@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @libro.isbn %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @libro.titulo %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @libro.autor.nombre %>
+</p>
+
+<p>
+  <strong>Editorial:</strong>
+  <%= @libro.editorial.nombre %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @libro.genero.genero %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @libro.idioma.nombre %>
+</p>
+
+<%= link_to 'Editar', editar_libros_path(@libro) %> |
+<%= link_to 'Regresar', inicio_libros_path %>

@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<h1>Prestamos</h1>
+<table>
+	<tr>
+		<td>Fecha de prestamo</td>
+		<td>Hora de prestamo</td>
+		<td>Tipo</td>
+		<td>Fecha de entrega</td>
+		<td>Hora de entrega</td>
+		<td>Libro</td>
+		<td>Persona</td>
+	</tr>
+    <% @prestamos.each do |prestamo| %>	
+		<tr>
+			<td><%= prestamo.fechaPrestamo %></td>
+			<td><%= prestamo.horaPrestamo %></td>
+			<td><%= prestamo.tipo %></td>
+			<td><%= prestamo.fechaEntrega %></td>
+			<td><%= prestamo.horaEntrega %></td>
+			<td><%= prestamo.libro.titulo %></td> 
+			<td><%= prestamo.persona.nombre %></td> 
+			<td><%= link_to 'Mostrar', mostrar_prestamos_path(prestamo.id) %></td>
+			<td><%= link_to 'Editar', editar_prestamos_path(prestamo.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_prestamos_path(prestamo.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nuevo Prestamo", nuevo_prestamos_path %>

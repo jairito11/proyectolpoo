@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<h1>Libros</h1>
+<table>
+	<tr>
+		<td>Isbn</td>
+		<td>Titulo</td>
+		<td>Autor</td>
+		<td>Editorial</td>
+		<td>Genero</td>
+		<td>Idioma</td>
+	</tr>
+    <% @libros.each do |libro| %>	
+		<tr>
+			<td><%= libro.isbn %></td>
+			<td><%= libro.titulo %></td>
+			<td><%= libro.autor.nombre %></td>
+			<td><%= libro.editorial.nombre %></td> 
+			<td><%= libro.genero.genero %></td> 
+			<td><%= libro.idioma.nombre %></td> 
+			<td><%= link_to 'Mostrar', mostrar_libros_path(libro.id) %></td>
+			<td><%= link_to 'Editar', editar_libros_path(libro.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_libros_path(libro.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nuevo Libro", nuevo_libros_path %>

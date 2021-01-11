@@ -1,0 +1,34 @@
+	<table>
+		<tr>
+			<th><%= f.label :isbn %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :isbn %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Titulo' %></th>
+			<td><%= f.text_field :titulo %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Autor' %></th>
+			<td><%= f.select :autor_id, @autores.collect{|e| [e.nombre,e.paterno]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Editorial' %></th>
+			<td><%= f.select :editorial_id, @editoriales.collect{|e| [e.nombre,e.tipo]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Genero' %></th>
+			<td><%= f.select :genero_id, @generos.collect{|e| [e.genero,e.descripcion]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>				
+		<tr>
+			<th><%= f.label 'Idiomas' %></th>
+			<td><%= f.select :idioma_id, @idiomas.collect{|e| [e.nombre,e.region]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>		
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>
