@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  region: MyString
+  hablantes: 1
+  puesto: 1
+  familia: MyString
+  dialectos: MyString
+  escritura: MyString
+  reguladoPor: MyString
+
+two:
+  nombre: MyString
+  region: MyString
+  hablantes: 1
+  puesto: 1
+  familia: MyString
+  dialectos: MyString
+  escritura: MyString
+  reguladoPor: MyString

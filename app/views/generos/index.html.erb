@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Generos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Genero</th>
+      <th>Subgenero</th>
+      <th>Descripcion</th>
+      <th>Semantica</th>
+      <th>Sintactica</th>
+      <th>Fonologia</th>
+      <th>Contexto</th>
+      <th>Historia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @generos.each do |genero| %>
+      <tr>
+        <td><%= genero.genero %></td>
+        <td><%= genero.subgenero %></td>
+        <td><%= genero.descripcion %></td>
+        <td><%= genero.semantica %></td>
+        <td><%= genero.sintactica %></td>
+        <td><%= genero.fonologia %></td>
+        <td><%= genero.contexto %></td>
+        <td><%= genero.historia %></td>
+        <td><%= link_to 'Show', genero %></td>
+        <td><%= link_to 'Edit', edit_genero_path(genero) %></td>
+        <td><%= link_to 'Destroy', genero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Genero', new_genero_path %>

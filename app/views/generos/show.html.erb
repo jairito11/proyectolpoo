@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @genero.genero %>
+</p>
+
+<p>
+  <strong>Subgenero:</strong>
+  <%= @genero.subgenero %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @genero.descripcion %>
+</p>
+
+<p>
+  <strong>Semantica:</strong>
+  <%= @genero.semantica %>
+</p>
+
+<p>
+  <strong>Sintactica:</strong>
+  <%= @genero.sintactica %>
+</p>
+
+<p>
+  <strong>Fonologia:</strong>
+  <%= @genero.fonologia %>
+</p>
+
+<p>
+  <strong>Contexto:</strong>
+  <%= @genero.contexto %>
+</p>
+
+<p>
+  <strong>Historia:</strong>
+  <%= @genero.historia %>
+</p>
+
+<%= link_to 'Edit', edit_genero_path(@genero) %> |
+<%= link_to 'Back', generos_path %>

@@ -1,0 +1,57 @@
+<%= form_with(model: genero, local: true) do |form| %>
+  <% if genero.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(genero.errors.count, "error") %> prohibited this genero from being saved:</h2>
+
+      <ul>
+      <% genero.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :genero %>
+    <%= form.text_field :genero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subgenero %>
+    <%= form.text_field :subgenero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :semantica %>
+    <%= form.text_field :semantica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sintactica %>
+    <%= form.text_field :sintactica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fonologia %>
+    <%= form.text_field :fonologia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contexto %>
+    <%= form.text_field :contexto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :historia %>
+    <%= form.text_field :historia %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

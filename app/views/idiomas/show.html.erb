@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @idioma.nombre %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @idioma.region %>
+</p>
+
+<p>
+  <strong>Hablantes:</strong>
+  <%= @idioma.hablantes %>
+</p>
+
+<p>
+  <strong>Puesto:</strong>
+  <%= @idioma.puesto %>
+</p>
+
+<p>
+  <strong>Familia:</strong>
+  <%= @idioma.familia %>
+</p>
+
+<p>
+  <strong>Dialectos:</strong>
+  <%= @idioma.dialectos %>
+</p>
+
+<p>
+  <strong>Escritura:</strong>
+  <%= @idioma.escritura %>
+</p>
+
+<p>
+  <strong>Reguladopor:</strong>
+  <%= @idioma.reguladoPor %>
+</p>
+
+<%= link_to 'Edit', edit_idioma_path(@idioma) %> |
+<%= link_to 'Back', idiomas_path %>
