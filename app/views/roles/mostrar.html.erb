@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rol:</strong>
+  <%= @rol.rol %>
+</p>
+
+<p>
+  <strong>Descripción:</strong>
+  <%= @rol.descripcion %>
+</p>
+
+<p>
+  <strong>Zona de Estacionamiento:</strong>
+  <%= @rol.zonaEstacionamiento %>
+</p>
+
+<p>
+  <strong>Edificio:</strong>
+  <%= @rol.edificio %>
+</p>
+
+<p>
+  <strong>Fecha de ingreso:</strong>
+  <%= @rol.fechaIngreso %>
+</p>
+
+<p>
+  <strong>Hora de ingreso:</strong>
+  <%= @rol.horaIngreso %>
+</p>
+
+<%= link_to 'Editar', editar_rol_path(@rol) %> |
+<%= link_to 'Regresar', inicio_rol_path %>

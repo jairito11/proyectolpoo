@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Roles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rol</th>
+      <th>Descripción</th>
+      <th>Zona de Estacionamiento</th>
+      <th>Edificio</th>
+      <th>Fecha de Ingreso</th>
+      <th>Hora de Ingreso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @roles.each do |rol| %>
+      <tr>
+        <td><%= rol.rol %></td>
+        <td><%= rol.descripcion %></td>
+        <td><%= rol.zonaEstacionamiento %></td>
+        <td><%= rol.edificio %></td>
+        <td><%= rol.fechaIngreso %></td>
+        <td><%= rol.horaIngreso %></td>
+        <td><%= link_to 'Mostrar', mostrar_rol_path(rol.id) %></td>
+        <td><%= link_to 'Editar', editar_rol_path(rol.id) %></td>
+        <td><%= link_to 'Eliminar', eliminar_rol_path(rol.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Rol', nuevo_rol_path %>

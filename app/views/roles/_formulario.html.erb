@@ -1,0 +1,34 @@
+	<table>
+		<tr>
+			<th><%= f.label :rol %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :rol %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Descripción' %></th>
+			<td><%= f.text_field :descripcion %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Zona de estacionamiento' %></th>
+			<td><%= f.text_field :zonaEstacionamiento %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Edificio' %></th>
+			<td><%= f.text_field :edificio %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Fecha de ingreso' %></th>
+			<td><%= f.text_field :fechaIngreso %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Hora de ingreso' %></th>
+			<td><%= f.text_field :horaIngreso %></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>

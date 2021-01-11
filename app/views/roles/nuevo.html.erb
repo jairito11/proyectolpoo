@@ -1,0 +1,6 @@
+<h1>Nuevo Rol</h1>
+
+<%= form_with(model: @rol,id: 'formulario_rol',url: crear_rol_path, local: true) do |f| %>
+	<%= render 'formulario', rol: @rol, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_rol_path %>

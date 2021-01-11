@@ -740,3 +740,1539 @@ Processing by CarrerasController#index as HTML
 Completed 200 OK in 276ms (Views: 245.6ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/carreras/1" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:38:07 -0600
+Processing by CarrerasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (4.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/controllers/carreras_controller.rb:67
+  [1m[36mCarrera Load (5.3ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:67
+  Rendering carreras/show.html.erb within layouts/application
+  Rendered carreras/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 2451ms (Views: 1129.4ms | ActiveRecord: 31.9ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-10 20:38:13 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (7.8ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  Rendered carreras/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 323ms (Views: 299.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:26:51 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (4.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (5.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (1069.7ms)
+Completed 500 Internal Server Error in 1678ms (ActiveRecord: 21.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `nuevo_rol_path' for #<#<Class:0x4841934f>:0x6ffd9767>):
+    34: 
+    35: <br>
+    36: 
+    37: <%= link_to 'Nuevo Rol', nuevo_rol_path %>
+  
+app/views/roles/inicio.html.erb:37:in `_app_views_roles_inicio_html_erb___311836203_2042'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:46:17 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (1.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (4.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (178.8ms)
+Completed 200 OK in 1539ms (Views: 1514.1ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:55:18 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (5.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (464.6ms)
+Completed 200 OK in 2005ms (Views: 1413.6ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:58:36 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (10.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (536.3ms)
+Completed 500 Internal Server Error in 579ms (ActiveRecord: 17.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `mostrar_rol' for #<#<Class:0x55a1d0ea>:0x6223680b>
+Did you mean?  mostrar_rol_url):
+    24:         <td><%= rol.edificio %></td>
+    25:         <td><%= rol.fechaIngreso %></td>
+    26:         <td><%= rol.horaIngreso %></td>
+    27:         <td><%= link_to 'Mostrar', mostrar_rol(rol.id) %></td>
+    28:         <td><%= link_to 'Editar', editar_rol_path(rol.id) %></td>
+    29:         <td><%= link_to 'Eliminar', eliminar_rol_path(rol.id), method: :delete, data: { confirm: 'Estas seguro?' } %></td>
+    30:       </tr>
+  
+app/views/roles/inicio.html.erb:27:in `block in _app_views_roles_inicio_html_erb__154080049_2050'
+app/views/roles/inicio.html.erb:19:in `_app_views_roles_inicio_html_erb__154080049_2050'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:59:02 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 320ms (Views: 306.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:59:13 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (RolesController#mostrar is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.4) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+org/jruby/RubyKernel.java:1897:in `tap'
+actionpack (5.2.4.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.4) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.4) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.4) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.4) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.4) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+org/jruby/RubyArray.java:1809:in `each'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+org/jruby/RubyKernel.java:1189:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma-3.12.6 (java) lib/puma/configuration.rb:227:in `call'
+puma-3.12.6 (java) lib/puma/server.rb:706:in `handle_request'
+puma-3.12.6 (java) lib/puma/server.rb:476:in `process_client'
+puma-3.12.6 (java) lib/puma/server.rb:334:in `block in run'
+puma-3.12.6 (java) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 21:59:18 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (6.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 280ms (Views: 258.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:06:14 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (12.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (148.6ms)
+Completed 200 OK in 356ms (Views: 343.7ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:06:17 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `rol' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Rol:</strong>
+    5:   <%= @rol.rol %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/roles/mostrar.html.erb:5:in `_app_views_roles_mostrar_html_erb___30712737_2148'
+Started GET "/roles/" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:08:44 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 320ms (Views: 274.1ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:08:49 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (2.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 181ms (Views: 138.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:08:52 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 166ms (Views: 150.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:09:59 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (1.7ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 156ms (Views: 139.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:10:01 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (62.6ms)
+Completed 200 OK in 182ms (Views: 173.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:19:05 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/controllers/roles_controller.rb:7
+  [1m[36mRol Load (1.6ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 284ms (Views: 134.1ms | ActiveRecord: 25.2ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:19:08 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 145ms (Views: 132.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:30:35 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (1.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 218ms (Views: 210.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:39:33 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (384.5ms)
+Completed 200 OK in 522ms (Views: 502.3ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:39:40 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (1.6ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 144ms (Views: 108.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:39:43 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 116ms (Views: 100.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-10 22:39:45 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_form.html.erb (218.0ms)
+  Rendered roles/nuevo.html.erb within layouts/application (224.0ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles_path' for #<#<Class:0x3c99c361>:0x6d35b290>
+Did you mean?  roles_inicio_path):
+    1: <%= form_with(model: rol, local: true) do |form| %>
+    2:     <% if rol.errors.any? %>
+    3:       <div id="error_explanation">
+    4:         <h2><%= pluralize(rol.errors.count, "error") %> prohibited this autor from being saved:</h2>
+  
+app/views/roles/_form.html.erb:1:in `_app_views_roles__form_html_erb___864093467_2240'
+app/views/roles/nuevo.html.erb:3:in `_app_views_roles_nuevo_html_erb__1413611551_2238'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:39:04 -0600
+  
+SyntaxError (/home/jairo/Desktop/workspace/proyectolpoo/app/controllers/roles_controller.rb:29: syntax error, unexpected end-of-file
+):
+  
+app/controllers/roles_controller.rb:29: syntax error, unexpected end-of-file
+
+Java::JavaLang::NullPointerException: 
+	from org.jruby.parser.StaticScope.determineModule(StaticScope.java:609)
+	from org.jruby.parser.StaticScope.determineModule(StaticScope.java:609)
+	from org.jruby.ir.interpreter.Interpreter.evalWithBinding(Interpreter.java:178)
+	from org.jruby.RubyKernel.evalCommon(RubyKernel.java:1086)
+	from org.jruby.RubyKernel.eval(RubyKernel.java:1048)
+	from org.jruby.RubyBinding.eval(RubyBinding.java:138)
+	from org.jruby.RubyBinding$INVOKER$i$0$2$eval.call(RubyBinding$INVOKER$i$0$2$eval.gen)
+	from org.jruby.internal.runtime.methods.JavaMethod$JavaMethodN.call(JavaMethod.java:815)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:172)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.Interpreter.INTERPRET_BLOCK(Interpreter.java:116)
+	from org.jruby.runtime.MixedModeIRBlockBody.commonYieldPath(MixedModeIRBlockBody.java:137)
+	from org.jruby.runtime.IRBlockBody.doYield(IRBlockBody.java:166)
+	from org.jruby.runtime.BlockBody.yield(BlockBody.java:108)
+	from org.jruby.runtime.Block.yield(Block.java:184)
+	from org.jruby.RubyArray.detectCommon(RubyArray.java:4763)
+	from org.jruby.RubyArray.find(RubyArray.java:4736)
+	from org.jruby.RubyEnumerable.find(RubyEnumerable.java:690)
+	from org.jruby.RubyEnumerable$INVOKER$s$find.call(RubyEnumerable$INVOKER$s$find.gen)
+	from org.jruby.internal.runtime.methods.JavaMethod$JavaMethodZeroOrOneBlock.call(JavaMethod.java:575)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:332)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:86)
+	from org.jruby.runtime.callsite.CachingCallSite.callIter(CachingCallSite.java:93)
+	from org.jruby.ir.instructions.CallBase.interpret(CallBase.java:546)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:361)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:80)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:121)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:108)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:192)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:354)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:143)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:345)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:80)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:121)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:108)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:192)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:354)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:143)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:345)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:386)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:184)
+	from org.jruby.RubyClass.newInstance(RubyClass.java:918)
+	from org.jruby.RubyClass$INVOKER$i$newInstance.call(RubyClass$INVOKER$i$newInstance.gen)
+	from org.jruby.internal.runtime.methods.JavaMethod$JavaMethodZeroOrOneOrNBlock.call(JavaMethod.java:349)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.Interpreter.INTERPRET_BLOCK(Interpreter.java:116)
+	from org.jruby.runtime.MixedModeIRBlockBody.commonYieldPath(MixedModeIRBlockBody.java:137)
+	from org.jruby.runtime.IRBlockBody.doYield(IRBlockBody.java:166)
+	from org.jruby.runtime.BlockBody.yield(BlockBody.java:108)
+	from org.jruby.runtime.Block.yield(Block.java:184)
+	from org.jruby.exceptions.CatchThrow.enter(CatchThrow.java:32)
+	from org.jruby.RubyKernel.rbCatch(RubyKernel.java:1189)
+	from org.jruby.RubyKernel$INVOKER$s$rbCatch.call(RubyKernel$INVOKER$s$rbCatch.gen)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:386)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:184)
+	from org.jruby.runtime.callsite.CachingCallSite.callIter(CachingCallSite.java:191)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:337)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:92)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:191)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:178)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:208)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:396)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:205)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:325)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.Interpreter.INTERPRET_BLOCK(Interpreter.java:116)
+	from org.jruby.runtime.MixedModeIRBlockBody.commonYieldPath(MixedModeIRBlockBody.java:137)
+	from org.jruby.runtime.IRBlockBody.doYield(IRBlockBody.java:166)
+	from org.jruby.runtime.BlockBody.yield(BlockBody.java:108)
+	from org.jruby.runtime.Block.yield(Block.java:184)
+	from org.jruby.ir.runtime.IRRuntimeHelpers.yield(IRRuntimeHelpers.java:499)
+	from org.jruby.ir.instructions.YieldInstr.interpret(YieldInstr.java:85)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.processOtherOp(StartupInterpreterEngine.java:178)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:104)
+	from org.jruby.ir.interpreter.Interpreter.INTERPRET_BLOCK(Interpreter.java:116)
+	from org.jruby.runtime.MixedModeIRBlockBody.commonYieldPath(MixedModeIRBlockBody.java:137)
+	from org.jruby.runtime.IRBlockBody.doYield(IRBlockBody.java:166)
+	from org.jruby.runtime.BlockBody.yield(BlockBody.java:108)
+	from org.jruby.runtime.Block.yield(Block.java:184)
+	from org.jruby.ir.runtime.IRRuntimeHelpers.yield(IRRuntimeHelpers.java:499)
+	from org.jruby.ir.instructions.YieldInstr.interpret(YieldInstr.java:85)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.processOtherOp(StartupInterpreterEngine.java:178)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:104)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:73)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:332)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:86)
+	from org.jruby.runtime.callsite.CachingCallSite.callIter(CachingCallSite.java:93)
+	from org.jruby.ir.instructions.CallBase.interpret(CallBase.java:546)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:361)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:386)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:184)
+	from org.jruby.runtime.callsite.CachingCallSite.callIter(CachingCallSite.java:191)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:337)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:86)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:156)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:143)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:200)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:375)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:174)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:316)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:92)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:191)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:178)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:208)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:396)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:205)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:325)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.InterpreterEngine.interpret(InterpreterEngine.java:92)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.INTERPRET_METHOD(MixedModeIRMethod.java:191)
+	from org.jruby.internal.runtime.methods.MixedModeIRMethod.call(MixedModeIRMethod.java:178)
+	from org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:208)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:396)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:205)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:325)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.Interpreter.INTERPRET_BLOCK(Interpreter.java:116)
+	from org.jruby.runtime.MixedModeIRBlockBody.commonYieldPath(MixedModeIRBlockBody.java:137)
+	from org.jruby.runtime.IRBlockBody.call(IRBlockBody.java:60)
+	from org.jruby.runtime.Block.call(Block.java:143)
+	from org.jruby.RubyProc.call(RubyProc.java:275)
+	from org.jruby.RubyProc$INVOKER$i$call.call(RubyProc$INVOKER$i$call.gen)
+	from org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:332)
+	from org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:86)
+	from org.jruby.ir.instructions.CallBase.interpret(CallBase.java:549)
+	from org.jruby.ir.interpreter.InterpreterEngine.processCall(InterpreterEngine.java:361)
+	from org.jruby.ir.interpreter.StartupInterpreterEngine.interpret(StartupInterpreterEngine.java:72)
+	from org.jruby.ir.interpreter.Interpreter.INTERPRET_BLOCK(Interpreter.java:116)
+	from org.jruby.runtime.MixedModeIRBlockBody.commonYieldPath(MixedModeIRBlockBody.java:137)
+	from org.jruby.runtime.IRBlockBody.call(IRBlockBody.java:60)
+	from org.jruby.runtime.IRBlockBody.call(IRBlockBody.java:52)
+	from org.jruby.runtime.Block.call(Block.java:139)
+	from org.jruby.RubyProc.call(RubyProc.java:318)
+	from org.jruby.internal.runtime.RubyRunnable.run(RubyRunnable.java:105)
+	from java.lang.Thread.run(Thread.java:748)
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:40:05 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (2.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (11.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (601.5ms)
+Completed 200 OK in 2154ms (Views: 1447.4ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:40:11 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (251.5ms)
+  Rendered roles/nuevo.html.erb within layouts/application (276.9ms)
+Completed 200 OK in 493ms (Views: 483.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:41:49 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"koE14nYx5TtGjK+kaqq6Av7B/pjO7YbCdaUoxKagIpCSH60PmZVH9IeURq7jf348C8wbaEkx3RiGdCwa/rngKA==", "rol"=>{"id"=>"", "rol"=>"Maestro", "descripcion"=>"Imparte clases", "zonaEstacionamiento"=>"A", "edificio"=>"E 1", "fechaIngreso"=>"2020-01-01", "horaIngreso"=>"13:00"}, "commit"=>"Guardar"}
+  [1m[35m (4.2ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (35.2ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `fechaIngreso`, `horaIngreso`) VALUES ('Maestro', 'Imparte clases', 'A', 'E 1', '2020-01-01', '13:00')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (197.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 327ms (ActiveRecord: 237.1ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:41:50 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 295ms (Views: 282.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/roles/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:45:42 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  Rendering roles/editar.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (46.0ms)
+  Rendered roles/editar.html.erb within layouts/application (66.4ms)
+Completed 200 OK in 215ms (Views: 208.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:49:36 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/usuarios"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+org/jruby/RubyKernel.java:1189:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma-3.12.6 (java) lib/puma/configuration.rb:227:in `call'
+puma-3.12.6 (java) lib/puma/server.rb:706:in `handle_request'
+puma-3.12.6 (java) lib/puma/server.rb:476:in `process_client'
+puma-3.12.6 (java) lib/puma/server.rb:334:in `block in run'
+puma-3.12.6 (java) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:49:43 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (3.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (242.0ms)
+Completed 200 OK in 455ms (Views: 431.7ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/roles/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:49:48 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (64.2ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE (id = '1') ORDER BY `roles`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:32
+  Rendering roles/editar.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (41.5ms)
+  Rendered roles/editar.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 295ms (Views: 194.8ms | ActiveRecord: 64.2ms)
+
+
+Started PATCH "/roles/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:49:58 -0600
+Processing by RolesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzX0+h0fzJ+vlR8VepmWdpwK/hyyjepsxDhhpUtf9zJ6UHsru1bjnEwF8yPOuswt/AkEPa3BUGq6ciVOacQZ6w==", "rol"=>{"id"=>"1", "rol"=>"Maestro", "descripcion"=>"Imparte clases", "zonaEstacionamiento"=>"A", "edificio"=>"E1", "fechaIngreso"=>"2010-05-01", "horaIngreso"=>"12:55"}, "commit"=>"Guardar"}
+  [1m[36mRol Load (1.8ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:35
+  [1m[35m (0.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[36mRol Update (61.5ms)[0m  [1m[33mUPDATE `roles` SET `horaIngreso` = '12:55' WHERE `roles`.`id` = 1[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[35m (97.6ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+Redirected to http://localhost:3000/roles/1/mostrar
+Completed 302 Found in 237ms (ActiveRecord: 161.6ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:49:59 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (6.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 157ms (Views: 137.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:50:01 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (11.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 231ms (Views: 163.8ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:12 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (7.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 249ms (Views: 193.5ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/roles/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:16 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (2.2ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 188ms (Views: 166.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:17 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 137ms (Views: 122.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/roles/2/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:19 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRol Load (1.7ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 156ms (Views: 130.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:21 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 148ms (Views: 134.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/roles/2/editar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:25 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRol Load (1.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE (id = '2') ORDER BY `roles`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:32
+  Rendering roles/editar.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (72.1ms)
+  Rendered roles/editar.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 230ms (Views: 210.4ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/roles/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:31 -0600
+Processing by RolesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdTVTiAK9ePLwH44WZQRTu70DXsWGsE3NlyP/5zE8hwksVqfhkPa4ChQkg7tt0sVjvf3WglWezFIFssUvl8cxQ==", "rol"=>{"id"=>"2", "rol"=>"Maestro", "descripcion"=>"Imparte clases", "zonaEstacionamiento"=>"A", "edificio"=>"E 1", "fechaIngreso"=>"2020-01-01", "horaIngreso"=>"13:20"}, "commit"=>"Guardar"}
+  [1m[36mRol Load (1.8ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:35
+  [1m[35m (1.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[36mRol Update (1.0ms)[0m  [1m[33mUPDATE `roles` SET `horaIngreso` = '13:20' WHERE `roles`.`id` = 2[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[35m (209.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+Redirected to http://localhost:3000/roles/2/mostrar
+Completed 302 Found in 263ms (ActiveRecord: 214.5ms)
+
+
+Started GET "/roles/2/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:31 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRol Load (2.5ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 163ms (Views: 145.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:52:43 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 176ms (Views: 165.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:55:56 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 168ms (Views: 159.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/roles/2/editar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:55:59 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRol Load (2.5ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE (id = '2') ORDER BY `roles`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:32
+  Rendering roles/editar.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (121.4ms)
+  Rendered roles/editar.html.erb within layouts/application (129.8ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `min' for "13:20":String):
+    25: 		</tr>
+    26: 		<tr>
+    27: 			<th><%= f.label 'Hora de ingreso' %></th>
+    28: 			<td><%= f.time_select :horaIngreso %></td>
+    29: 		</tr>
+    30: 		<tr>
+    31: 			<th></th>
+  
+app/views/roles/_formulario.html.erb:28:in `_app_views_roles__formulario_html_erb__1283670525_2166'
+app/views/roles/editar.html.erb:4:in `block in _app_views_roles_editar_html_erb__910862496_2164'
+app/views/roles/editar.html.erb:3:in `_app_views_roles_editar_html_erb__910862496_2164'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:56:39 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 186ms (Views: 130.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:56:42 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (51.3ms)
+  Rendered roles/nuevo.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 165ms (Views: 158.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:56:49 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 129ms (Views: 121.2ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/roles/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:56:54 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/roles/2/eliminar"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+org/jruby/RubyKernel.java:1189:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma-3.12.6 (java) lib/puma/configuration.rb:227:in `call'
+puma-3.12.6 (java) lib/puma/server.rb:706:in `handle_request'
+puma-3.12.6 (java) lib/puma/server.rb:476:in `process_client'
+puma-3.12.6 (java) lib/puma/server.rb:334:in `block in run'
+puma-3.12.6 (java) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:58:43 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 200ms (Views: 160.4ms | ActiveRecord: 12.1ms)
+
+
+Started DELETE "/roles/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-10 23:58:50 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/roles/2/eliminar"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+org/jruby/RubyKernel.java:1189:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma-3.12.6 (java) lib/puma/configuration.rb:227:in `call'
+puma-3.12.6 (java) lib/puma/server.rb:706:in `handle_request'
+puma-3.12.6 (java) lib/puma/server.rb:476:in `process_client'
+puma-3.12.6 (java) lib/puma/server.rb:334:in `block in run'
+puma-3.12.6 (java) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:02:03 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (68.8ms)
+Completed 200 OK in 200ms (Views: 160.5ms | ActiveRecord: 15.7ms)
+
+
+Started DELETE "/roles/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:02:06 -0600
+Processing by RolesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"xNuOzJQKmHT1ZooslHtU877rSWdjH0oKmGt/4CTkmnW5Z3CIrYQLuRtzIcI5gUn8bn64UTF6CkqCGsSpUoXN3A==", "id"=>"2"}
+  [1m[36mRol Load (1.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:51
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:53
+  [1m[36mRol Destroy (331.6ms)[0m  [1m[31mDELETE FROM `roles` WHERE `roles`.`id` = 2[0m
+  ↳ app/controllers/roles_controller.rb:53
+  [1m[35m (88.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:53
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 471ms (ActiveRecord: 421.9ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:02:07 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 137ms (Views: 123.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:02:14 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (36.3ms)
+  Rendered roles/nuevo.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 146ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:02:51 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1/uI52MveaFt1EA3BvmVCseZEGMhHqsGkthOaSZkgNX3bZ6C4rZSG8ZpCoPi3qVHPiQi/C7sxODV1RBWdEUijQ==", "rol"=>{"id"=>"", "rol"=>"Alumno", "descripcion"=>"Asiste a clases", "zonaEstacionamiento"=>"B", "edificio"=>"E5", "fechaIngreso(1i)"=>"2017", "fechaIngreso(2i)"=>"1", "fechaIngreso(3i)"=>"11", "horaIngreso(1i)"=>"2021", "horaIngreso(2i)"=>"1", "horaIngreso(3i)"=>"11", "horaIngreso(4i)"=>"08", "horaIngreso(5i)"=>"02"}, "commit"=>"Guardar"}
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (18.7ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`) VALUES ('Alumno', 'Asiste a clases', 'B', 'E5')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 20.3ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`) VALUES ('Alumno', 'Asiste a clases', 'B', 'E5')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started GET "/roles/" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:03:25 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 129ms (Views: 122.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:03:27 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (37.6ms)
+  Rendered roles/nuevo.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 168ms (Views: 159.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:04:24 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iIdaoaUJ2RqWhhYkypuAtQYTnmqripyh2DmACJsjBKioEUzEJJDyoD07XJAuvLD4/66s9aR480efNN43yQKm8A==", "rol"=>{"id"=>"", "rol"=>"Alumno", "descripcion"=>"Toma clases", "zonaEstacionamiento"=>"B", "edificio"=>"E5", "fechaIngreso(1i)"=>"2016", "fechaIngreso(2i)"=>"1", "fechaIngreso(3i)"=>"11", "horaIngreso"=>"12:50"}, "commit"=>"Guardar"}
+  [1m[35m (0.8ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (4.0ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumno', 'Toma clases', 'B', 'E5', '12:50')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (2.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 6.8ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumno', 'Toma clases', 'B', 'E5', '12:50')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:05:43 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KPcEOi89zhXSnoeDlC3vmBjhayqbLravxBZ04/JnKQ5VS/p+FrNd2DyLLG051/KXyHSaHMlL9u/eZ8+qhAZ+pw==", "rol"=>{"id"=>"", "rol"=>"Alumno", "descripcion"=>"Toma clases", "zonaEstacionamiento"=>"B", "edificio"=>"E5", "fechaIngreso(1i)"=>"2016", "fechaIngreso(2i)"=>"1", "fechaIngreso(3i)"=>"6", "horaIngreso"=>"12:50"}, "commit"=>"Guardar"}
+  [1m[35m (0.6ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (4.6ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumno', 'Toma clases', 'B', 'E5', '12:50')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 6.1ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumno', 'Toma clases', 'B', 'E5', '12:50')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:11:35 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (11.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (560.8ms)
+Completed 200 OK in 2117ms (Views: 1446.1ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:11:39 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (224.6ms)
+  Rendered roles/nuevo.html.erb within layouts/application (249.5ms)
+Completed 200 OK in 514ms (Views: 497.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:11:48 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 307ms (Views: 297.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:11:51 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (53.4ms)
+  Rendered roles/nuevo.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 263ms (Views: 242.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:12:31 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+SVqGirvSgZfClgZc/r1p1txL0oDS6WWFyr1UNXdKTTZs3x/q3ZhvPS3Eq2X3cXqoswd1Qy5ynBQJ6tvh/yLbA==", "rol"=>{"id"=>"", "rol"=>"Alumno", "descripcion"=>"Toma clases", "zonaEstacionamiento"=>"Z", "edificio"=>"E5", "fechaIngreso(1i)"=>"2019", "fechaIngreso(2i)"=>"10", "fechaIngreso(3i)"=>"1", "horaIngreso"=>"9:00"}, "commit"=>"Guardar"}
+  [1m[35m (16.1ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (45.9ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumno', 'Toma clases', 'Z', 'E5', '9:00')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 62.9ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumno', 'Toma clases', 'Z', 'E5', '9:00')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:15:39 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (13.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (760.3ms)
+Completed 200 OK in 2325ms (Views: 1657.3ms | ActiveRecord: 38.6ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:15:51 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (209.1ms)
+  Rendered roles/nuevo.html.erb within layouts/application (234.9ms)
+Completed 200 OK in 470ms (Views: 455.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:16:39 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+N+KUCcWtJzo24WJTkoxOCh1HTp3+hB0DyhTPUqJqU7dWhMwQVxaNgeJKLBHhiJGRzm6+Yth6eXMf9zpwuE/Q==", "rol"=>{"id"=>"", "rol"=>"Alumnos", "descripcion"=>"Borrar", "zonaEstacionamiento"=>"B", "edificio"=>"E4", "fechaIngreso(1i)"=>"2018", "fechaIngreso(2i)"=>"5", "fechaIngreso(3i)"=>"5", "horaIngreso"=>"20:20"}, "commit"=>"Guardar"}
+  [1m[35m (10.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (33.3ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumnos', 'Borrar', 'B', 'E4', '20:20')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 44.8ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Alumnos', 'Borrar', 'B', 'E4', '20:20')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started GET "/roles/" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:18:05 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (5.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 295ms (Views: 281.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:18:08 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (64.0ms)
+  Rendered roles/nuevo.html.erb within layouts/application (74.7ms)
+Completed 200 OK in 244ms (Views: 234.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:18:53 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+tsU5OQUCg3x3Fn8JZGJ7tZcJE0lUJ/6w6fe4AyNsnLaTQKBZY0ht1phE0jBtrmjL+EW0iqi8ByEqoDfXqwQKg==", "rol"=>{"id"=>"", "rol"=>"Alumno", "descripcion"=>"Borrar", "zonaEstacionamiento"=>"B", "edificio"=>"E3", "fechaIngreso"=>"2000-03-01", "horaIngreso"=>"20:0"}, "commit"=>"Guardar"}
+  [1m[35m (0.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (40.0ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `fechaIngreso`, `horaIngreso`) VALUES ('Alumno', 'Borrar', 'B', 'E3', '2000-03-01', '20:0')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (90.6ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 176ms (ActiveRecord: 131.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:18:53 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 223ms (Views: 213.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:24:07 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (63.9ms)
+  Rendered roles/nuevo.html.erb within layouts/application (80.7ms)
+Completed 200 OK in 259ms (Views: 244.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:24:10 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (48.4ms)
+  Rendered roles/nuevo.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 239ms (Views: 225.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:24:17 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (72.2ms)
+  Rendered roles/nuevo.html.erb within layouts/application (115.2ms)
+Completed 200 OK in 335ms (Views: 288.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:24:39 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TIxcsy5vBCrWsNrVGf38ikGqQdhsimLCgcfg1+xZ8wMxMKL3F+GX5zilcTu0B+GFkT+w7j7vIoKbtluemjikqg==", "rol"=>{"id"=>"", "rol"=>"borrar", "descripcion"=>"borrar", "zonaEstacionamiento"=>"b", "edificio"=>"b", "fechaIngreso(1i)"=>"2021", "fechaIngreso(2i)"=>"1", "fechaIngreso(3i)"=>"11", "horaIngreso"=>"15:00"}, "commit"=>"Guardar"}
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (0.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (7.6ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('borrar', 'borrar', 'b', 'b', '15:00')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 9.7ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('borrar', 'borrar', 'b', 'b', '15:00')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:26:55 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (4.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 216ms (Views: 202.1ms | ActiveRecord: 4.7ms)
+
+
+Started DELETE "/roles/3/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:26:59 -0600
+Processing by RolesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"kGWy2o3QnEh+XqDnuv38F2tUhvm9sriLefkp0QeJ8Lrt2UyetF4PhZBLCwkXB+EYu8F3z+/X+MtjiJKYceinEw==", "id"=>"3"}
+  [1m[36mRol Load (2.5ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:51
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:53
+  [1m[36mRol Destroy (5.9ms)[0m  [1m[31mDELETE FROM `roles` WHERE `roles`.`id` = 3[0m
+  ↳ app/controllers/roles_controller.rb:53
+  [1m[35m (164.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:53
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 259ms (ActiveRecord: 173.3ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:26:59 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 159ms (Views: 146.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/roles/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:27:05 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRol Load (1.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE (id = '1') ORDER BY `roles`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:32
+  Rendering roles/editar.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (33.6ms)
+  Rendered roles/editar.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 197ms (Views: 163.5ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/roles/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:32:23 -0600
+Processing by RolesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DdqEjJQ54qVDeRUDZFWOi1qlw5ORC16Natq+2OKy58csvwtdMnDNpqDp+TXQdtTQOqY5so5H5IsUkPozwCkJHg==", "rol"=>{"id"=>"1", "rol"=>"Maestro", "descripcion"=>"Imparte clases", "zonaEstacionamiento"=>"A", "edificio"=>"E1", "fechaIngreso(1i)"=>"2010", "fechaIngreso(2i)"=>"5", "fechaIngreso(3i)"=>"1", "horaIngreso"=>"12:55"}, "commit"=>"Guardar"}
+  [1m[36mRol Load (3.7ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:35
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[36mRol Update (11.9ms)[0m  [1m[33mUPDATE `roles` SET `fechaIngreso` = NULL WHERE `roles`.`id` = 1[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 16.9ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'fechaIngreso' cannot be null: UPDATE `roles` SET `fechaIngreso` = NULL WHERE `roles`.`id` = 1):
+  
+app/controllers/roles_controller.rb:37:in `block in actualizar'
+app/controllers/roles_controller.rb:36:in `actualizar'
+Started GET "/roles/" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:32:51 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 176ms (Views: 167.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:35:12 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[36mAutor Load (4.4ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:21
+  Rendered autores/index.html.erb within layouts/application (94.8ms)
+Completed 200 OK in 217ms (Views: 187.6ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/autores/1/edit" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:35:16 -0600
+Processing by AutoresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAutor Load (1.7ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/autores_controller.rb:67
+  Rendering autores/edit.html.erb within layouts/application
+  Rendered autores/_form.html.erb (54.1ms)
+  Rendered autores/edit.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 197ms (Views: 172.2ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/autores/1" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:35:26 -0600
+Processing by AutoresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lG51qpXCv10rcqgYEhTVhOBSX8xdhM6k4H5Did2LjarLtVmSz8Nn4qhbwnKl6VcrO8R5GwR+B9acVzYVYq1dIQ==", "autor"=>{"nombre"=>"Gabriel José de la Cocordia", "paterno"=>"García", "materno"=>"Márquez", "nacionalidad"=>"Colombiana", "lengua"=>"Español", "religion"=>"Ninguna", "distinciones"=>"Nobel de Literatura 1982", "fechaNacimiento(1i)"=>"2016", "fechaNacimiento(2i)"=>"3", "fechaNacimiento(3i)"=>"7"}, "commit"=>"Update Autor", "id"=>"1"}
+  [1m[36mAutor Load (2.4ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/autores_controller.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/autores_controller.rb:44
+  [1m[36mAutor Update (2.9ms)[0m  [1m[33mUPDATE `autores` SET `fechaNacimiento` = '2016-03-07' WHERE `autores`.`id` = 1[0m
+  ↳ app/controllers/autores_controller.rb:44
+  [1m[35m (153.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/autores_controller.rb:44
+Redirected to http://localhost:3000/autores/1
+Completed 302 Found in 212ms (ActiveRecord: 159.9ms)
+
+
+Started GET "/autores/1" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:35:27 -0600
+Processing by AutoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAutor Load (1.9ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/autores_controller.rb:67
+  Rendering autores/show.html.erb within layouts/application
+  Rendered autores/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 135ms (Views: 119.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:35:29 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[36mAutor Load (5.4ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:21
+  Rendered autores/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 142ms (Views: 130.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:43:31 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/autores/index.html.erb:21
+  [1m[36mAutor Load (6.1ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:21
+  Rendered autores/index.html.erb within layouts/application (332.1ms)
+Completed 200 OK in 454ms (Views: 446.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/autores/new" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:43:33 -0600
+Processing by AutoresController#new as HTML
+  Rendering autores/new.html.erb within layouts/application
+  Rendered autores/_form.html.erb (78.3ms)
+  Rendered autores/new.html.erb within layouts/application (86.1ms)
+Completed 200 OK in 198ms (Views: 181.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:44:01 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (4.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 141ms (Views: 129.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:44:03 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (62.7ms)
+  Rendered roles/nuevo.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 184ms (Views: 175.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:44:51 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8EZ4kwEuqTbbvOrs34+XM1DNqZH52N5hBD5u16GAQzbQ0G72gLeCjHABoFg7qKd+qXCbDvYqsYdDMzDo86Hhbg==", "rol"=>{"id"=>"", "rol"=>"Eliminar", "descripcion"=>"eliminar", "zonaEstacionamiento"=>"B", "edificio"=>"C", "fechaIngreso(1i)"=>"2004", "fechaIngreso(2i)"=>"3", "fechaIngreso(3i)"=>"7", "horaIngreso"=>"20:20"}, "commit"=>"Guardar"}
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (3.3ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Eliminar', 'eliminar', 'B', 'C', '20:20')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 4.7ms)
+
+
+  
+ActiveRecord::NotNullViolation (ActiveRecord::JDBCError: Field 'fechaIngreso' doesn't have a default value: INSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `horaIngreso`) VALUES ('Eliminar', 'eliminar', 'B', 'C', '20:20')):
+  
+app/controllers/roles_controller.rb:23:in `block in crear'
+app/controllers/roles_controller.rb:22:in `crear'
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:50:50 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mRol Load (1.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (135.5ms)
+Completed 200 OK in 253ms (Views: 245.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:50:52 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (20.6ms)
+  Rendered roles/nuevo.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 131ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles/crear" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:51:30 -0600
+Processing by RolesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iLSeBa9+EyfwEIQ8pg8DtY4DEvGToWeWnDh8KSm6MueoIohgLuc4nVutzohCKDP4d74gbpxTCHDbNSIWe5uQvw==", "rol"=>{"id"=>"", "rol"=>"Estudiante", "descripcion"=>"Toma clases", "zonaEstacionamiento"=>"Z", "edificio"=>"E5", "fechaIngreso"=>"2010-05-01", "horaIngreso"=>"20:20"}, "commit"=>"Guardar"}
+  [1m[35m (0.8ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[36mRol Create (2.8ms)[0m  [1m[32mINSERT INTO `roles` (`rol`, `descripcion`, `zonaEstacionamiento`, `edificio`, `fechaIngreso`, `horaIngreso`) VALUES ('Estudiante', 'Toma clases', 'Z', 'E5', '2010-05-01', '20:20')[0m
+  ↳ app/controllers/roles_controller.rb:23
+  [1m[35m (149.6ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:23
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 197ms (ActiveRecord: 153.2ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:51:30 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 159ms (Views: 149.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/roles/4/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:51:41 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRol Load (2.2ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 125ms (Views: 103.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:51:44 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 117ms (Views: 108.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/roles/4/editar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:51:46 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRol Load (2.4ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE (id = '4') ORDER BY `roles`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:32
+  Rendering roles/editar.html.erb within layouts/application
+  Rendered roles/_formulario.html.erb (27.3ms)
+  Rendered roles/editar.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 156ms (Views: 139.3ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/roles/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:52:01 -0600
+Processing by RolesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UF4q+gYSlrZSDtvNi0a2tj2eiy78LlDp4W3c1Xk+hQ9xO6UroFu5tbGeN/s/ZeztXZ1xD+Ni6u+fJ5g+W6Vr1g==", "rol"=>{"id"=>"4", "rol"=>"Estudiante", "descripcion"=>"Toma clases", "zonaEstacionamiento"=>"Z", "edificio"=>"E5", "fechaIngreso"=>"2010-05-02", "horaIngreso"=>"09:20"}, "commit"=>"Guardar"}
+  [1m[36mRol Load (2.2ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:35
+  [1m[35m (0.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[36mRol Update (0.9ms)[0m  [1m[33mUPDATE `roles` SET `fechaIngreso` = '2010-05-02', `horaIngreso` = '09:20' WHERE `roles`.`id` = 4[0m
+  ↳ app/controllers/roles_controller.rb:37
+  [1m[35m (169.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:37
+Redirected to http://localhost:3000/roles/4/mostrar
+Completed 302 Found in 230ms (ActiveRecord: 173.2ms)
+
+
+Started GET "/roles/4/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:52:01 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRol Load (1.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  Rendered roles/mostrar.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 105ms (Views: 90.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-11 00:52:04 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  Rendered roles/inicio.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 107ms (Views: 99.8ms | ActiveRecord: 1.5ms)
+
+
