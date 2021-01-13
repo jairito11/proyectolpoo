@@ -25,11 +25,11 @@
 		</tr>
 		<tr>
 			<th><%= f.label 'Libro' %></th>
-			<td><%= f.select :libro_id, @libros.collect{|e| [e.titulo,e.isbn]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :libro_id, @libros.collect{|e| [e.titulo,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Persona' %></th>
-			<td><%= f.select :persona_id, @personas.collect{|e| [e.nombre,e.paterno]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :persona_id, @personas.collect{|e| [e.nombre,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>
 		
 		<tr>

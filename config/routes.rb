@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+=begin
+  get 'edificios/inicio'
+  get 'edificios/mostrar'
+  get 'edificios/nuevo'
+  get 'edificios/editar'
+  get 'proveedores/inicio'
+  get 'proveedores/mostrar'
+  get 'proveedores/nuevo'
+  get 'proveedores/editar'
+  get 'presidentes/inicio'
+  get 'presidentes/mostrar'
+  get 'presidentes/nuevo'
+  get 'presidentes/editar'
+  get 'coordinadores/inicio'
+  get 'coordinadores/mostrar'
+  get 'coordinadores/nuevo'
+  get 'coordinadores/editar'
+  get 'asociaciones/inicio'
+  get 'asociaciones/mostrar'
+  get 'asociaciones/nuevo'
+  get 'asociaciones/editar'
+=end
+  resources :carreras
+  resources :idiomas
   #get 'prestamos/inicio'
   #get 'prestamos/mostrar'
   #get 'prestamos/nuevo'
@@ -27,8 +51,6 @@ Rails.application.routes.draw do
   #get 'especialidades/actualizar'
   #get 'especialidades/eliminar'
   #get 'roles/inicio'
-  resources :carreras
-  resources :idiomas
   resources :generos
   resources :editoriales
   resources :autores
@@ -73,4 +95,44 @@ Rails.application.routes.draw do
   match '/prestamos/:id/editar' => 'prestamos#editar', via: :get, :as => :editar_prestamos
   match '/prestamos/actualizar' => 'prestamos#actualizar', via: :patch, :as => :actualizar_prestamos
   match '/prestamos/:id/eliminar' => 'prestamos#eliminar', via: :delete, :as => :eliminar_prestamos
+  ##########Asociaciones
+  match '/asociaciones' => 'asociaciones#inicio',via: :get, :as => :inicio_asociaciones
+  match '/asociaciones/:id/mostrar' => 'asociaciones#mostrar', via: :get, :as => :mostrar_asociaciones
+  match '/asociaciones/nuevo' => 'asociaciones#nuevo', via: :get, :as => :nuevo_asociaciones
+  match '/asociaciones/crear' => 'asociaciones#crear', via: :post, :as => :crear_asociaciones
+  match '/asociaciones/:id/editar' => 'asociaciones#editar', via: :get, :as => :editar_asociaciones
+  match '/asociaciones/actualizar' => 'asociaciones#actualizar', via: :patch, :as => :actualizar_asociaciones
+  match '/asociaciones/:id/eliminar' => 'asociaciones#eliminar', via: :delete, :as => :eliminar_asociaciones
+  ##########Coordinadores
+  match '/coordinadores' => 'coordinadores#inicio',via: :get, :as => :inicio_coordinadores
+  match '/coordinadores/:id/mostrar' => 'coordinadores#mostrar', via: :get, :as => :mostrar_coordinadores
+  match '/coordinadores/nuevo' => 'coordinadores#nuevo', via: :get, :as => :nuevo_coordinadores
+  match '/coordinadores/crear' => 'coordinadores#crear', via: :post, :as => :crear_coordinadores
+  match '/coordinadores/:id/editar' => 'coordinadores#editar', via: :get, :as => :editar_coordinadores
+  match '/coordinadores/actualizar' => 'coordinadores#actualizar', via: :patch, :as => :actualizar_coordinadores
+  match '/coordinadores/:id/eliminar' => 'coordinadores#eliminar', via: :delete, :as => :eliminar_coordinadores
+  ##########Presidentes
+  match '/presidentes' => 'presidentes#inicio',via: :get, :as => :inicio_presidentes
+  match '/presidentes/:id/mostrar' => 'presidentes#mostrar', via: :get, :as => :mostrar_presidentes
+  match '/presidentes/nuevo' => 'presidentes#nuevo', via: :get, :as => :nuevo_presidentes
+  match '/presidentes/crear' => 'presidentes#crear', via: :post, :as => :crear_presidentes
+  match '/presidentes/:id/editar' => 'presidentes#editar', via: :get, :as => :editar_presidentes
+  match '/presidentes/actualizar' => 'presidentes#actualizar', via: :patch, :as => :actualizar_presidentes
+  match '/presidentes/:id/eliminar' => 'presidentes#eliminar', via: :delete, :as => :eliminar_presidentes
+  ##########Proveedores
+  match '/proveedores' => 'proveedores#inicio',via: :get, :as => :inicio_proveedores
+  match '/proveedores/:id/mostrar' => 'proveedores#mostrar', via: :get, :as => :mostrar_proveedores
+  match '/proveedores/nuevo' => 'proveedores#nuevo', via: :get, :as => :nuevo_proveedores
+  match '/proveedores/crear' => 'proveedores#crear', via: :post, :as => :crear_proveedores
+  match '/proveedores/:id/editar' => 'proveedores#editar', via: :get, :as => :editar_proveedores
+  match '/proveedores/actualizar' => 'proveedores#actualizar', via: :patch, :as => :actualizar_proveedores
+  match '/proveedores/:id/eliminar' => 'proveedores#eliminar', via: :delete, :as => :eliminar_proveedores
+  ##########Edificios
+  match '/edificios' => 'edificios#inicio',via: :get, :as => :inicio_edificios
+  match '/edificios/:id/mostrar' => 'edificios#mostrar', via: :get, :as => :mostrar_edificios
+  match '/edificios/nuevo' => 'edificios#nuevo', via: :get, :as => :nuevo_edificios
+  match '/edificios/crear' => 'edificios#crear', via: :post, :as => :crear_edificios
+  match '/edificios/:id/editar' => 'edificios#editar', via: :get, :as => :editar_edificios
+  match '/edificios/actualizar' => 'edificios#actualizar', via: :patch, :as => :actualizar_edificios
+  match '/edificios/:id/eliminar' => 'edificios#eliminar', via: :delete, :as => :eliminar_edificios
 end

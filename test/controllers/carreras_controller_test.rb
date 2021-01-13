@@ -17,7 +17,7 @@ class CarrerasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create carrera" do
     assert_difference('Carrera.count') do
-      post carreras_url, params: { carrera: { campus: @carrera.campus, clave: @carrera.clave, coordinador: @carrera.coordinador, descripcion: @carrera.descripcion, estado: @carrera.estado, municipio: @carrera.municipio, nombre: @carrera.nombre, pais: @carrera.pais } }
+      post carreras_url, params: { carrera: { campus: @carrera.campus, clave: @carrera.clave, coordinador_id: @carrera.coordinador_id, descripcion: @carrera.descripcion, estado: @carrera.estado, municipio: @carrera.municipio, nombre: @carrera.nombre, pais: @carrera.pais } }
     end
 
     assert_redirected_to carrera_url(Carrera.last)
@@ -34,7 +34,7 @@ class CarrerasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update carrera" do
-    patch carrera_url(@carrera), params: { carrera: { campus: @carrera.campus, clave: @carrera.clave, coordinador: @carrera.coordinador, descripcion: @carrera.descripcion, estado: @carrera.estado, municipio: @carrera.municipio, nombre: @carrera.nombre, pais: @carrera.pais } }
+    patch carrera_url(@carrera), params: { carrera: { campus: @carrera.campus, clave: @carrera.clave, coordinador_id: @carrera.coordinador_id, descripcion: @carrera.descripcion, estado: @carrera.estado, municipio: @carrera.municipio, nombre: @carrera.nombre, pais: @carrera.pais } }
     assert_redirected_to carrera_url(@carrera)
   end
 

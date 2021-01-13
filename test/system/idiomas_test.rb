@@ -14,6 +14,7 @@ class IdiomasTest < ApplicationSystemTestCase
     visit idiomas_url
     click_on "New Idioma"
 
+    fill_in "Asociacion", with: @idioma.asociacion_id
     fill_in "Dialectos", with: @idioma.dialectos
     fill_in "Escritura", with: @idioma.escritura
     fill_in "Familia", with: @idioma.familia
@@ -21,7 +22,6 @@ class IdiomasTest < ApplicationSystemTestCase
     fill_in "Nombre", with: @idioma.nombre
     fill_in "Puesto", with: @idioma.puesto
     fill_in "Region", with: @idioma.region
-    fill_in "Reguladopor", with: @idioma.reguladoPor
     click_on "Create Idioma"
 
     assert_text "Idioma was successfully created"
@@ -32,6 +32,7 @@ class IdiomasTest < ApplicationSystemTestCase
     visit idiomas_url
     click_on "Edit", match: :first
 
+    fill_in "Asociacion", with: @idioma.asociacion_id
     fill_in "Dialectos", with: @idioma.dialectos
     fill_in "Escritura", with: @idioma.escritura
     fill_in "Familia", with: @idioma.familia
@@ -39,7 +40,6 @@ class IdiomasTest < ApplicationSystemTestCase
     fill_in "Nombre", with: @idioma.nombre
     fill_in "Puesto", with: @idioma.puesto
     fill_in "Region", with: @idioma.region
-    fill_in "Reguladopor", with: @idioma.reguladoPor
     click_on "Update Idioma"
 
     assert_text "Idioma was successfully updated"

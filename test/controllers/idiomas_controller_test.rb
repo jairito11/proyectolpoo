@@ -17,7 +17,7 @@ class IdiomasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create idioma" do
     assert_difference('Idioma.count') do
-      post idiomas_url, params: { idioma: { dialectos: @idioma.dialectos, escritura: @idioma.escritura, familia: @idioma.familia, hablantes: @idioma.hablantes, nombre: @idioma.nombre, puesto: @idioma.puesto, region: @idioma.region, reguladoPor: @idioma.reguladoPor } }
+      post idiomas_url, params: { idioma: { asociacion_id: @idioma.asociacion_id, dialectos: @idioma.dialectos, escritura: @idioma.escritura, familia: @idioma.familia, hablantes: @idioma.hablantes, nombre: @idioma.nombre, puesto: @idioma.puesto, region: @idioma.region } }
     end
 
     assert_redirected_to idioma_url(Idioma.last)
@@ -34,7 +34,7 @@ class IdiomasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update idioma" do
-    patch idioma_url(@idioma), params: { idioma: { dialectos: @idioma.dialectos, escritura: @idioma.escritura, familia: @idioma.familia, hablantes: @idioma.hablantes, nombre: @idioma.nombre, puesto: @idioma.puesto, region: @idioma.region, reguladoPor: @idioma.reguladoPor } }
+    patch idioma_url(@idioma), params: { idioma: { asociacion_id: @idioma.asociacion_id, dialectos: @idioma.dialectos, escritura: @idioma.escritura, familia: @idioma.familia, hablantes: @idioma.hablantes, nombre: @idioma.nombre, puesto: @idioma.puesto, region: @idioma.region } }
     assert_redirected_to idioma_url(@idioma)
   end
 

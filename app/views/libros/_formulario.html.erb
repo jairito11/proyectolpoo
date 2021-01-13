@@ -11,21 +11,21 @@
 			<th><%= f.label 'Titulo' %></th>
 			<td><%= f.text_field :titulo %></td>
 		</tr>
-		<tr>
+		<tr> 
 			<th><%= f.label 'Autor' %></th>
-			<td><%= f.select :autor_id, @autores.collect{|e| [e.nombre,e.paterno]}, {include_blank: "Selecciona uno."} %></td>
+			<th><%= f.select :autor_id, @autores.collect{|e| [e.nombre + e.paterno + e.materno,e.id]}, {include_blank: "Selecciona uno."} %></th>
 		</tr>
 		<tr>
 			<th><%= f.label 'Editorial' %></th>
-			<td><%= f.select :editorial_id, @editoriales.collect{|e| [e.nombre,e.tipo]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :editorial_id, @editoriales.collect {|e| [e.nombre,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Genero' %></th>
-			<td><%= f.select :genero_id, @generos.collect{|e| [e.genero,e.descripcion]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :genero_id, @generos.collect {|e| [e.genero,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>				
 		<tr>
 			<th><%= f.label 'Idiomas' %></th>
-			<td><%= f.select :idioma_id, @idiomas.collect{|e| [e.nombre,e.region]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :idioma_id, @idiomas.collect {|e| [e.nombre,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>		
 		<tr>
 			<th></th>

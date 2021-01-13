@@ -13,7 +13,7 @@
 		<tr>
 			<td><%= libro.isbn %></td>
 			<td><%= libro.titulo %></td>
-			<td><%= libro.autor.nombre %></td>
+			<td><%= libro.autor.nombre+' '+libro.autor.paterno+' '+libro.autor.materno%></td>
 			<td><%= libro.editorial.nombre %></td> 
 			<td><%= libro.genero.genero %></td> 
 			<td><%= libro.idioma.nombre %></td> 

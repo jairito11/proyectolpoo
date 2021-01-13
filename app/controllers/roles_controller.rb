@@ -9,15 +9,17 @@ class RolesController < ApplicationController
 
   def nuevo
     @rol = Rol.new
+    @edificios = Edificio.all
   end
 
   def crear
     @rol = Rol.new(rol: params[:rol][:rol],
       descripcion: params[:rol][:descripcion],
       zonaEstacionamiento: params[:rol][:zonaEstacionamiento],
-      edificio: params[:rol][:edificio],
       fechaIngreso: params[:rol][:fechaIngreso],
-      horaIngreso: params[:rol][:horaIngreso])
+      horaIngreso: params[:rol][:horaIngreso],
+      edificio_id: params[:rol][:edificio_id])
+    @edificios = Edificio.all
 
     respond_to do |format|
       if @rol.save
@@ -30,16 +32,18 @@ class RolesController < ApplicationController
 
   def editar
     @rol = Rol.where('id = ?', params[:id]).first
+    @edificios = Edificio.all
   end
   def actualizar
     @rol = Rol.find(params[:rol][:id])
+    @edificios = Edificio.all
     respond_to do |format|
       if @rol.update(rol: params[:rol][:rol],
       descripcion: params[:rol][:descripcion],
       zonaEstacionamiento: params[:rol][:zonaEstacionamiento],
-      edificio: params[:rol][:edificio],
       fechaIngreso: params[:rol][:fechaIngreso],
-      horaIngreso: params[:rol][:horaIngreso])
+      horaIngreso: params[:rol][:horaIngreso],
+      edificio_id: params[:rol][:edificio_id],)
         format.html { redirect_to mostrar_rol_path(@rol.id), notice: 'Rol actualizando exitosamente' }
       else
         format.html { render :nuevo }

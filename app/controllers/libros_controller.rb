@@ -24,6 +24,11 @@ class LibrosController < ApplicationController
       genero_id: params[:libro][:genero_id],
       idioma_id: params[:libro][:idioma_id]
       )
+    @autores = Autor.all
+    @editoriales = Editorial.all
+    @generos = Genero.all
+    @idiomas = Idioma.all
+
 
     respond_to do |format|
       if @libro.save
@@ -44,6 +49,10 @@ class LibrosController < ApplicationController
 
   def actualizar
     @libro = Libro.find(params[:libro][:id])
+    @autores = Autor.all
+    @editoriales = Editorial.all
+    @generos = Genero.all
+    @idiomas = Idioma.all
 
     respond_to do |format|
       if @libro.update(

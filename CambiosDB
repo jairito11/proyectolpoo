@@ -1,0 +1,30 @@
+new Asociaciones
+Idiomas
+	Se borra el atributo reguladoPor
+	se pone el asociacion_id referencia a Asociaciones
+new Cordinadores
+Carreras
+	El atributo coordinador se borra
+	Se añade coordinador_id referencia a Coordinadores
+
+Personas
+	Añadir password_digest
+
+new Presidentes
+new Proveedores
+new Edificios
+
+Roles
+	El atributo edificio se borra
+	Se añade edificio_id referencia a Edificios
+
+
+
+___
+https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8 
+sesiones
+https://stackoverflow.com/questions/123078/how-do-i-validate-on-destroy-in-rails
+validación 1
+https://github.com/rails/rails/issues/32376
+validación 2
+

@@ -17,7 +17,7 @@
 		</tr>
 		<tr>
 			<th><%= f.label 'Carrera' %></th>
-			<td><%= f.select :carrera_id, @carreras.collect{|e| [e.nombre,e.descripcion]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :carrera_id, @carreras.collect{|e| [e.nombre,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>		
 		<tr>
 			<th></th>

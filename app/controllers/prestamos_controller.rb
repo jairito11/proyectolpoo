@@ -23,6 +23,8 @@ class PrestamosController < ApplicationController
       libro_id: params[:prestamo][:libro_id],
       persona_id: params[:prestamo][:persona_id]
       )
+    @libros = Libro.all
+    @personas = Persona.all    
 
     respond_to do |format|
       if @prestamo.save
@@ -41,6 +43,8 @@ class PrestamosController < ApplicationController
 
   def actualizar
     @prestamo = Prestamo.find(params[:prestamo][:id])
+    @libros = Libro.all
+    @personas = Persona.all    
 
     respond_to do |format|
       if @prestamo.update(
@@ -53,7 +57,7 @@ class PrestamosController < ApplicationController
         persona_id: params[:prestamo][:persona_id]
       )
 
-        format.html { redirect_to mostrar_prestamos_path(@prestamo.id), notice: 'Prestamo actualizado exitosamente' }
+        format.html { redirect_to inicio_prestamos_path(@prestamo.id), notice: 'Prestamo actualizado exitosamente' }
       else
         format.html { render :nuevo }
       end

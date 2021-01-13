@@ -1,6 +1,6 @@
 <h1>Editar prestamo</h1>
 
-<%= form_with(model: @prestamo,id: 'formulario_prestamo',url: editar_prestamos_path, local: true) do |f| %>
+<%= form_with(model: @prestamo,id: 'formulario_prestamo',url: actualizar_prestamos_path, local: true) do |f| %>
 	<%= render 'formulario', prestamo: @prestamo, f: f %>
 <% end %>
 <%= link_to "Regresar", inicio_prestamos_path %>

@@ -3,4 +3,5 @@ class Libro < ApplicationRecord
 	belongs_to :editorial
 	belongs_to :genero
 	belongs_to :idioma
+	has_many :prestamos
 end

@@ -18,6 +18,7 @@ class EspecialidadesController < ApplicationController
       nombre: params[:especialidad][:nombre],
       descripcion: params[:especialidad][:descripcion],
       carrera_id: params[:especialidad][:carrera_id])
+    @carreras = Carrera.all
 
     respond_to do |format|
       if @especialidad.save
@@ -35,6 +36,7 @@ class EspecialidadesController < ApplicationController
 
   def actualizar
     @especialidad = Especialidad.find(params[:especialidad][:id])
+    @carreras = Carrera.all
 
     respond_to do |format|
       if @especialidad.update(

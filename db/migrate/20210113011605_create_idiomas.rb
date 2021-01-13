@@ -8,7 +8,7 @@ class CreateIdiomas < ActiveRecord::Migration[5.2]
       t.string :familia
       t.string :dialectos
       t.string :escritura
-      t.string :reguladoPor
+      t.integer :asociacion_id
 
       t.timestamps
     end

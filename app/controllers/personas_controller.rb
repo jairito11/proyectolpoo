@@ -22,6 +22,7 @@ class PersonasController < ApplicationController
       sexo: params[:persona][:sexo],
       telefono: params[:persona][:telefono],
       direccion: params[:persona][:direccion],
+      password_digest: params[:persona][:password_digest],
       rol_id: params[:persona][:rol_id],
       especialidad_id: params[:persona][:especialidad_id]
       )
@@ -53,6 +54,7 @@ class PersonasController < ApplicationController
         sexo: params[:persona][:sexo],
         telefono: params[:persona][:telefono],
         direccion: params[:persona][:direccion],
+        password_digest: params[:persona][:password_digest],
         rol_id: params[:persona][:rol_id],
         especialidad_id: params[:persona][:especialidad_id]
       )

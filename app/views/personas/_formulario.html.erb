@@ -32,12 +32,16 @@
 			<td><%= f.text_field :direccion %></td>
 		</tr>
 		<tr>
+			<th><%= f.label 'Contraseña' %></th>
+			<td><%= f.password_field :password_digest %></td>
+		</tr>
+		<tr>
 			<th><%= f.label 'Rol' %></th>
-			<td><%= f.select :rol_id, @roles.collect{|e| [e.rol,e.descripcion]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :rol_id, @roles.collect{|e| [e.rol,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Especialidad' %></th>
-			<td><%= f.select :especialidad_id, @especialidades.collect{|e| [e.nombre,e.descripcion]}, {include_blank: "Selecciona uno."} %></td>
+			<td><%= f.select :especialidad_id, @especialidades.collect{|e| [e.nombre,e.id]}, {include_blank: "Selecciona uno."} %></td>
 		</tr>
 		
 		<tr>

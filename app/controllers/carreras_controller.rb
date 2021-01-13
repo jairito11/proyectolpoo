@@ -69,6 +69,6 @@ class CarrerasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def carrera_params
-      params.require(:carrera).permit(:clave, :nombre, :descripcion, :campus, :municipio, :estado, :pais, :coordinador)
+      params.require(:carrera).permit(:clave, :nombre, :descripcion, :campus, :municipio, :estado, :pais, :coordinador_id)
     end
 end

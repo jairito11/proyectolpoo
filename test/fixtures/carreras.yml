@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  clave: MyString
+  clave: 1
   nombre: MyString
   descripcion: MyString
   campus: MyString
   municipio: MyString
   estado: MyString
   pais: MyString
-  coordinador: MyString
+  coordinador_id: 1
 
 two:
-  clave: MyString
+  clave: 1
   nombre: MyString
   descripcion: MyString
   campus: MyString
   municipio: MyString
   estado: MyString
   pais: MyString
-  coordinador: MyString
+  coordinador_id: 1

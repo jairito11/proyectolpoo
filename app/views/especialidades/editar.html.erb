@@ -1,6 +1,6 @@
 <h1>Editar Especialidad</h1>
 
-<%= form_with(model: @especialidad,id: 'formulario_especialidad',url: editar_especialidades_path, local: true) do |f| %>
+<%= form_with(model: @especialidad,id: 'formulario_especialidad',url: actualizar_especialidades_path, local: true) do |f| %>
 	<%= render 'formulario', especialidad: @especialidad, f: f %>
 <% end %>
 <%= link_to "Regresar", inicio_especialidades_path %>

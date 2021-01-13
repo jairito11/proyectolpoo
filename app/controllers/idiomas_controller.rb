@@ -69,6 +69,6 @@ class IdiomasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def idioma_params
-      params.require(:idioma).permit(:nombre, :region, :hablantes, :puesto, :familia, :dialectos, :escritura, :reguladoPor)
+      params.require(:idioma).permit(:nombre, :region, :hablantes, :puesto, :familia, :dialectos, :escritura, :asociacion_id)
     end
 end

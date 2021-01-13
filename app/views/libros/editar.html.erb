@@ -1,6 +1,6 @@
 <h1>Editar Libro</h1>
 
-<%= form_with(model: @libro,id: 'formulario_libro',url: editar_libros_path, local: true) do |f| %>
+<%= form_with(model: @libro,id: 'formulario_libro',url: actualizar_libros_path, local: true) do |f| %>
 	<%= render 'formulario', libro: @libro, f: f %>
 <% end %>
 <%= link_to "Regresar", inicio_libros_path %>

@@ -8,7 +8,7 @@ one:
   familia: MyString
   dialectos: MyString
   escritura: MyString
-  reguladoPor: MyString
+  asociacion_id: 1
 
 two:
   nombre: MyString
@@ -18,4 +18,4 @@ two:
   familia: MyString
   dialectos: MyString
   escritura: MyString
-  reguladoPor: MyString
+  asociacion_id: 1

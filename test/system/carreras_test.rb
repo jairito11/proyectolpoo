@@ -16,7 +16,7 @@ class CarrerasTest < ApplicationSystemTestCase
 
     fill_in "Campus", with: @carrera.campus
     fill_in "Clave", with: @carrera.clave
-    fill_in "Coordinador", with: @carrera.coordinador
+    fill_in "Coordinador", with: @carrera.coordinador_id
     fill_in "Descripcion", with: @carrera.descripcion
     fill_in "Estado", with: @carrera.estado
     fill_in "Municipio", with: @carrera.municipio
@@ -34,7 +34,7 @@ class CarrerasTest < ApplicationSystemTestCase
 
     fill_in "Campus", with: @carrera.campus
     fill_in "Clave", with: @carrera.clave
-    fill_in "Coordinador", with: @carrera.coordinador
+    fill_in "Coordinador", with: @carrera.coordinador_id
     fill_in "Descripcion", with: @carrera.descripcion
     fill_in "Estado", with: @carrera.estado
     fill_in "Municipio", with: @carrera.municipio

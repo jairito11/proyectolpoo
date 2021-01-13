@@ -16,10 +16,6 @@
 			<td><%= f.text_field :zonaEstacionamiento %></td>
 		</tr>
 		<tr>
-			<th><%= f.label 'Edificio' %></th>
-			<td><%= f.text_field :edificio %></td>
-		</tr>
-		<tr>
 			<th><%= f.label 'Fecha de ingreso' %></th>
 			<td><%= f.text_field :fechaIngreso %></td>
 		</tr>
@@ -27,6 +23,10 @@
 			<th><%= f.label 'Hora de ingreso' %></th>
 			<td><%= f.text_field :horaIngreso %></td>
 		</tr>
+		<tr>
+			<th><%= f.label 'Edificio' %></th>
+			<th><%= f.select :edificio_id, @edificios.collect{|e| [e.codigo,e.id]}, {include_blank: "Selecciona uno."} %></th>
+		</tr>		
 		<tr>
 			<th></th>
 			<td><%= f.submit "Guardar"%></td>
