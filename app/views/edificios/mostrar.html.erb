@@ -1,2 +1,49 @@
-<h1>Edificios#mostrar</h1>
-<p>Find me in app/views/edificios/mostrar.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @edificio.codigo %>
+</p>
+
+<p>
+  <strong>Dirección:</strong>
+  <%= @edificio.direccion %>
+</p>
+
+<p>
+  <strong>Página:</strong>
+  <%= @edificio.pagina %>
+</p>
+
+<p>
+  <strong>Teléfono:</strong>
+  <%= @edificio.telefono %>
+</p>
+
+<p>
+  <strong>Hora apertura:</strong>
+  <%= @edificio.horaAbre %>
+</p>
+
+<p>
+  <strong>Hora cierre:</strong>
+  <%= @edificio.horaCierre %>
+</p>
+
+<p>
+  <strong>Numero de Salones:</strong>
+  <%= @edificio.numeroSalones %>
+</p>
+
+<p>
+  <strong>Numero de Cubiculos:</strong>
+  <%= @edificio.numeroCubiculos %>
+</p>
+
+<p>
+  <strong>Proveedor</strong>
+  <%= @edificio.proveedor.codigo %>
+</p>
+
+<%= link_to 'Editar', editar_edificios_path(@edificio) %> |
+<%= link_to 'Regresar', inicio_edificios_path %>

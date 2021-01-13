@@ -1,2 +1,6 @@
-<h1>Edificios#editar</h1>
-<p>Find me in app/views/edificios/editar.html.erb</p>
+<h1>Editar Edificios</h1>
+
+<%= form_with(model: @edificio,id: 'formulario_edificio',url: actualizar_edificios_path, local: true) do |f| %>
+	<%= render 'formulario', edificio: @edificio, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_edificios_path %>

@@ -1,0 +1,42 @@
+	<table>
+		<tr>
+			<th><%= f.label :codigo %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :codigo %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label :acronimo %></th>
+			<td><%= f.text_field :acronimo %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :genero %></th>
+			<td><%= f.text_field :genero %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :objetivos %></th>
+			<td><%= f.text_field :objetivos %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :fundacion %></th>
+			<td><%= f.text_field :fundacion %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :fundador %></th>
+			<td><%= f.text_field :fundador %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :sede %></th>
+			<td><%= f.text_field :sede %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :operacion %></th>
+			<td><%= f.text_field :operacion %></td>
+		</tr>	
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>

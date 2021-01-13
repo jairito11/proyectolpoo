@@ -1,2 +1,30 @@
-<h1>Asociaciones#inicio</h1>
-<p>Find me in app/views/asociaciones/inicio.html.erb</p>
+<p id="notice"><%= notice %></p>
+<h1>Asociaciones</h1>
+<table>
+	<tr>
+		<td>Codigo</td>
+		<td>Acronimo</td>
+		<td>Genero</td>
+		<td>Objetivos</td>
+		<td>Fundación</td>
+		<td>Fundador</td>
+		<td>Sede</td>
+		<td>Operación</td>
+	</tr>
+    <% @asociaciones.each do |asociacion| %>	
+		<tr>
+			<td><%= asociacion.codigo %></td>
+			<td><%= asociacion.acronimo %></td>
+			<td><%= asociacion.genero %></td>
+			<td><%= asociacion.objetivos %></td> 
+			<td><%= asociacion.fundacion %></td>
+			<td><%= asociacion.fundador %></td>
+			<td><%= asociacion.sede %></td>
+			<td><%= asociacion.operacion %></td>
+			<td><%= link_to 'Mostrar', mostrar_asociaciones_path(asociacion.id) %></td>
+			<td><%= link_to 'Editar', editar_asociaciones_path(asociacion.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_asociaciones_path(asociacion.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nueva Asociación", nuevo_asociaciones_path %> 

@@ -1,2 +1,44 @@
-<h1>Asociaciones#mostrar</h1>
-<p>Find me in app/views/asociaciones/mostrar.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @asociacion.codigo %>
+</p>
+
+<p>
+  <strong>Acronimo:</strong>
+  <%= @asociacion.acronimo %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @asociacion.genero %>
+</p>
+
+<p>
+  <strong>Objetivos:</strong>
+  <%= @asociacion.objetivos %>
+</p>
+
+<p>
+  <strong>Fundación:</strong>
+  <%= @asociacion.fundacion %>
+</p>
+
+<p>
+  <strong>Fundador:</strong>
+  <%= @asociacion.fundador %>
+</p>
+
+<p>
+  <strong>Sede:</strong>
+  <%= @asociacion.sede %>
+</p>
+
+<p>
+  <strong>Operación:</strong>
+  <%= @asociacion.operacion %>
+</p>
+
+<%= link_to 'Editar', editar_asociaciones_path(@asociacion) %> |
+<%= link_to 'Regresar', inicio_asociaciones_path %>

@@ -1,2 +1,34 @@
-<h1>Proveedores#inicio</h1>
-<p>Find me in app/views/proveedores/inicio.html.erb</p>
+<p id="notice"><%= notice %></p>
+<h1>Proveedores</h1>
+<table>
+	<tr>
+		<td>Codigo</td>
+		<td>Tipo</td>
+		<td>Industria</td>
+		<td>Forma Legal</td>
+		<td>Fundación</td>
+		<td>Servicio</td>
+		<td>Matriz</td>
+		<td>Sitio web</td>
+		<td>Empleados</td>
+		<td>Presidente</td>
+	</tr>
+    <% @proveedores.each do |proveedor| %>	
+		<tr>
+			<td><%= proveedor.codigo %></td>
+			<td><%= proveedor.tipo %></td>
+			<td><%= proveedor.industria %></td>
+			<td><%= proveedor.formaLegal %></td> 
+			<td><%= proveedor.fundacion %></td>
+			<td><%= proveedor.servicio %></td>
+			<td><%= proveedor.matriz %></td>
+			<td><%= proveedor.sitioweb %></td>
+			<td><%= proveedor.empleados %></td>
+			<td><%= proveedor.presidente.predecesor %></td>
+			<td><%= link_to 'Mostrar', mostrar_proveedores_path(proveedor.id) %></td>
+			<td><%= link_to 'Editar', editar_proveedores_path(proveedor.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_proveedores_path(proveedor.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nuevo Proveedor", nuevo_proveedores_path %> 

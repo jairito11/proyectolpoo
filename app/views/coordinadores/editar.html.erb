@@ -1,2 +1,6 @@
-<h1>Coordinadores#editar</h1>
-<p>Find me in app/views/coordinadores/editar.html.erb</p>
+<h1>Editar Coordinadores</h1>
+
+<%= form_with(model: @coordinador,id: 'formulario_coordinador',url: actualizar_coordinadores_path, local: true) do |f| %>
+	<%= render 'formulario', coordinador: @coordinador, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_coordinadores_path %>

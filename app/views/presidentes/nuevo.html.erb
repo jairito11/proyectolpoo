@@ -1,2 +1,6 @@
-<h1>Presidentes#nuevo</h1>
-<p>Find me in app/views/presidentes/nuevo.html.erb</p>
+<h1>Nuevo Presidente</h1>
+
+<%= form_with(model: @presidente,id: 'formulario_presidente',url: crear_presidentes_path, local: true) do |f| %>
+	<%= render 'formulario', presidente: @presidente, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_presidentes_path %>

@@ -1,2 +1,6 @@
-<h1>Proveedores#nuevo</h1>
-<p>Find me in app/views/proveedores/nuevo.html.erb</p>
+<h1>Nuevo Proveedor</h1>
+
+<%= form_with(model: @proveedor,id: 'formulario_proveedor',url: crear_proveedores_path, local: true) do |f| %>
+	<%= render 'formulario', proveedor: @proveedor, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_proveedores_path %>

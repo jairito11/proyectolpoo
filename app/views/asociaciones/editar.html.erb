@@ -1,2 +1,6 @@
-<h1>Asociaciones#editar</h1>
-<p>Find me in app/views/asociaciones/editar.html.erb</p>
+<h1>Editar Asociaciones</h1>
+
+<%= form_with(model: @asociacion,id: 'formulario_asociacion',url: actualizar_asociaciones_path, local: true) do |f| %>
+	<%= render 'formulario', asociacion: @asociacion, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_asociaciones_path %>

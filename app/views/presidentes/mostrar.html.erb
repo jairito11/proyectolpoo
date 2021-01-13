@@ -1,2 +1,44 @@
-<h1>Presidentes#mostrar</h1>
-<p>Find me in app/views/presidentes/mostrar.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @presidente.predecesor %>
+</p>
+
+<p>
+  <strong>Nacimiento:</strong>
+  <%= @presidente.nacimiento %>
+</p>
+
+<p>
+  <strong>Residencia:</strong>
+  <%= @presidente.residencia %>
+</p>
+
+<p>
+  <strong>Nacionalidad:</strong>
+  <%= @presidente.nacionalidad %>
+</p>
+
+<p>
+  <strong>Religión:</strong>
+  <%= @presidente.religion %>
+</p>
+
+<p>
+  <strong>Educado en:</strong>
+  <%= @presidente.educadoEn %>
+</p>
+
+<p>
+  <strong>Ocupación:</strong>
+  <%= @presidente.ocupacion %>
+</p>
+
+<p>
+  <strong>Distinciones:</strong>
+  <%= @presidente.distinciones %>
+</p>
+
+<%= link_to 'Editar', editar_presidentes_path(@presidente) %> |
+<%= link_to 'Regresar', inicio_presidentes_path %>

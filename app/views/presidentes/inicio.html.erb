@@ -1,2 +1,30 @@
-<h1>Presidentes#inicio</h1>
-<p>Find me in app/views/presidentes/inicio.html.erb</p>
+<p id="notice"><%= notice %></p>
+<h1>Presidentes</h1>
+<table>
+	<tr>
+		<td>Nombre</td>
+		<td>Nacimiento</td>
+		<td>Residencia</td>
+		<td>Nacionalidad</td>
+		<td>Religión</td>
+		<td>Educado En</td>
+		<td>Ocupación</td>
+		<td>Distinciones</td>
+	</tr>
+    <% @presidentes.each do |presidente| %>	
+		<tr>
+			<td><%= presidente.predecesor %></td>
+			<td><%= presidente.nacimiento %></td>
+			<td><%= presidente.residencia %></td>
+			<td><%= presidente.nacionalidad %></td> 
+			<td><%= presidente.religion %></td>
+			<td><%= presidente.educadoEn %></td>
+			<td><%= presidente.ocupacion %></td>
+			<td><%= presidente.distinciones %></td>
+			<td><%= link_to 'Mostrar', mostrar_presidentes_path(presidente.id) %></td>
+			<td><%= link_to 'Editar', editar_presidentes_path(presidente.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_presidentes_path(presidente.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nuevo presidente", nuevo_presidentes_path %> 

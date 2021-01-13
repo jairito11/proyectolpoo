@@ -10957,3 +10957,1192 @@ Processing by AutoresController#index as HTML
 Completed 200 OK in 87ms (Views: 82.3ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:11:21 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  Rendered asociaciones/inicio.html.erb within layouts/application (77.2ms)
+Completed 500 Internal Server Error in 738ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: 		<td>Sede</td>
+    12: 		<td>Operación</td>
+    13: 	</tr>
+    14:     <% @asociaciones.each do |asociacion| %>	
+    15: 		<tr>
+    16: 			<td><%= asociacion.codigo %></td>
+    17: 			<td><%= asociacion.acronimo %></td>
+  
+app/views/asociaciones/inicio.html.erb:14:in `_app_views_asociaciones_inicio_html_erb___579464696_2042'
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:32:00 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  [1m[36mAsociacion Load (9.3ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (577.1ms)
+  Rendered layouts/_header.html.erb (21.5ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 2663ms (Views: 1940.1ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/asociaciones/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:32:26 -0600
+Processing by AsociacionesController#nuevo as HTML
+  Rendering asociaciones/nuevo.html.erb within layouts/application
+  Rendered asociaciones/nuevo.html.erb within layouts/application (34.3ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial asociaciones/_formulario, application/_formulario with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/jairo/Desktop/workspace/proyectolpoo/app/views"
+):
+    1: <h1>Nueva Asociacion</h1>
+    2: 
+    3: <%= form_with(model: @asociacion,id: 'formulario_asociacion',url: crear_asociaciones_path, local: true) do |f| %>
+    4: 	<%= render 'formulario', asociacion: @asociacion, f: f %>
+    5: <% end %>
+    6: <%= link_to "Regresar", inicio_asociaciones_path %>
+  
+app/views/asociaciones/nuevo.html.erb:4:in `block in _app_views_asociaciones_nuevo_html_erb___1586192190_2054'
+app/views/asociaciones/nuevo.html.erb:3:in `_app_views_asociaciones_nuevo_html_erb___1586192190_2054'
+Started GET "/asociaciones/" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:41:27 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[35m (1.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  [1m[36mAsociacion Load (9.3ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (571.7ms)
+  Rendered layouts/_header.html.erb (19.7ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 2572ms (Views: 1837.1ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/asociaciones/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:41:34 -0600
+Processing by AsociacionesController#nuevo as HTML
+  Rendering asociaciones/nuevo.html.erb within layouts/application
+  Rendered asociaciones/_formulario.html.erb (276.6ms)
+  Rendered asociaciones/nuevo.html.erb within layouts/application (305.4ms)
+  Rendered layouts/_header.html.erb (20.1ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 829ms (Views: 802.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/asociaciones/crear" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:43:13 -0600
+Processing by AsociacionesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y9lnVywt7iDn0oNeMnpHtI+eaSFGgUmTnQz4v7gZHJ9vAM0mhMm+BSJVc92zDP8h/H9rnmYn1yOsYYC2olo8JA==", "asociacion"=>{"id"=>"", "codigo"=>"20002", "acronimo"=>"ASA", "genero"=>"Lingüistica", "objetivos"=>"Difusión", "fundacion"=>"1990-01-01", "fundador"=>"Gobierno", "sede"=>"Inglaterra", "operacion"=>"Europa"}, "commit"=>"Guardar"}
+  [1m[35m (4.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:26
+  [1m[36mAsociacion Create (4.2ms)[0m  [1m[32mINSERT INTO `asociaciones` (`codigo`, `acronimo`, `genero`, `objetivos`, `fundacion`, `fundador`, `sede`, `operacion`) VALUES ('20002', 'ASA', 'Lingüistica', 'Difusión', '1990-01-01', 'Gobierno', 'Inglaterra', 'Europa')[0m
+  ↳ app/controllers/asociaciones_controller.rb:26
+  [1m[35m (185.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:26
+Redirected to http://localhost:3000/asociaciones
+Completed 302 Found in 288ms (ActiveRecord: 194.5ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:43:14 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (2.8ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (34.9ms)
+  Rendered layouts/_header.html.erb (14.8ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 392ms (Views: 374.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:43:21 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (11.0ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (71.3ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 392ms (Views: 373.7ms | ActiveRecord: 11.0ms)
+
+
+Started DELETE "/asociaciones/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:44:01 -0600
+Processing by AsociacionesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"BUq0qwfU8FrqSExYAkYZdRmo5Zn52zT3wBT9SObdiGsJkx7arzCgfy/PvNuDMKHgaknnJtl9qkfxeYVB/J6o0A==", "id"=>"1"}
+  [1m[36mAsociacion Load (2.0ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE `asociaciones`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:60
+  [1m[35m (12.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+  [1m[36mAsociacion Destroy (36.3ms)[0m  [1m[31mDELETE FROM `asociaciones` WHERE `asociaciones`.`id` = 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+  [1m[35m (133.3ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 184.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`proyecto`.`idiomas`, CONSTRAINT `idiomas_ibfk_1` FOREIGN KEY (`asociacion_id`) REFERENCES `asociaciones` (`id`)): DELETE FROM `asociaciones` WHERE `asociaciones`.`id` = 1):
+  
+app/controllers/asociaciones_controller.rb:62:in `block in eliminar'
+app/controllers/asociaciones_controller.rb:61:in `eliminar'
+Started GET "/asociaciones/" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:44:08 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (2.9ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_header.html.erb (7.9ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 337ms (Views: 325.5ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/asociaciones/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:44:15 -0600
+Processing by AsociacionesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"yOQ+CuX09Xs7iZF+RjzweM1ur6Er+ZsOumI+9Uj/6VbEPZR7TRClXv4OYf3HSkjtvo+tHgtfBb6LD0b8UrzJ7Q==", "id"=>"2"}
+  [1m[36mAsociacion Load (11.4ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE `asociaciones`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:60
+  [1m[35m (1.2ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+  [1m[36mAsociacion Destroy (1.2ms)[0m  [1m[31mDELETE FROM `asociaciones` WHERE `asociaciones`.`id` = 2[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+  [1m[35m (120.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+Redirected to http://localhost:3000/asociaciones
+Completed 302 Found in 186ms (ActiveRecord: 134.2ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-13 13:44:15 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (13.5ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 372ms (Views: 346.8ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:24:50 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  [1m[36mCoordinador Load (19.7ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (209.9ms)
+  Rendered layouts/_header.html.erb (8.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 534ms (Views: 497.7ms | ActiveRecord: 46.7ms)
+
+
+Started DELETE "/coordinadores/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:25:04 -0600
+Processing by CoordinadoresController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"Sd/iWKZH5myG2LhQIhAUp0Pz/yTSrfLj9YfD76KwdQpFBkgpDqO2SUNfSNOjZqwyMBL9m/ILbFPE6rvmuPNVsQ==", "id"=>"1"}
+  [1m[36mCoordinador Load (1.7ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:60
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+  [1m[36mCoordinador Destroy (14.9ms)[0m  [1m[31mDELETE FROM `coordinadores` WHERE `coordinadores`.`id` = 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+  [1m[35m (99.4ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 116.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`proyecto`.`carreras`, CONSTRAINT `carreras_ibfk_1` FOREIGN KEY (`coordinador_id`) REFERENCES `coordinadores` (`id`)): DELETE FROM `coordinadores` WHERE `coordinadores`.`id` = 1):
+  
+app/controllers/coordinadores_controller.rb:62:in `block in eliminar'
+app/controllers/coordinadores_controller.rb:61:in `eliminar'
+Started GET "/coordinadores/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:25:12 -0600
+Processing by CoordinadoresController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoordinador Load (4.5ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE (id = '1') ORDER BY `coordinadores`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:35
+  Rendering coordinadores/editar.html.erb within layouts/application
+  Rendered coordinadores/_formulario.html.erb (57.9ms)
+  Rendered coordinadores/editar.html.erb within layouts/application (73.7ms)
+  Rendered layouts/_header.html.erb (6.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 321ms (Views: 283.6ms | ActiveRecord: 4.5ms)
+
+
+Started PATCH "/coordinadores/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:25:57 -0600
+Processing by CoordinadoresController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nL3vUZ1Gkg+eiYd5XmnJMm4W6wuYa9kdAbP2c1xPnBTmF7VuQ50m5RwSsLT8jkDfCOg88YgWzMJicsSvS4Pu5w==", "coordinador"=>{"id"=>"1", "correo"=>"marcelo@mail.com", "nombre"=>"Marcelo ", "paterno"=>"Romero", "materno"=>"Huertas", "direccion"=>"Toluca ", "telefonoCelular"=>"5555555555", "telefonoCasa"=>"1234567890", "especialidad"=>"Servidores"}, "commit"=>"Guardar"}
+  [1m[36mCoordinador Load (1.1ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:39
+  [1m[35m (0.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+  [1m[36mCoordinador Update (0.8ms)[0m  [1m[33mUPDATE `coordinadores` SET `nombre` = 'Marcelo ', `direccion` = 'Toluca ', `telefonoCelular` = '5555555555', `especialidad` = 'Servidores' WHERE `coordinadores`.`id` = 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+  [1m[35m (84.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+Redirected to http://localhost:3000/coordinadores/1/mostrar
+Completed 302 Found in 132ms (ActiveRecord: 86.6ms)
+
+
+Started GET "/coordinadores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:25:57 -0600
+Processing by CoordinadoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoordinador Load (12.1ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:7
+  Rendering coordinadores/mostrar.html.erb within layouts/application
+  Rendered coordinadores/mostrar.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 267ms (Views: 243.1ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:26:00 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (1.9ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_header.html.erb (11.5ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 256ms (Views: 245.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/coordinadores/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:26:06 -0600
+Processing by CoordinadoresController#nuevo as HTML
+  Rendering coordinadores/nuevo.html.erb within layouts/application
+  Rendered coordinadores/_formulario.html.erb (47.3ms)
+  Rendered coordinadores/nuevo.html.erb within layouts/application (57.7ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 263ms (Views: 253.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coordinadores/crear" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:03 -0600
+Processing by CoordinadoresController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hm1KOl6b5mYTjk4rSiYAd76qpKkwzYlvvxH41d0eQMHJnrOGP85jOQWfZNnHK9fL0BaYGriNS+uKa2HgZEwZyQ==", "coordinador"=>{"id"=>"", "correo"=>"juan@mail.com", "nombre"=>"Juan", "paterno"=>"Mendez", "materno"=>"Peréz", "direccion"=>"Pilares", "telefonoCelular"=>"0987654321", "telefonoCasa"=>"0987654321", "especialidad"=>"JEE"}, "commit"=>"Guardar"}
+  [1m[35m (0.8ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:26
+  [1m[36mCoordinador Create (2.5ms)[0m  [1m[32mINSERT INTO `coordinadores` (`correo`, `nombre`, `paterno`, `materno`, `direccion`, `telefonoCelular`, `telefonoCasa`, `especialidad`) VALUES ('juan@mail.com', 'Juan', 'Mendez', 'Peréz', 'Pilares', '0987654321', '0987654321', 'JEE')[0m
+  ↳ app/controllers/coordinadores_controller.rb:26
+  [1m[35m (97.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:26
+Redirected to http://localhost:3000/coordinadores
+Completed 302 Found in 163ms (ActiveRecord: 100.8ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:04 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (4.3ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 227ms (Views: 210.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/coordinadores/2/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:07 -0600
+Processing by CoordinadoresController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoordinador Load (1.9ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:7
+  Rendering coordinadores/mostrar.html.erb within layouts/application
+  Rendered coordinadores/mostrar.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 234ms (Views: 214.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:09 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (1.7ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 212ms (Views: 205.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/coordinadores/2/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:11 -0600
+Processing by CoordinadoresController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoordinador Load (2.1ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE (id = '2') ORDER BY `coordinadores`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:35
+  Rendering coordinadores/editar.html.erb within layouts/application
+  Rendered coordinadores/_formulario.html.erb (54.4ms)
+  Rendered coordinadores/editar.html.erb within layouts/application (65.0ms)
+  Rendered layouts/_header.html.erb (9.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 275ms (Views: 255.9ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/coordinadores/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:18 -0600
+Processing by CoordinadoresController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ppG0IQ5CKqmfjyaqjLzSotdF1RaZuiIZcFj9PWFc4tzcO+4e0JmeQx0UEWcuW1tPsbsC7InHN8YTmc/hdpCQLw==", "coordinador"=>{"id"=>"2", "correo"=>"juan@mail.com", "nombre"=>"Juan", "paterno"=>"Mendez", "materno"=>"Peréz", "direccion"=>"Pilares", "telefonoCelular"=>"0987654321", "telefonoCasa"=>"0987654321", "especialidad"=>"Rails"}, "commit"=>"Guardar"}
+  [1m[36mCoordinador Load (1.4ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:39
+  [1m[35m (0.6ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+  [1m[36mCoordinador Update (0.9ms)[0m  [1m[33mUPDATE `coordinadores` SET `especialidad` = 'Rails' WHERE `coordinadores`.`id` = 2[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+  [1m[35m (155.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+Redirected to http://localhost:3000/coordinadores/2/mostrar
+Completed 302 Found in 201ms (ActiveRecord: 158.3ms)
+
+
+Started GET "/coordinadores/2/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:18 -0600
+Processing by CoordinadoresController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoordinador Load (1.8ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:7
+  Rendering coordinadores/mostrar.html.erb within layouts/application
+  Rendered coordinadores/mostrar.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 207ms (Views: 193.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:19 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (2.7ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (37.5ms)
+  Rendered layouts/_header.html.erb (8.6ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 281ms (Views: 269.8ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/coordinadores/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:23 -0600
+Processing by CoordinadoresController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"pSWZFooF6lOqt55kdLualifcAOy1t7Ks+85uC5TTAZqp/DNnIuG6dm8wbuf1zSIDVD0CU5URLBzKoxYCjpAhIQ==", "id"=>"2"}
+  [1m[36mCoordinador Load (2.8ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:60
+  [1m[35m (1.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+  [1m[36mCoordinador Destroy (0.9ms)[0m  [1m[31mDELETE FROM `coordinadores` WHERE `coordinadores`.`id` = 2[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+  [1m[35m (169.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+Redirected to http://localhost:3000/coordinadores
+Completed 302 Found in 220ms (ActiveRecord: 174.3ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:27:23 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (2.5ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 226ms (Views: 206.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:56:03 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  [1m[36mPresidente Load (43.3ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (175.5ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 377ms (Views: 338.4ms | ActiveRecord: 64.3ms)
+
+
+Started GET "/presidentes/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:56:17 -0600
+Processing by PresidentesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (2.1ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:7
+  Rendering presidentes/mostrar.html.erb within layouts/application
+  Rendered presidentes/mostrar.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 172ms (Views: 149.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:56:19 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (2.6ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_header.html.erb (7.2ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 189ms (Views: 180.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/presidentes/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:56:21 -0600
+Processing by PresidentesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (2.0ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE (id = '1') ORDER BY `presidentes`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:35
+  Rendering presidentes/editar.html.erb within layouts/application
+  Rendered presidentes/editar.html.erb within layouts/application (523.7ms)
+Completed 500 Internal Server Error in 579ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `actualizar_presidentees_path' for #<#<Class:0x2f94c188>:0x65162e60>
+Did you mean?  actualizar_presidentes_path
+               actualizar_presidentes_url
+               actualizar_prestamos_path
+               actualizar_proveedores_path):
+    1: <h1>Editar Presidentes</h1>
+    2: 
+    3: <%= form_with(model: @presidente,id: 'formulario_presidente',url: actualizar_presidentees_path, local: true) do |f| %>
+    4: 	<%= render 'formulario', presidente: @presidente, f: f %>
+    5: <% end %>
+    6: <%= link_to "Regresar", inicio_presidentes_path %>
+  
+app/views/presidentes/editar.html.erb:3:in `_app_views_presidentes_editar_html_erb__921799763_2354'
+Started GET "/presidentes/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:56:48 -0600
+Processing by PresidentesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (2.4ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE (id = '1') ORDER BY `presidentes`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:35
+  Rendering presidentes/editar.html.erb within layouts/application
+  Rendered presidentes/_formulario.html.erb (28.4ms)
+  Rendered presidentes/editar.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_header.html.erb (11.1ms)
+  Rendered layouts/_footer.html.erb (8.0ms)
+Completed 200 OK in 256ms (Views: 240.0ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/presidentes/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:57:04 -0600
+Processing by PresidentesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lFJYPXV5y81/AMhz5RNavSkj1WEsKn9GqPt8UvZ8RKmYi/JM3Z2b6LqHOPBkZeIoWsLX3gyM4faZlgRb7D9kEg==", "presidente"=>{"id"=>"1", "predecesor"=>"Gobierno de México GOB", "nacimiento"=>"1940-01-28", "residencia"=>"Ciudad de México", "nacionalidad"=>"Mexicano", "religion"=>"Catolica", "educadoEn"=>"UNAM1", "ocupacion"=>"Empresario", "distinciones"=>"Golden Plate Award"}, "commit"=>"Guardar"}
+  [1m[36mPresidente Load (2.2ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:39
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:42
+  [1m[36mPresidente Update (0.9ms)[0m  [1m[33mUPDATE `presidentes` SET `predecesor` = 'Gobierno de México GOB', `educadoEn` = 'UNAM1' WHERE `presidentes`.`id` = 1[0m
+  ↳ app/controllers/presidentes_controller.rb:42
+  [1m[35m (71.6ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:42
+Redirected to http://localhost:3000/presidentes/1/mostrar
+Completed 302 Found in 126ms (ActiveRecord: 75.4ms)
+
+
+Started GET "/presidentes/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:57:04 -0600
+Processing by PresidentesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (10.0ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:7
+  Rendering presidentes/mostrar.html.erb within layouts/application
+  Rendered presidentes/mostrar.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (10.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 195ms (Views: 172.9ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:57:08 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (2.9ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 171ms (Views: 162.4ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/presidentes/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:57:16 -0600
+Processing by PresidentesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"3GudHS7XoSdDGB2VG5fAhcKHCqaclxIv0UXsIhO9CK/QsjdshjPxAoaf7Raa4XgQsWYIGbwxjJ/gKJQrCf4oFA==", "id"=>"1"}
+  [1m[36mPresidente Load (3.5ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:60
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+  [1m[36mPresidente Destroy (49.2ms)[0m  [1m[31mDELETE FROM `presidentes` WHERE `presidentes`.`id` = 1[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+  [1m[35m (87.4ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 141.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`proyecto`.`proveedores`, CONSTRAINT `proveedores_ibfk_1` FOREIGN KEY (`presidente_id`) REFERENCES `presidentes` (`id`)): DELETE FROM `presidentes` WHERE `presidentes`.`id` = 1):
+  
+app/controllers/presidentes_controller.rb:62:in `block in eliminar'
+app/controllers/presidentes_controller.rb:61:in `eliminar'
+Started GET "/presidentes/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:57:21 -0600
+Processing by PresidentesController#nuevo as HTML
+  Rendering presidentes/nuevo.html.erb within layouts/application
+  Rendered presidentes/_formulario.html.erb (55.4ms)
+  Rendered presidentes/nuevo.html.erb within layouts/application (65.5ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 218ms (Views: 209.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/presidentes/crear" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:58:46 -0600
+Processing by PresidentesController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bob19P+imMQEQ/BS4nzv23bHOnLawLpyIqCTnrF9U2ioqNfBNbDwrjYIXhuzqGPfL0KfIXVyCmIPC+8ZTgDuTw==", "presidente"=>{"id"=>"", "predecesor"=>"GOB", "nacimiento"=>"1950-01-01", "residencia"=>"CDMX", "nacionalidad"=>"Mexicano", "religion"=>"Cristiano", "educadoEn"=>"UAEMEX", "ocupacion"=>"Empresario,Arquitecto", "distinciones"=>"Ninguna"}, "commit"=>"Guardar"}
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:26
+  [1m[36mPresidente Create (1.2ms)[0m  [1m[32mINSERT INTO `presidentes` (`predecesor`, `nacimiento`, `residencia`, `nacionalidad`, `religion`, `educadoEn`, `ocupacion`, `distinciones`) VALUES ('GOB', '1950-01-01', 'CDMX', 'Mexicano', 'Cristiano', 'UAEMEX', 'Empresario,Arquitecto', 'Ninguna')[0m
+  ↳ app/controllers/presidentes_controller.rb:26
+  [1m[35m (144.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:26
+Redirected to http://localhost:3000/presidentes
+Completed 302 Found in 196ms (ActiveRecord: 147.0ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:58:47 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (1.7ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 237ms (Views: 230.8ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/presidentes/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:58:52 -0600
+Processing by PresidentesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"mcyRKJd7RKyFUbYTfYeGXnBTN3k8Ge8RzhSJHeU5yECVFTtZP58UiUDWRpD88T7LA7I1xhy/caH/efEU/3ro+w==", "id"=>"2"}
+  [1m[36mPresidente Load (1.6ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:60
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+  [1m[36mPresidente Destroy (3.1ms)[0m  [1m[31mDELETE FROM `presidentes` WHERE `presidentes`.`id` = 2[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+  [1m[35m (114.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+Redirected to http://localhost:3000/presidentes
+Completed 302 Found in 152ms (ActiveRecord: 119.5ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-13 14:58:52 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (1.4ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 175ms (Views: 168.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:04:47 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  [1m[36mPresidente Load (2.5ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (37.3ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 209ms (Views: 196.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:56:37 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mProveedor Load (2.6ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.7ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (242.8ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 19.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `predesesor' for #<Presidente:0x1bbc07ea>
+Did you mean?  predecesor
+               predecesor=
+               predecesor?):
+    24: 			<td><%= proveedor.matriz %></td>
+    25: 			<td><%= proveedor.sitioweb %></td>
+    26: 			<td><%= proveedor.empleados %></td>
+    27: 			<td><%= proveedor.presidente.predesesor %></td>
+    28: 			<td><%= link_to 'Mostrar', mostrar_proveedores_path(proveedor.id) %></td>
+    29: 			<td><%= link_to 'Editar', editar_proveedores_path(proveedor.id) %></td>
+    30: 			<td><%= link_to 'Eliminar', eliminar_proveedores_path(proveedor.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+  
+app/views/proveedores/inicio.html.erb:27:in `block in _app_views_proveedores_inicio_html_erb__1608708667_2522'
+app/views/proveedores/inicio.html.erb:16:in `_app_views_proveedores_inicio_html_erb__1608708667_2522'
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:57:15 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (2.5ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.7ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (34.7ms)
+  Rendered layouts/_header.html.erb (10.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 207ms (Views: 192.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/proveedores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:57:39 -0600
+Processing by ProveedoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedor Load (1.3ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:7
+  Rendering proveedores/mostrar.html.erb within layouts/application
+  Rendered proveedores/mostrar.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (6.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 164ms (Views: 145.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:57:41 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (2.1ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (5.7ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (37.7ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 164ms (Views: 151.2ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/proveedores/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:57:44 -0600
+Processing by ProveedoresController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedor Load (1.8ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE (id = '1') ORDER BY `proveedores`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:39
+  Rendering proveedores/editar.html.erb within layouts/application
+  [1m[36mPresidente Load (5.0ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/proveedores/_formulario.html.erb:44
+  Rendered proveedores/_formulario.html.erb (95.3ms)
+  Rendered proveedores/editar.html.erb within layouts/application (107.0ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 298ms (Views: 266.5ms | ActiveRecord: 6.8ms)
+
+
+Started PATCH "/proveedores/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:58:10 -0600
+Processing by ProveedoresController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQK/jh3WtiBTWEZceTLUK5sSJvynZXaMzNvM6a0E2zTDc57GzCd06gP606Y6Yzupn9vfVZMLrfO2DJyh1ECAMw==", "proveedor"=>{"id"=>"1", "codigo"=>"10001", "tipo"=>"Sector privado edición", "industria"=>"Telmex edición", "formaLegal"=>"Sociedad por acciones", "fundacion"=>"1947", "servicio"=>"Telefonía e internet", "matriz"=>"America Movil edición", "sitioweb"=>"telmex.com", "empleados"=>"46247", "presidente_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mProveedor Load (8.8ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:44
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+  [1m[36mPresidente Load (2.8ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+  [1m[36mProveedor Update (1.0ms)[0m  [1m[33mUPDATE `proveedores` SET `tipo` = 'Sector privado edición', `industria` = 'Telmex edición', `matriz` = 'America Movil edición' WHERE `proveedores`.`id` = 1[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+  [1m[35m (145.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+Redirected to http://localhost:3000/proveedores/1/mostrar
+Completed 302 Found in 231ms (ActiveRecord: 158.9ms)
+
+
+Started GET "/proveedores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:58:10 -0600
+Processing by ProveedoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedor Load (1.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:7
+  Rendering proveedores/mostrar.html.erb within layouts/application
+  Rendered proveedores/mostrar.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 156ms (Views: 138.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:58:14 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (1.3ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.3ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 154ms (Views: 146.0ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/proveedores/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:58:26 -0600
+Processing by ProveedoresController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"ljVKdAPTCQvptaMKe2WoF3Etrr1cz9yTaNFbVXWH0H2a7OAFqzdZLiwyU4n6ExCCAsysAnxpQiNZvCNcb8Twxg==", "id"=>"1"}
+  [1m[36mProveedor Load (2.1ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:68
+  [1m[35m (2.1ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+  [1m[36mProveedor Destroy (5.8ms)[0m  [1m[31mDELETE FROM `proveedores` WHERE `proveedores`.`id` = 1[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+  [1m[35m (43.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 53.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`proyecto`.`edificios`, CONSTRAINT `edificios_ibfk_1` FOREIGN KEY (`proveedor_id`) REFERENCES `proveedores` (`id`)): DELETE FROM `proveedores` WHERE `proveedores`.`id` = 1):
+  
+app/controllers/proveedores_controller.rb:70:in `block in eliminar'
+app/controllers/proveedores_controller.rb:69:in `eliminar'
+Started GET "/proveedores/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:58:29 -0600
+Processing by ProveedoresController#nuevo as HTML
+  Rendering proveedores/nuevo.html.erb within layouts/application
+  [1m[36mPresidente Load (2.8ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/proveedores/_formulario.html.erb:44
+  Rendered proveedores/_formulario.html.erb (41.0ms)
+  Rendered proveedores/nuevo.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 256ms (Views: 220.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/proveedores/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 15:58:45 -0600
+Processing by ProveedoresController#nuevo as HTML
+  Rendering proveedores/nuevo.html.erb within layouts/application
+  [1m[36mPresidente Load (2.3ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/proveedores/_formulario.html.erb:44
+  Rendered proveedores/_formulario.html.erb (68.4ms)
+  Rendered proveedores/nuevo.html.erb within layouts/application (74.1ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 267ms (Views: 198.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/proveedores/crear" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:00:16 -0600
+Processing by ProveedoresController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ke7/pbqmYXkVMUIatLXYm1DUVSZ/40PEPxBivMyrf/qdN1XUEkIxXNC2spk1w2AOIzVXmV9F3XQOfRq11uhfQQ==", "proveedor"=>{"id"=>"", "codigo"=>"10002", "tipo"=>"Sector público", "industria"=>"CFE", "formaLegal"=>"Gubernamental", "fundacion"=>"1900", "servicio"=>"Energía electrica", "matriz"=>"Mex", "sitioweb"=>"cfe.com", "empleados"=>"25000", "presidente_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:30
+  [1m[36mPresidente Load (2.2ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:30
+  [1m[36mProveedor Create (1.1ms)[0m  [1m[32mINSERT INTO `proveedores` (`codigo`, `tipo`, `industria`, `formaLegal`, `fundacion`, `servicio`, `matriz`, `sitioweb`, `empleados`, `presidente_id`) VALUES ('10002', 'Sector público', 'CFE', 'Gubernamental', '1900', 'Energía electrica', 'Mex', 'cfe.com', 25000, 1)[0m
+  ↳ app/controllers/proveedores_controller.rb:30
+  [1m[35m (111.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:30
+Redirected to http://localhost:3000/proveedores
+Completed 302 Found in 177ms (ActiveRecord: 114.8ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:00:16 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (3.5ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.9ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  [1m[36mCACHE Presidente Load (0.1ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (59.8ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 204ms (Views: 193.3ms | ActiveRecord: 5.5ms)
+
+
+Started DELETE "/proveedores/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:00:35 -0600
+Processing by ProveedoresController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"HRpqg3rGPSjAvrcNj5y+n1SERSk8kT0i1Eem0ClF2DwRw8Dy0iJtDQU5R44O6gYKJ2VHlhw3o5LlKt7ZMwb4hw==", "id"=>"2"}
+  [1m[36mProveedor Load (2.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:68
+  [1m[35m (0.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+  [1m[36mProveedor Destroy (0.9ms)[0m  [1m[31mDELETE FROM `proveedores` WHERE `proveedores`.`id` = 2[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+  [1m[35m (203.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+Redirected to http://localhost:3000/proveedores
+Completed 302 Found in 245ms (ActiveRecord: 207.1ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:00:35 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (1.4ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.6ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 184ms (Views: 174.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:00:45 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (1.2ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (7.8ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (27.1ms)
+  Rendered layouts/_header.html.erb (7.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 152ms (Views: 138.8ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:40:15 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[35m (5.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mEdificio Load (11.3ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (2.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (878.5ms)
+  Rendered layouts/_header.html.erb (20.5ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 3098ms (Views: 2317.3ms | ActiveRecord: 50.1ms)
+
+
+Started DELETE "/edificios/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:40:35 -0600
+Processing by EdificiosController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"bt4JJzjL8ut0jWFT5JJFnkD20kVBiVr9LgT5Xcdv45NiB6NWkC+izrEKkdBl5P0LMxfQ+mEvxE0faYFU3SzDKA==", "id"=>"1"}
+  [1m[36mEdificio Load (6.3ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:66
+  [1m[35m (3.6ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[36mEdificio Destroy (39.2ms)[0m  [1m[31mDELETE FROM `edificios` WHERE `edificios`.`id` = 1[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[35m (116.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 165.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`proyecto`.`roles`, CONSTRAINT `roles_ibfk_1` FOREIGN KEY (`edificio_id`) REFERENCES `edificios` (`id`)): DELETE FROM `edificios` WHERE `edificios`.`id` = 1):
+  
+app/controllers/edificios_controller.rb:68:in `block in eliminar'
+app/controllers/edificios_controller.rb:67:in `eliminar'
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:40:40 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (2.5ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  Rendered edificios/mostrar.html.erb within layouts/application (152.5ms)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `provedor' for #<Edificio:0x5a44376f>
+Did you mean?  proveedor
+               proveedor=):
+    42: 
+    43: <p>
+    44:   <strong>Proveedor</strong>
+    45:   <%= @edificio.provedor.codigo %>
+    46: </p>
+    47: 
+    48: <%= link_to 'Editar', editar_edificios_path(@edificio) %> |
+  
+app/views/edificios/mostrar.html.erb:45:in `_app_views_edificios_mostrar_html_erb__1872368383_2118'
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:41:05 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (3.4ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  [1m[36mProveedor Load (2.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/mostrar.html.erb:45
+  Rendered edificios/mostrar.html.erb within layouts/application (30.8ms)
+  Rendered layouts/_header.html.erb (19.1ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 537ms (Views: 513.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:41:08 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (2.1ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (6.3ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (62.0ms)
+  Rendered layouts/_header.html.erb (14.6ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 399ms (Views: 382.3ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/edificios/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:41:15 -0600
+Processing by EdificiosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (6.2ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE (id = '1') ORDER BY `edificios`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:38
+  Rendering edificios/editar.html.erb within layouts/application
+  [1m[36mProveedor Load (3.5ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (204.3ms)
+  Rendered edificios/editar.html.erb within layouts/application (241.1ms)
+  Rendered layouts/_header.html.erb (11.2ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 577ms (Views: 528.4ms | ActiveRecord: 9.7ms)
+
+
+Started PATCH "/edificios/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:41:51 -0600
+Processing by EdificiosController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CF56pn3nngihCxDZStkdog8Lh5m1OWWWOq2KnqKtVRZBIlXAtHfpjV8328ktofk4vBLflnRNyjH0Sl+roahDow==", "edificio"=>{"id"=>"1", "codigo"=>"08134", "direccion"=>"Toluca edición", "pagina"=>"edificio1.com", "telefono"=>"0987654321", "horaAbre"=>"15:00", "horaCierre"=>"17:00", "numeroSalones"=>"25", "numeroCubiculos"=>"10", "proveedor_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mEdificio Load (2.8ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:43
+  [1m[35m (0.8ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mProveedor Load (6.3ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mEdificio Update (3.6ms)[0m  [1m[33mUPDATE `edificios` SET `direccion` = 'Toluca edición', `horaAbre` = '15:00', `numeroCubiculos` = 10 WHERE `edificios`.`id` = 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[35m (158.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+Redirected to http://localhost:3000/edificios/1/mostrar
+Completed 302 Found in 269ms (ActiveRecord: 171.8ms)
+
+
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:41:51 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (2.3ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  [1m[36mProveedor Load (26.2ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/mostrar.html.erb:45
+  Rendered edificios/mostrar.html.erb within layouts/application (46.5ms)
+  Rendered layouts/_header.html.erb (13.8ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 412ms (Views: 361.5ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:41:58 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (1.5ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (2.4ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (37.8ms)
+  Rendered layouts/_header.html.erb (10.6ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 296ms (Views: 281.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/edificios/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:42:07 -0600
+Processing by EdificiosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (1.6ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE (id = '1') ORDER BY `edificios`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:38
+  Rendering edificios/editar.html.erb within layouts/application
+  [1m[36mProveedor Load (1.7ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (93.2ms)
+  Rendered edificios/editar.html.erb within layouts/application (114.9ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 411ms (Views: 390.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/edificios/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:43:08 -0600
+Processing by EdificiosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (2.3ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE (id = '1') ORDER BY `edificios`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:38
+  Rendering edificios/editar.html.erb within layouts/application
+  [1m[36mProveedor Load (1.9ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (76.1ms)
+  Rendered edificios/editar.html.erb within layouts/application (121.8ms)
+  Rendered layouts/_header.html.erb (13.6ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 426ms (Views: 404.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/edificios/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:43:48 -0600
+Processing by EdificiosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (1.5ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE (id = '1') ORDER BY `edificios`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:38
+  Rendering edificios/editar.html.erb within layouts/application
+  [1m[36mProveedor Load (3.9ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (71.1ms)
+  Rendered edificios/editar.html.erb within layouts/application (83.9ms)
+  Rendered layouts/_header.html.erb (14.1ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 363ms (Views: 336.8ms | ActiveRecord: 5.4ms)
+
+
+Started PATCH "/edificios/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:15 -0600
+Processing by EdificiosController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p00oL2cDGvNVYz0z8rvQYfkEqvvLi/vQi0kyxI5QmiurlIJez+dK1pDkzbBzzWj0iuWoROstZWC6JErNlBO6kA==", "edificio"=>{"id"=>"1", "codigo"=>"1000", "direccion"=>"Toluca edición", "pagina"=>"edificio1.com", "telefono"=>"0987654321", "horaAbre"=>"15:00", "horaCierre"=>"17:00", "numeroSalones"=>"25", "numeroCubiculos"=>"10", "proveedor_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mEdificio Load (2.1ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:43
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mProveedor Load (2.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mEdificio Update (1.0ms)[0m  [1m[33mUPDATE `edificios` SET `codigo` = '1000' WHERE `edificios`.`id` = 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[35m (249.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+Redirected to http://localhost:3000/edificios/1/mostrar
+Completed 302 Found in 309ms (ActiveRecord: 254.7ms)
+
+
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:15 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (1.4ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  [1m[36mProveedor Load (6.2ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/mostrar.html.erb:45
+  Rendered edificios/mostrar.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_header.html.erb (13.9ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+Completed 200 OK in 304ms (Views: 271.6ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/edificios/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:20 -0600
+Processing by EdificiosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (2.0ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE (id = '1') ORDER BY `edificios`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:38
+  Rendering edificios/editar.html.erb within layouts/application
+  [1m[36mProveedor Load (11.2ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (68.6ms)
+  Rendered edificios/editar.html.erb within layouts/application (78.9ms)
+  Rendered layouts/_header.html.erb (17.1ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 312ms (Views: 273.2ms | ActiveRecord: 13.2ms)
+
+
+Started PATCH "/edificios/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:35 -0600
+Processing by EdificiosController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ew2jToVz9T3Q5SNHoWSF6/qu07S0AMcCJED2uEGGsf9acYwoTOOCuC7Z6FfGHGFxSbeLu3V0aKXqpyONQoOnSg==", "edificio"=>{"id"=>"1", "codigo"=>"1000", "direccion"=>"Toluca edición", "pagina"=>"edificio1.com", "telefono"=>"0987654321", "horaAbre"=>"07:00", "horaCierre"=>"19:00", "numeroSalones"=>"25", "numeroCubiculos"=>"10", "proveedor_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mEdificio Load (1.2ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:43
+  [1m[35m (3.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mProveedor Load (2.8ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mEdificio Update (0.9ms)[0m  [1m[33mUPDATE `edificios` SET `horaAbre` = '07:00', `horaCierre` = '19:00' WHERE `edificios`.`id` = 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[35m (145.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+Redirected to http://localhost:3000/edificios/1/mostrar
+Completed 302 Found in 225ms (ActiveRecord: 154.2ms)
+
+
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:35 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (8.2ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  [1m[36mProveedor Load (1.6ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/mostrar.html.erb:45
+  Rendered edificios/mostrar.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_header.html.erb (12.3ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 286ms (Views: 251.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:38 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (6.3ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (5.5ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (59.0ms)
+  Rendered layouts/_header.html.erb (12.2ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 298ms (Views: 261.6ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/edificios/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:44:54 -0600
+Processing by EdificiosController#nuevo as HTML
+  Rendering edificios/nuevo.html.erb within layouts/application
+  [1m[36mProveedor Load (1.8ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (52.9ms)
+  Rendered edificios/nuevo.html.erb within layouts/application (62.2ms)
+  Rendered layouts/_header.html.erb (8.7ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 308ms (Views: 294.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/edificios/crear" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:45:20 -0600
+Processing by EdificiosController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/WeHuvWUuq/6+3uAP/TRsKoT2X6R6xlJM3wByNiqu9rE1PzdJogXZ0toLOSz5gj/mfNxg2IAdtNZjq3kUNwRiQ==", "edificio"=>{"id"=>"", "codigo"=>"1001", "direccion"=>"borrar", "pagina"=>"borrar", "telefono"=>"1234567890", "horaAbre"=>"00:00", "horaCierre"=>"15:00", "numeroSalones"=>"5", "numeroCubiculos"=>"5", "proveedor_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:29
+  [1m[36mProveedor Load (1.8ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:29
+  [1m[36mEdificio Create (20.5ms)[0m  [1m[32mINSERT INTO `edificios` (`codigo`, `direccion`, `pagina`, `telefono`, `horaAbre`, `horaCierre`, `numeroSalones`, `numeroCubiculos`, `proveedor_id`) VALUES ('1001', 'borrar', 'borrar', '1234567890', '00:00', '15:00', 5, 5, 1)[0m
+  ↳ app/controllers/edificios_controller.rb:29
+  [1m[35m (146.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:29
+Redirected to http://localhost:3000/edificios
+Completed 302 Found in 248ms (ActiveRecord: 169.7ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:45:21 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (5.2ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (6.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  [1m[36mCACHE Proveedor Load (0.3ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (60.3ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 247ms (Views: 230.4ms | ActiveRecord: 11.5ms)
+
+
+Started DELETE "/edificios/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:45:25 -0600
+Processing by EdificiosController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"bvG9Q/Zh3Bpb7bvShJuQ3g2DQgz+9xp51KDtKq1I6H9iKBcyXoWMP55qS1EF7ShLfmJAs95RhMnlzZUjtwvIxA==", "id"=>"1"}
+  [1m[36mEdificio Load (4.5ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:66
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[36mEdificio Destroy (5.1ms)[0m  [1m[31mDELETE FROM `edificios` WHERE `edificios`.`id` = 1[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[35m (91.2ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 101.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`proyecto`.`roles`, CONSTRAINT `roles_ibfk_1` FOREIGN KEY (`edificio_id`) REFERENCES `edificios` (`id`)): DELETE FROM `edificios` WHERE `edificios`.`id` = 1):
+  
+app/controllers/edificios_controller.rb:68:in `block in eliminar'
+app/controllers/edificios_controller.rb:67:in `eliminar'
+Started DELETE "/edificios/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:45:31 -0600
+Processing by EdificiosController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"bvG9Q/Zh3Bpb7bvShJuQ3g2DQgz+9xp51KDtKq1I6H9iKBcyXoWMP55qS1EF7ShLfmJAs95RhMnlzZUjtwvIxA==", "id"=>"2"}
+  [1m[36mEdificio Load (3.8ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:66
+  [1m[35m (1.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[36mEdificio Destroy (0.9ms)[0m  [1m[31mDELETE FROM `edificios` WHERE `edificios`.`id` = 2[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[35m (158.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+Redirected to http://localhost:3000/edificios
+Completed 302 Found in 209ms (ActiveRecord: 165.0ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-13 16:45:31 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (19.8ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (5.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (58.5ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 393ms (Views: 361.3ms | ActiveRecord: 24.9ms)
+
+

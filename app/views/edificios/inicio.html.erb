@@ -1,2 +1,32 @@
-<h1>Edificios#inicio</h1>
-<p>Find me in app/views/edificios/inicio.html.erb</p>
+<p id="notice"><%= notice %></p>
+<h1>Edificios</h1>
+<table>
+	<tr>
+		<td>Codigo</td>
+		<td>Dirección</td>
+		<td>Página</td>
+		<td>Teléfono</td>
+		<td>Hora Apertura</td>
+		<td>Hora Cierre</td>
+		<td>Numero de salones</td>
+		<td>Numero de Cubiculos</td>
+		<td>Proveedor</td>
+	</tr>
+    <% @edificios.each do |edificio| %>	
+		<tr>
+			<td><%= edificio.codigo %></td>
+			<td><%= edificio.direccion %></td>
+			<td><%= edificio.pagina %></td>
+			<td><%= edificio.telefono %></td> 
+			<td><%= edificio.horaAbre %></td>
+			<td><%= edificio.horaCierre %></td>
+			<td><%= edificio.numeroSalones %></td>
+			<td><%= edificio.numeroCubiculos %></td>
+			<td><%= edificio.proveedor.codigo %></td>
+			<td><%= link_to 'Mostrar', mostrar_edificios_path(edificio.id) %></td>
+			<td><%= link_to 'Editar', editar_edificios_path(edificio.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_edificios_path(edificio.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nuevo Edificio", nuevo_edificios_path %> 

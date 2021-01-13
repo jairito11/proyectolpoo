@@ -1,2 +1,44 @@
-<h1>Proveedores#mostrar</h1>
-<p>Find me in app/views/proveedores/mostrar.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @proveedor.codigo %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @proveedor.tipo %>
+</p>
+
+<p>
+  <strong>Industria:</strong>
+  <%= @proveedor.industria %>
+</p>
+
+<p>
+  <strong>Forma legal:</strong>
+  <%= @proveedor.formaLegal %>
+</p>
+
+<p>
+  <strong>Fundación</strong>
+  <%= @proveedor.fundacion %>
+</p>
+
+<p>
+  <strong>Servicio:</strong>
+  <%= @proveedor.servicio %>
+</p>
+
+<p>
+  <strong>Matriz:</strong>
+  <%= @proveedor.matriz %>
+</p>
+
+<p>
+  <strong>Sitio web:</strong>
+  <%= @proveedor.sitioweb %>
+</p>
+
+<%= link_to 'Editar', editar_proveedores_path(@proveedor) %> |
+<%= link_to 'Regresar', inicio_proveedores_path %>

@@ -1,2 +1,44 @@
-<h1>Coordinadores#mostrar</h1>
-<p>Find me in app/views/coordinadores/mostrar.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @coordinador.correo %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @coordinador.nombre %>
+</p>
+
+<p>
+  <strong>Paterno:</strong>
+  <%= @coordinador.paterno %>
+</p>
+
+<p>
+  <strong>Materno:</strong>
+  <%= @coordinador.materno %>
+</p>
+
+<p>
+  <strong>Dirección:</strong>
+  <%= @coordinador.direccion %>
+</p>
+
+<p>
+  <strong>Telefono celular:</strong>
+  <%= @coordinador.telefonoCelular %>
+</p>
+
+<p>
+  <strong>Telefono Casa:</strong>
+  <%= @coordinador.telefonoCasa %>
+</p>
+
+<p>
+  <strong>Especialidad:</strong>
+  <%= @coordinador.especialidad %>
+</p>
+
+<%= link_to 'Editar', editar_coordinadores_path(@coordinador) %> |
+<%= link_to 'Regresar', inicio_coordinadores_path %>

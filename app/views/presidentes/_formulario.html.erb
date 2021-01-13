@@ -1,0 +1,42 @@
+	<table>
+		<tr>
+			<th><%= f.label 'Nombre' %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :predecesor %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label :nacimiento %></th>
+			<td><%= f.text_field :nacimiento %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :residencia %></th>
+			<td><%= f.text_field :residencia %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :nacionalidad %></th>
+			<td><%= f.text_field :nacionalidad %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :religion %></th>
+			<td><%= f.text_field :religion %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :educadoEn %></th>
+			<td><%= f.text_field :educadoEn %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :ocupacion %></th>
+			<td><%= f.text_field :ocupacion %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :distinciones %></th>
+			<td><%= f.text_field :distinciones %></td>
+		</tr>	
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>

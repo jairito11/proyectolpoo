@@ -1,2 +1,6 @@
-<h1>Proveedores#editar</h1>
-<p>Find me in app/views/proveedores/editar.html.erb</p>
+<h1>Editar Proveedores</h1>
+
+<%= form_with(model: @proveedor,id: 'formulario_proveedor',url: actualizar_proveedores_path, local: true) do |f| %>
+	<%= render 'formulario', proveedor: @proveedor, f: f %>
+<% end %>
+<%= link_to "Regresar", inicio_proveedores_path %>

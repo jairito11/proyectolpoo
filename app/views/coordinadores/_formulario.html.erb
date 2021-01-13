@@ -1,0 +1,42 @@
+	<table>
+		<tr>
+			<th><%= f.label :correo %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :correo %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label :nombre %></th>
+			<td><%= f.text_field :nombre %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :paterno %></th>
+			<td><%= f.text_field :paterno %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :materno %></th>
+			<td><%= f.text_field :materno %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :direccion %></th>
+			<td><%= f.text_field :direccion %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :telefonoCelular %></th>
+			<td><%= f.text_field :telefonoCelular %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :telefonoCasa %></th>
+			<td><%= f.text_field :telefonoCasa %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :especialidad %></th>
+			<td><%= f.text_field :especialidad %></td>
+		</tr>	
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>

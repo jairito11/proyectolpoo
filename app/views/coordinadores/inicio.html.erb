@@ -1,2 +1,30 @@
-<h1>Coordinadores#inicio</h1>
-<p>Find me in app/views/coordinadores/inicio.html.erb</p>
+<p id="notice"><%= notice %></p>
+<h1>Coordinadores</h1>
+<table>
+	<tr>
+		<td>Correo</td>
+		<td>Nombre</td>
+		<td>Paterno</td>
+		<td>Materno</td>
+		<td>Dirección</td>
+		<td>Telefono Celular</td>
+		<td>Telefono Casa</td>
+		<td>Especialidad</td>
+	</tr>
+    <% @coordinadores.each do |coordinador| %>	
+		<tr>
+			<td><%= coordinador.correo %></td>
+			<td><%= coordinador.nombre %></td>
+			<td><%= coordinador.paterno %></td>
+			<td><%= coordinador.materno %></td> 
+			<td><%= coordinador.direccion %></td>
+			<td><%= coordinador.telefonoCelular %></td>
+			<td><%= coordinador.telefonoCasa %></td>
+			<td><%= coordinador.especialidad %></td>
+			<td><%= link_to 'Mostrar', mostrar_coordinadores_path(coordinador.id) %></td>
+			<td><%= link_to 'Editar', editar_coordinadores_path(coordinador.id) %></td>
+			<td><%= link_to 'Eliminar', eliminar_coordinadores_path(coordinador.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "Nuevo Coordinador", nuevo_coordinadores_path %> 

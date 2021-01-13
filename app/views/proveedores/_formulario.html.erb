@@ -1,0 +1,50 @@
+	<table>
+		<tr>
+			<th><%= f.label :codigo %></th>
+			<td>
+				<%=f.hidden_field :id %>
+				<%= f.text_field :codigo %>
+				
+			</td>
+		</tr>
+		<tr>
+			<th><%= f.label :tipo %></th>
+			<td><%= f.text_field :tipo %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :industria %></th>
+			<td><%= f.text_field :industria %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :formaLegal %></th>
+			<td><%= f.text_field :formaLegal %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :fundacion %></th>
+			<td><%= f.text_field :fundacion %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :servicio %></th>
+			<td><%= f.text_field :servicio %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :matriz %></th>
+			<td><%= f.text_field :matriz %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :sitioweb %></th>
+			<td><%= f.text_field :sitioweb %></td>
+		</tr>
+		<tr>
+			<th><%= f.label :empleados %></th>
+			<td><%= f.text_field :empleados %></td>
+		</tr>
+		<tr>
+			<th><%= f.label 'Presidente' %></th>
+			<td><%= f.select :presidente_id, @presidentes.collect{|e| [e.predecesor,e.id]}, {include_blank: "Selecciona uno."} %></td>
+		</tr>			
+		<tr>
+			<th></th>
+			<td><%= f.submit "Guardar"%></td>
+		</tr>		
+	</table>
