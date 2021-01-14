@@ -28,7 +28,7 @@ class GenerosController < ApplicationController
 
     respond_to do |format|
       if @genero.save
-        format.html { redirect_to @genero, notice: 'Genero was successfully created.' }
+        format.html { redirect_to @genero, notice: 'Genero fue creado correctamente.' }
         format.json { render :show, status: :created, location: @genero }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class GenerosController < ApplicationController
   def update
     respond_to do |format|
       if @genero.update(genero_params)
-        format.html { redirect_to @genero, notice: 'Genero was successfully updated.' }
+        format.html { redirect_to @genero, notice: 'Genero fue actualizado correctamente.' }
         format.json { render :show, status: :ok, location: @genero }
       else
         format.html { render :edit }
@@ -54,10 +54,14 @@ class GenerosController < ApplicationController
   # DELETE /generos/1
   # DELETE /generos/1.json
   def destroy
-    @genero.destroy
     respond_to do |format|
-      format.html { redirect_to generos_url, notice: 'Genero was successfully destroyed.' }
-      format.json { head :no_content }
+      if @genero.destroy
+        format.html { redirect_to generos_url, notice: 'Genero fue eliminado correctamente.' }
+        format.json { head :no_content }  
+      else
+        format.html { redirect_to generos_url, notice: 'Genero NO pudo ser eliminado.' }
+        format.json { head :no_content }
+      end
     end
   end
 

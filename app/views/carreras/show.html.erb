@@ -37,7 +37,7 @@
 
 <p>
   <strong>Coordinador:</strong>
-  <%= @carrera.coordinador_id %>
+  <%= @carrera.coordinador.nombre+' '+@carrera.coordinador.paterno %>
 </p>
 
 <%= link_to 'Edit', edit_carrera_path(@carrera) %> |

@@ -28,7 +28,7 @@ class IdiomasController < ApplicationController
 
     respond_to do |format|
       if @idioma.save
-        format.html { redirect_to @idioma, notice: 'Idioma was successfully created.' }
+        format.html { redirect_to @idioma, notice: 'Idioma fue creado correctamente.' }
         format.json { render :show, status: :created, location: @idioma }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class IdiomasController < ApplicationController
   def update
     respond_to do |format|
       if @idioma.update(idioma_params)
-        format.html { redirect_to @idioma, notice: 'Idioma was successfully updated.' }
+        format.html { redirect_to @idioma, notice: 'Idioma fue actualizado correctamente.' }
         format.json { render :show, status: :ok, location: @idioma }
       else
         format.html { render :edit }
@@ -54,10 +54,14 @@ class IdiomasController < ApplicationController
   # DELETE /idiomas/1
   # DELETE /idiomas/1.json
   def destroy
-    @idioma.destroy
     respond_to do |format|
-      format.html { redirect_to idiomas_url, notice: 'Idioma was successfully destroyed.' }
-      format.json { head :no_content }
+      if @idioma.destroy
+      format.html { redirect_to idiomas_url, notice: 'Idioma fue eliminado correctamente.' }
+      format.json { head :no_content }      
+      else
+      format.html { redirect_to idiomas_url, notice: 'Idioma NO fue eliminado correctamente.' }
+      format.json { head :no_content }      
+      end
     end
   end
 

@@ -28,7 +28,7 @@ class EditorialesController < ApplicationController
 
     respond_to do |format|
       if @editorial.save
-        format.html { redirect_to @editorial, notice: 'Editorial was successfully created.' }
+        format.html { redirect_to @editorial, notice: 'Editorial fue creada correctamente.' }
         format.json { render :show, status: :created, location: @editorial }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class EditorialesController < ApplicationController
   def update
     respond_to do |format|
       if @editorial.update(editorial_params)
-        format.html { redirect_to @editorial, notice: 'Editorial was successfully updated.' }
+        format.html { redirect_to @editorial, notice: 'Editorial fue actualizada correctamente.' }
         format.json { render :show, status: :ok, location: @editorial }
       else
         format.html { render :edit }
@@ -54,10 +54,14 @@ class EditorialesController < ApplicationController
   # DELETE /editoriales/1
   # DELETE /editoriales/1.json
   def destroy
-    @editorial.destroy
     respond_to do |format|
-      format.html { redirect_to editoriales_url, notice: 'Editorial was successfully destroyed.' }
-      format.json { head :no_content }
+      if @editorial.destroy
+        format.html { redirect_to editoriales_url, notice: 'Editorial fue eliminada correctamente.' }
+        format.json { head :no_content }        
+      else
+        format.html { redirect_to editoriales_url, notice: 'Editorial NO fue eliminada correctamente.' }
+        format.json { head :no_content }        
+      end
     end
   end
 

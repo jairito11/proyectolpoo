@@ -27,7 +27,7 @@
         <td><%= carrera.municipio %></td>
         <td><%= carrera.estado %></td>
         <td><%= carrera.pais %></td>
-        <td><%= carrera.coordinador_id %></td>
+        <td><%= carrera.coordinador.nombre+' '+carrera.coordinador.paterno %></td>
         <td><%= link_to 'Show', carrera %></td>
         <td><%= link_to 'Edit', edit_carrera_path(carrera) %></td>
         <td><%= link_to 'Destroy', carrera, method: :delete, data: { confirm: 'Are you sure?' } %></td>

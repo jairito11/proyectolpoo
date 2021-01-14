@@ -48,7 +48,7 @@
 
   <div class="field">
     <%= form.label :coordinador_id %>
-    <%= form.number_field :coordinador_id %>
+    <%= form.select :coordinador_id, @coordinadores.collect {|e| [e.nombre,e.id]}, {include_blank: "Selecciona uno."}%>
   </div>
 
   <div class="actions">

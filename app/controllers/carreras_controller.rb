@@ -15,20 +15,23 @@ class CarrerasController < ApplicationController
   # GET /carreras/new
   def new
     @carrera = Carrera.new
+    @coordinadores = Coordinador.all
   end
 
   # GET /carreras/1/edit
   def edit
+    @coordinadores = Coordinador.all
   end
 
   # POST /carreras
   # POST /carreras.json
   def create
     @carrera = Carrera.new(carrera_params)
+    @coordinadores = Coordinador.all
 
     respond_to do |format|
       if @carrera.save
-        format.html { redirect_to @carrera, notice: 'Carrera was successfully created.' }
+        format.html { redirect_to @carrera, notice: 'Carrera fue creada correctamente.' }
         format.json { render :show, status: :created, location: @carrera }
       else
         format.html { render :new }
@@ -40,9 +43,10 @@ class CarrerasController < ApplicationController
   # PATCH/PUT /carreras/1
   # PATCH/PUT /carreras/1.json
   def update
+    @coordinadores = Coordinador.all
     respond_to do |format|
       if @carrera.update(carrera_params)
-        format.html { redirect_to @carrera, notice: 'Carrera was successfully updated.' }
+        format.html { redirect_to @carrera, notice: 'Carrera fue actualizada correctamente.' }
         format.json { render :show, status: :ok, location: @carrera }
       else
         format.html { render :edit }
@@ -54,10 +58,14 @@ class CarrerasController < ApplicationController
   # DELETE /carreras/1
   # DELETE /carreras/1.json
   def destroy
-    @carrera.destroy
     respond_to do |format|
-      format.html { redirect_to carreras_url, notice: 'Carrera was successfully destroyed.' }
-      format.json { head :no_content }
+      if @carrera.destroy
+      format.html { redirect_to carreras_url, notice: 'Carrera fue eliminada correctamente.' }
+      format.json { head :no_content }        
+      else
+      format.html { redirect_to carreras_url, notice: 'Carrera NO fue eliminada correctamente.' }
+      format.json { head :no_content }        
+      end
     end
   end
 

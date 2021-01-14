@@ -28,10 +28,10 @@ class AutoresController < ApplicationController
 
     respond_to do |format|
       if @autor.save
-        format.html { redirect_to @autor, notice: 'Autor was successfully created.' }
+        format.html { redirect_to @autor, notice: 'Autor fue creado correctamente.' }
         format.json { render :show, status: :created, location: @autor }
       else
-        format.html { render :new }
+        format.html { render :new , notice: 'Autor no pudo ser creado.'}
         format.json { render json: @autor.errors, status: :unprocessable_entity }
       end
     end
@@ -42,10 +42,10 @@ class AutoresController < ApplicationController
   def update
     respond_to do |format|
       if @autor.update(autor_params)
-        format.html { redirect_to @autor, notice: 'Autor was successfully updated.' }
+        format.html { redirect_to @autor, notice: 'Autor fue actualizado correctamente' }
         format.json { render :show, status: :ok, location: @autor }
       else
-        format.html { render :edit }
+        format.html { render :edit, notice: 'El autor no pudo ser actualizado' }
         format.json { render json: @autor.errors, status: :unprocessable_entity }
       end
     end
@@ -54,10 +54,14 @@ class AutoresController < ApplicationController
   # DELETE /autores/1
   # DELETE /autores/1.json
   def destroy
-    @autor.destroy
     respond_to do |format|
-      format.html { redirect_to autores_url, notice: 'Autor was successfully destroyed.' }
-      format.json { head :no_content }
+      if @autor.destroy
+        format.html { redirect_to autores_url, notice: 'Autor fue destruido correctamente' }
+        format.json { head :no_content }
+      else
+        format.html { redirect_to autores_url, notice: 'Autor NO pudo ser eliminado' }
+        format.json { head :no_content }
+      end      
     end
   end
 
