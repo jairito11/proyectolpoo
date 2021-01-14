@@ -1,4 +1,4 @@
-<%= form_with(model: idioma, local: true) do |form| %>
+<%= form_with(model: idioma,:html => {:id => "formulario_idioma"}, local: true) do |form| %>
   <% if idioma.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(idioma.errors.count, "error") %> prohibited this idioma from being saved:</h2>

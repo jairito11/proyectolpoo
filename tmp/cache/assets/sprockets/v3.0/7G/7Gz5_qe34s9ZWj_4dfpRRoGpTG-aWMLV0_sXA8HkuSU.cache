@@ -1,0 +1,25 @@
+I"¹(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_presidente').validate({
+      rules: {
+        'presidente[predecesor]': {
+          required: true
+        }
+      },
+      messages: {
+        'presidente[predecesor]': {
+          required: 'Nombre requerido'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

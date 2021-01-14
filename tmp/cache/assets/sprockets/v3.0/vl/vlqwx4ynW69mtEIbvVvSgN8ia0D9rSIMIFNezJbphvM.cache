@@ -1,0 +1,25 @@
+I"´(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_coordinador').validate({
+      rules: {
+        'coordinador[correo]': {
+          required: true
+        }
+      },
+      messages: {
+        'coordinador[correo]': {
+          required: 'Correo requerido'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

@@ -1,4 +1,4 @@
-<%= form_with(model: editorial, local: true) do |form| %>
+<%= form_with(model: editorial,:html => {:id => "formulario_editorial"}, local: true) do |form| %>
   <% if editorial.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(editorial.errors.count, "error") %> prohibited this editorial from being saved:</h2>

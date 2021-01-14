@@ -1,0 +1,27 @@
+I"ë(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_genero').validate({
+      rules: {
+        'genero[genero]': {
+          required: true,
+          minlength: 13
+        }
+      },
+      messages: {
+        'genero[genero]': {
+          required: 'genero requerido',
+          minlength: 'Minimo 13 Caracteres'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

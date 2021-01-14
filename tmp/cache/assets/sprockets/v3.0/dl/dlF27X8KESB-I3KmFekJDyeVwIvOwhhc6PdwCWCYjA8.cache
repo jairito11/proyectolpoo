@@ -1,0 +1,25 @@
+I"±(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_asociacion').validate({
+      rules: {
+        'asociacion[codigo]': {
+          required: true
+        }
+      },
+      messages: {
+        'asociacion[codigo]': {
+          required: 'Codigo requerido'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

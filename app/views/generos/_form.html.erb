@@ -1,4 +1,4 @@
-<%= form_with(model: genero, local: true) do |form| %>
+<%= form_with(model: genero,:html => {:id => "formulario_genero"}, local: true) do |form| %>
   <% if genero.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(genero.errors.count, "error") %> prohibited this genero from being saved:</h2>

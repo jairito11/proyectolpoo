@@ -1,0 +1,25 @@
+I"¸(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_prestamo').validate({
+      rules: {
+        'prestamo[fechaPrestamo]': {
+          required: true
+        }
+      },
+      messages: {
+        'prestamo[fechaPrestamo]': {
+          required: 'Fecha requerida'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

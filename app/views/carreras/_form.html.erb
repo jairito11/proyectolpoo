@@ -1,4 +1,4 @@
-<%= form_with(model: carrera, local: true) do |form| %>
+<%= form_with(model: carrera,:html => {:id => "formulario_carrera"}, local: true) do |form| %>
   <% if carrera.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(carrera.errors.count, "error") %> prohibited this carrera from being saved:</h2>

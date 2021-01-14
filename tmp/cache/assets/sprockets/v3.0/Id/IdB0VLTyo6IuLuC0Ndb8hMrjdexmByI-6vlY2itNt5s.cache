@@ -1,0 +1,25 @@
+I"«(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_edificio').validate({
+      rules: {
+        'edificio[codigo]': {
+          required: true
+        }
+      },
+      messages: {
+        'edificio[codigo]': {
+          required: 'Codigo requerido'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

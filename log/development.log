@@ -16658,3 +16658,2186 @@ Processing by SesionesController#login as HTML
 Completed 200 OK in 233ms (Views: 216.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:02:37 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (37.0ms)
+Completed 500 Internal Server Error in 3252ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb__2010287366_2044'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:05:31 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (26.2ms)
+Completed 500 Internal Server Error in 351ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb__2010287366_2084'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:06:25 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (13.2ms)
+Completed 500 Internal Server Error in 264ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'bootstrap', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application_login.html.erb:8:in `_app_views_layouts_application_login_html_erb__2010287366_2122'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:10:28 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (23.9ms)
+Completed 500 Internal Server Error in 306ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'bootstrap', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application_login.html.erb:8:in `_app_views_layouts_application_login_html_erb__2010287366_2160'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:11:53 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (10.9ms)
+Completed 500 Internal Server Error in 232ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb__2010287366_2198'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:12:40 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (7.9ms)
+Completed 500 Internal Server Error in 255ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    'bootstrap', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb__2010287366_2236'
+Started GET "/" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:13:14 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/jruby/lib/ruby/gems/shared/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/jruby/lib/ruby/gems/shared/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (16.8ms)
+Completed 200 OK in 613ms (Views: 36.5ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:13:22 -0600
+Processing by RolesController#inicio as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :login? rendered or redirected
+Completed 302 Found in 18ms
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:13:22 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (25.4ms)
+Completed 500 Internal Server Error in 1557ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    'bootstrap', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb___1878802241_2050'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:15:01 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (22.6ms)
+Completed 500 Internal Server Error in 582ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    'bootstrap', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb___1878802241_2088'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:16:08 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (24.9ms)
+Completed 500 Internal Server Error in 314ms
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:11:27: unexpected newline):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application_login.html.erb:9:in `_app_views_layouts_application_login_html_erb___1878802241_2128'
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:16:42 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (16.1ms)
+Completed 200 OK in 1321ms (Views: 1305.4ms)
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:23:22 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (14.5ms)
+Completed 200 OK in 680ms (Views: 668.4ms)
+
+
+Started POST "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:23:36 -0600
+Processing by SesionesController#validar_usuario as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8st5aXl47ytb8JbBqq/JwWV3XbX7/GAzS4L7/gniejn+EtMY0Zy/Dp53ZkIr2XFUFpZfCtta/oN674P3E6Fagg==", "curp"=>"MEAJ930109HMCNRR01", "password_digest"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35m (1.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/controllers/sesiones_controller.rb:11
+  [1m[36mPersona Load (5.0ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE (curp = 'MEAJ930109HMCNRR01' and password_digest = '12345') ORDER BY `personas`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/sesiones_controller.rb:11
+Redirected to http://localhost:3000/login
+Completed 302 Found in 561ms (ActiveRecord: 25.2ms)
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:23:36 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (7.5ms)
+Completed 200 OK in 296ms (Views: 287.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:23:56 -0600
+Processing by SesionesController#validar_usuario as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VdEx6ox9hxTm+vyskjeyCKrYcCTDpdMB4GCKWfAITfpju62AtWmOZYcG3EzPmZdUUpjf7OoCfw27PogfYMBjA==", "curp"=>"MEAJ930109HMCNRR02", "password_digest"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mPersona Load (1.9ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE (curp = 'MEAJ930109HMCNRR02' and password_digest = '112345') ORDER BY `personas`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/sesiones_controller.rb:11
+Redirected to http://localhost:3000/login
+Completed 302 Found in 44ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:23:56 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (10.7ms)
+Completed 200 OK in 286ms (Views: 275.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:01 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (9.1ms)
+Completed 200 OK in 276ms (Views: 264.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:10 -0600
+Processing by SesionesController#validar_usuario as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olySzrRn7c0u2C7u+SJA8rryA1Dq/9+U7rhC6As5EZeuhTi/HIO96Otf3m14VPhnyRMB78pZQSTf1TrhEXoxLA==", "curp"=>"MEAJ930109HMCNRR02", "password_digest"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mPersona Load (2.7ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE (curp = 'MEAJ930109HMCNRR02' and password_digest = '12345') ORDER BY `personas`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/sesiones_controller.rb:11
+Redirected to http://localhost:3000/autores
+Completed 302 Found in 107ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:10 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[36mAutor Load (10.0ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:23
+  Rendered autores/index.html.erb within layouts/application (118.2ms)
+  Rendered layouts/_header.html.erb (16.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 406ms (Views: 367.6ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/autores/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:17 -0600
+Processing by AutoresController#new as HTML
+  Rendering autores/new.html.erb within layouts/application
+  Rendered autores/_form.html.erb (202.8ms)
+  Rendered autores/new.html.erb within layouts/application (207.8ms)
+  Rendered layouts/_header.html.erb (12.7ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 455ms (Views: 437.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:19 -0600
+Processing by AutoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1z8mBXeqheWr4CtCQCFxSkk/cJkRl9Hq7Vc9iXBMEFKDZRMwmEtlwaUgwMTt4pKMRcMgykg8LP4pK5KoqfOwKw==", "autor"=>{"nombre"=>"", "paterno"=>"", "materno"=>"", "nacionalidad"=>"", "lengua"=>"", "religion"=>"", "distinciones"=>"", "fechaNacimiento(1i)"=>"2021", "fechaNacimiento(2i)"=>"1", "fechaNacimiento(3i)"=>"14"}, "commit"=>"Create Autor"}
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/autores_controller.rb:30
+  [1m[36mAutor Create (5.5ms)[0m  [1m[32mINSERT INTO `autores` (`nombre`, `paterno`, `materno`, `nacionalidad`, `lengua`, `religion`, `distinciones`, `fechaNacimiento`) VALUES ('', '', '', '', '', '', '', '2021-01-14')[0m
+  ↳ app/controllers/autores_controller.rb:30
+  [1m[35m (142.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/autores_controller.rb:30
+Redirected to http://localhost:3000/autores/4
+Completed 302 Found in 227ms (ActiveRecord: 148.9ms)
+
+
+Started GET "/autores/4" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:19 -0600
+Processing by AutoresController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAutor Load (12.7ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/autores_controller.rb:71
+  Rendering autores/show.html.erb within layouts/application
+  Rendered autores/show.html.erb within layouts/application (26.6ms)
+  Rendered layouts/_header.html.erb (12.8ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 317ms (Views: 267.8ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:22 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[36mAutor Load (1.8ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:23
+  Rendered autores/index.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_header.html.erb (7.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 230ms (Views: 218.6ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/autores/4" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:29 -0600
+Processing by AutoresController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2X+m7KhGCWp3W3k9QrOd9ZLWBVjjBaqyUDBDw739nejVpgydAKJZT7Lcib7DxSVg4TcH58OjNAJhXTvKp769Uw==", "id"=>"4"}
+  [1m[36mAutor Load (4.9ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/autores_controller.rb:71
+  [1m[35m (4.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/autores_controller.rb:58
+  [1m[36mLibro Exists (8.4ms)[0m  [1m[34mSELECT  1 AS one FROM `libros` WHERE `libros`.`autor_id` = 4 LIMIT 1[0m
+  ↳ app/controllers/autores_controller.rb:58
+  [1m[36mAutor Destroy (1.5ms)[0m  [1m[31mDELETE FROM `autores` WHERE `autores`.`id` = 4[0m
+  ↳ app/controllers/autores_controller.rb:58
+  [1m[35m (292.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/autores_controller.rb:58
+Redirected to http://localhost:3000/autores
+Completed 302 Found in 488ms (ActiveRecord: 320.4ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:25:30 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[36mAutor Load (3.1ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:23
+  Rendered autores/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 318ms (Views: 308.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/autores" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:28:03 -0600
+Processing by AutoresController#index as HTML
+  Rendering autores/index.html.erb within layouts/application
+  [1m[36mAutor Load (7.2ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/autores/index.html.erb:23
+  Rendered autores/index.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_header.html.erb (7.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 268ms (Views: 251.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/autores/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:28:12 -0600
+Processing by AutoresController#new as HTML
+  Rendering autores/new.html.erb within layouts/application
+  Rendered autores/_form.html.erb (99.4ms)
+  Rendered autores/new.html.erb within layouts/application (111.6ms)
+  Rendered layouts/_header.html.erb (10.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 318ms (Views: 304.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editoriales" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:35:59 -0600
+Processing by EditorialesController#index as HTML
+  Rendering editoriales/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/views/editoriales/index.html.erb:21
+  [1m[36mEditorial Load (2.3ms)[0m  [1m[34mSELECT `editoriales`.* FROM `editoriales`[0m
+  ↳ app/views/editoriales/index.html.erb:21
+  Rendered editoriales/index.html.erb within layouts/application (92.6ms)
+  Rendered layouts/_header.html.erb (13.1ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 631ms (Views: 608.1ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/editoriales" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:36:00 -0600
+Processing by EditorialesController#index as HTML
+  Rendering editoriales/index.html.erb within layouts/application
+  [1m[36mEditorial Load (1.7ms)[0m  [1m[34mSELECT `editoriales`.* FROM `editoriales`[0m
+  ↳ app/views/editoriales/index.html.erb:21
+  Rendered editoriales/index.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_header.html.erb (16.8ms)
+  Rendered layouts/_footer.html.erb (4.7ms)
+Completed 200 OK in 295ms (Views: 283.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/editoriales/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:36:03 -0600
+Processing by EditorialesController#new as HTML
+  Rendering editoriales/new.html.erb within layouts/application
+  Rendered editoriales/_form.html.erb (46.0ms)
+  Rendered editoriales/new.html.erb within layouts/application (50.8ms)
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 248ms (Views: 241.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/generos" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:37:23 -0600
+Processing by GenerosController#index as HTML
+  Rendering generos/index.html.erb within layouts/application
+  [1m[36mGenero Load (2.3ms)[0m  [1m[34mSELECT `generos`.* FROM `generos`[0m
+  ↳ app/views/generos/index.html.erb:21
+  Rendered generos/index.html.erb within layouts/application (69.5ms)
+  Rendered layouts/_header.html.erb (7.9ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 475ms (Views: 446.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/generos" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:37:24 -0600
+Processing by GenerosController#index as HTML
+  Rendering generos/index.html.erb within layouts/application
+  [1m[36mGenero Load (2.2ms)[0m  [1m[34mSELECT `generos`.* FROM `generos`[0m
+  ↳ app/views/generos/index.html.erb:21
+  Rendered generos/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_header.html.erb (11.6ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 375ms (Views: 339.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/generos/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:37:27 -0600
+Processing by GenerosController#new as HTML
+  Rendering generos/new.html.erb within layouts/application
+  Rendered generos/_form.html.erb (63.8ms)
+  Rendered generos/new.html.erb within layouts/application (72.4ms)
+  Rendered layouts/_header.html.erb (7.6ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 255ms (Views: 242.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/generos" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:38:45 -0600
+Processing by GenerosController#index as HTML
+  Rendering generos/index.html.erb within layouts/application
+  [1m[36mGenero Load (2.5ms)[0m  [1m[34mSELECT `generos`.* FROM `generos`[0m
+  ↳ app/views/generos/index.html.erb:21
+  Rendered generos/index.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 401ms (Views: 388.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/generos/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:38:46 -0600
+Processing by GenerosController#new as HTML
+  Rendering generos/new.html.erb within layouts/application
+  Rendered generos/_form.html.erb (55.2ms)
+  Rendered generos/new.html.erb within layouts/application (74.3ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 296ms (Views: 276.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/idiomas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:39:51 -0600
+Processing by IdiomasController#index as HTML
+  Rendering idiomas/index.html.erb within layouts/application
+  [1m[36mIdioma Load (1.9ms)[0m  [1m[34mSELECT `idiomas`.* FROM `idiomas`[0m
+  ↳ app/views/idiomas/index.html.erb:21
+  Rendered idiomas/index.html.erb within layouts/application (65.7ms)
+  Rendered layouts/_header.html.erb (7.9ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 441ms (Views: 394.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/idiomas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:39:52 -0600
+Processing by IdiomasController#index as HTML
+  Rendering idiomas/index.html.erb within layouts/application
+  [1m[36mIdioma Load (2.1ms)[0m  [1m[34mSELECT `idiomas`.* FROM `idiomas`[0m
+  ↳ app/views/idiomas/index.html.erb:21
+  Rendered idiomas/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 212ms (Views: 206.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/idiomas/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:39:54 -0600
+Processing by IdiomasController#new as HTML
+  Rendering idiomas/new.html.erb within layouts/application
+  Rendered idiomas/_form.html.erb (7.0ms)
+  Rendered idiomas/new.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/jairo/Desktop/workspace/proyectolpoo/app/views/idiomas/_form.html.erb:1: syntax error, unexpected ','
+            _old_virtual_path, @virtual_path = @virtual_path, "idiomas/_form";_old_output_buffer = @output_buffer;idioma = local_assigns[:idioma]; idioma = idioma;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_with(model: idioma,,:html => {:id => "formulario_idioma"}, local: true) do |form| @output_buffer.safe_append='
+                                                                                                                                                                                                                                                                                   ^):
+  
+app/views/idiomas/_form.html.erb:1: syntax error, unexpected ','
+app/views/idiomas/new.html.erb:3:in `_app_views_idiomas_new_html_erb___398868884_2354'
+Started GET "/idiomas/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:40:17 -0600
+Processing by IdiomasController#new as HTML
+  Rendering idiomas/new.html.erb within layouts/application
+  Rendered idiomas/_form.html.erb (41.6ms)
+  Rendered idiomas/new.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_header.html.erb (11.7ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 246ms (Views: 240.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:42:22 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (2.7ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCoordinador Load (1.7ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/index.html.erb:30
+  Rendered carreras/index.html.erb within layouts/application (633.2ms)
+Completed 500 Internal Server Error in 674ms (ActiveRecord: 16.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `Editar_carrera_path' for #<#<Class:0x72d6be98>:0x73112be4>
+Did you mean?  edit_carrera_path):
+    29:         <td><%= carrera.pais %></td>
+    30:         <td><%= carrera.coordinador.nombre+' '+carrera.coordinador.paterno %></td>
+    31:         <td><%= link_to 'Mostrar', carrera %></td>
+    32:         <td><%= link_to 'Editar', Editar_carrera_path(carrera) %></td>
+    33:         <td><%= link_to 'Eliminar', carrera, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+    34:       </tr>
+    35:     <% end %>
+  
+app/views/carreras/index.html.erb:32:in `block in _app_views_carreras_index_html_erb__2021710459_2402'
+app/views/carreras/index.html.erb:21:in `_app_views_carreras_index_html_erb__2021710459_2402'
+Started GET "/idiomas/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:21 -0600
+Processing by IdiomasController#new as HTML
+  Rendering idiomas/new.html.erb within layouts/application
+  Rendered idiomas/_form.html.erb (67.1ms)
+  Rendered idiomas/new.html.erb within layouts/application (76.6ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 554ms (Views: 543.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:25 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (1.7ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCoordinador Load (2.2ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/index.html.erb:30
+  Rendered carreras/index.html.erb within layouts/application (49.9ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Nueva_carrera_path):
+    38: 
+    39: <br>
+    40: 
+    41: <%= link_to 'Nueva Carrera', Nueva_carrera_path %>
+  
+app/views/carreras/index.html.erb:41:in `_app_views_carreras_index_html_erb__2021710459_2454'
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:44 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (1.7ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCoordinador Load (1.5ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/index.html.erb:30
+  Rendered carreras/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_header.html.erb (9.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 231ms (Views: 221.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/carreras/1" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:52 -0600
+Processing by CarrerasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarrera Load (2.0ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:75
+  Rendering carreras/show.html.erb within layouts/application
+  [1m[36mCoordinador Load (4.7ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/show.html.erb:40
+  Rendered carreras/show.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 266ms (Views: 236.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/carreras/1/edit" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:54 -0600
+Processing by CarrerasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarrera Load (2.1ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:75
+  Rendering carreras/edit.html.erb within layouts/application
+  [1m[36mCoordinador Load (2.2ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/carreras/_form.html.erb:51
+  Rendered carreras/_form.html.erb (61.9ms)
+  Rendered carreras/edit.html.erb within layouts/application (67.6ms)
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 234ms (Views: 215.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:56 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (1.6ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCoordinador Load (1.6ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/index.html.erb:30
+  Rendered carreras/index.html.erb within layouts/application (37.6ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 198ms (Views: 188.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/carreras/1/edit" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:44:58 -0600
+Processing by CarrerasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarrera Load (1.5ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:75
+  Rendering carreras/edit.html.erb within layouts/application
+  [1m[36mCoordinador Load (1.9ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/carreras/_form.html.erb:51
+  Rendered carreras/_form.html.erb (51.2ms)
+  Rendered carreras/edit.html.erb within layouts/application (57.1ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 236ms (Views: 218.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:45:00 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (1.2ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCoordinador Load (1.4ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/index.html.erb:30
+  Rendered carreras/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 187ms (Views: 164.7ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/carreras/1" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:45:06 -0600
+Processing by CarrerasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jaAIc7PqvEiU8+Am+Z6/hk5g2P0RouVhLcRUIXO1jKKBeaICGw7sbVF0EKV46AcTPYHaQjEEe9EcqSwoafasGQ==", "id"=>"1"}
+  [1m[36mCarrera Load (2.7ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:75
+  [1m[35m (0.8ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/carreras_controller.rb:62
+  [1m[36mEspecialidad Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `especialidades` WHERE `especialidades`.`carrera_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/carreras_controller.rb:62
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/carreras_controller.rb:62
+Redirected to http://localhost:3000/carreras
+Completed 302 Found in 105ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/carreras" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:45:06 -0600
+Processing by CarrerasController#index as HTML
+  Rendering carreras/index.html.erb within layouts/application
+  [1m[36mCarrera Load (1.5ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/carreras/index.html.erb:21
+  [1m[36mCoordinador Load (2.0ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/carreras/index.html.erb:30
+  Rendered carreras/index.html.erb within layouts/application (46.3ms)
+  Rendered layouts/_header.html.erb (7.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 259ms (Views: 249.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/carreras/new" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:45:12 -0600
+Processing by CarrerasController#new as HTML
+  Rendering carreras/new.html.erb within layouts/application
+  [1m[36mCoordinador Load (1.4ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/carreras/_form.html.erb:51
+  Rendered carreras/_form.html.erb (42.3ms)
+  Rendered carreras/new.html.erb within layouts/application (46.0ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 175ms (Views: 167.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:49:16 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (3.1ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (136.2ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 608ms (Views: 571.6ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:49:17 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (1.8ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (45.1ms)
+  Rendered layouts/_header.html.erb (14.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 232ms (Views: 218.7ms | ActiveRecord: 4.8ms)
+
+
+Started DELETE "/roles/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:49:22 -0600
+Processing by RolesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"LNUbHIOPihlfHJg0vtsyzC+jYr/S4kxnscrUckua70kgDLFtK2vaPJqbaLc/rYpZXEJgAPJE0teAp6x7UdnP8g==", "id"=>"2"}
+  [1m[36mRol Load (3.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:55
+  [1m[35m (0.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:57
+  [1m[36mPersona Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM `personas` WHERE `personas`.`rol_id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:57
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:57
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 6.6ms)
+
+
+  
+NameError (undefined local variable or method `paises_inicio_path' for #<RolesController:0x373fa958>):
+  
+app/controllers/roles_controller.rb:60:in `block in eliminar'
+app/controllers/roles_controller.rb:56:in `eliminar'
+Started DELETE "/roles/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:50:44 -0600
+Processing by RolesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"LNUbHIOPihlfHJg0vtsyzC+jYr/S4kxnscrUckua70kgDLFtK2vaPJqbaLc/rYpZXEJgAPJE0teAp6x7UdnP8g==", "id"=>"2"}
+  [1m[36mRol Load (1.8ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:55
+  [1m[35m (2.2ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:57
+  [1m[36mPersona Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `personas` WHERE `personas`.`rol_id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:57
+  [1m[35m (18.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:57
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 186ms (ActiveRecord: 40.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:50:45 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (2.2ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (101.7ms)
+  Rendered layouts/_header.html.erb (6.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 1491ms (Views: 1470.5ms | ActiveRecord: 10.2ms)
+
+
+Started DELETE "/roles/2/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:50:52 -0600
+Processing by RolesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"N82dMU4vhkY2yUWV2zEvqr7pJNV93jWzD9yDFwcp6Q87FDdA5svWY/NOtRZaR5c/zQgmal14qwM+sfseHWrJtA==", "id"=>"2"}
+  [1m[36mRol Load (3.0ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:55
+  [1m[35m (0.6ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:57
+  [1m[36mPersona Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `personas` WHERE `personas`.`rol_id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:57
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/roles_controller.rb:57
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 107ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:50:52 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (2.4ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (48.6ms)
+  Rendered layouts/_header.html.erb (6.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 196ms (Views: 185.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/roles/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:50:57 -0600
+Processing by RolesController#nuevo as HTML
+  Rendering roles/nuevo.html.erb within layouts/application
+  [1m[36mEdificio Load (1.5ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/roles/_formulario.html.erb:28
+  Rendered roles/_formulario.html.erb (35.6ms)
+  Rendered roles/nuevo.html.erb within layouts/application (43.6ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 174ms (Views: 168.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:51:06 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (2.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (2.0ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (32.8ms)
+  Rendered layouts/_header.html.erb (7.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 202ms (Views: 189.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/roles/2/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:51:09 -0600
+Processing by RolesController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRol Load (4.7ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE (id = '2') ORDER BY `roles`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:34
+  Rendering roles/editar.html.erb within layouts/application
+  [1m[36mEdificio Load (4.4ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/roles/_formulario.html.erb:28
+  Rendered roles/_formulario.html.erb (30.5ms)
+  Rendered roles/editar.html.erb within layouts/application (37.5ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 181ms (Views: 155.9ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:51:11 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (1.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (4.6ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (44.1ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 185ms (Views: 168.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/roles/2/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:51:12 -0600
+Processing by RolesController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRol Load (1.5ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/roles_controller.rb:7
+  Rendering roles/mostrar.html.erb within layouts/application
+  [1m[36mEdificio Load (1.7ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/mostrar.html.erb:30
+  Rendered roles/mostrar.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_header.html.erb (9.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 161ms (Views: 145.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/roles" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:51:14 -0600
+Processing by RolesController#inicio as HTML
+  Rendering roles/inicio.html.erb within layouts/application
+  [1m[36mRol Load (3.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/roles/inicio.html.erb:19
+  [1m[36mEdificio Load (1.6ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/roles/inicio.html.erb:26
+  Rendered roles/inicio.html.erb within layouts/application (33.4ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 154ms (Views: 144.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/especialidades" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:18 -0600
+Processing by EspecialidadesController#inicio as HTML
+  Rendering especialidades/inicio.html.erb within layouts/application
+  [1m[36mEspecialidad Load (1.1ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/especialidades/inicio.html.erb:10
+  [1m[36mCarrera Load (1.5ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/especialidades/inicio.html.erb:15
+  Rendered especialidades/inicio.html.erb within layouts/application (114.4ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 431ms (Views: 389.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/especialidades" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:19 -0600
+Processing by EspecialidadesController#inicio as HTML
+  Rendering especialidades/inicio.html.erb within layouts/application
+  [1m[36mEspecialidad Load (1.2ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/especialidades/inicio.html.erb:10
+  [1m[36mCarrera Load (2.3ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/especialidades/inicio.html.erb:15
+  Rendered especialidades/inicio.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 183ms (Views: 171.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/especialidades/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:21 -0600
+Processing by EspecialidadesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEspecialidad Load (1.2ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/especialidades_controller.rb:7
+  Rendering especialidades/mostrar.html.erb within layouts/application
+  [1m[36mCarrera Load (1.7ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/especialidades/mostrar.html.erb:20
+  Rendered especialidades/mostrar.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 203ms (Views: 177.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/especialidades" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:23 -0600
+Processing by EspecialidadesController#inicio as HTML
+  Rendering especialidades/inicio.html.erb within layouts/application
+  [1m[36mEspecialidad Load (1.6ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/especialidades/inicio.html.erb:10
+  [1m[36mCarrera Load (3.6ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/especialidades/inicio.html.erb:15
+  Rendered especialidades/inicio.html.erb within layouts/application (31.4ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 172ms (Views: 159.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/especialidades/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:24 -0600
+Processing by EspecialidadesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEspecialidad Load (1.2ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE (id = '1') ORDER BY `especialidades`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/especialidades_controller.rb:33
+  Rendering especialidades/editar.html.erb within layouts/application
+  [1m[36mCarrera Load (2.3ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/especialidades/_formulario.html.erb:20
+  Rendered especialidades/_formulario.html.erb (57.8ms)
+  Rendered especialidades/editar.html.erb within layouts/application (67.3ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 219ms (Views: 175.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/especialidades" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:26 -0600
+Processing by EspecialidadesController#inicio as HTML
+  Rendering especialidades/inicio.html.erb within layouts/application
+  [1m[36mEspecialidad Load (1.6ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/especialidades/inicio.html.erb:10
+  [1m[36mCarrera Load (6.4ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/especialidades/inicio.html.erb:15
+  Rendered especialidades/inicio.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 165ms (Views: 151.7ms | ActiveRecord: 7.9ms)
+
+
+Started DELETE "/especialidades/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:28 -0600
+Processing by EspecialidadesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"Myx1DxiBIvMCmnmFXXSu6UJniWx8bUhCNGWFlN3aJLI/9d9+sGVy1scdiQbcAhZ8MYaL01zL1vIFCP2dx5kECQ==", "id"=>"1"}
+  [1m[36mEspecialidad Load (3.6ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/especialidades_controller.rb:56
+  [1m[35m (0.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/especialidades_controller.rb:58
+  [1m[36mPersona Exists (4.7ms)[0m  [1m[34mSELECT  1 AS one FROM `personas` WHERE `personas`.`especialidad_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/especialidades_controller.rb:58
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/especialidades_controller.rb:58
+Redirected to http://localhost:3000/especialidades
+Completed 302 Found in 61ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/especialidades" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:28 -0600
+Processing by EspecialidadesController#inicio as HTML
+  Rendering especialidades/inicio.html.erb within layouts/application
+  [1m[36mEspecialidad Load (4.1ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/especialidades/inicio.html.erb:10
+  [1m[36mCarrera Load (2.1ms)[0m  [1m[34mSELECT  `carreras`.* FROM `carreras` WHERE `carreras`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/especialidades/inicio.html.erb:15
+  Rendered especialidades/inicio.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 156ms (Views: 146.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/especialidades/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:53:30 -0600
+Processing by EspecialidadesController#nuevo as HTML
+  Rendering especialidades/nuevo.html.erb within layouts/application
+  [1m[36mCarrera Load (1.5ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/especialidades/_formulario.html.erb:20
+  Rendered especialidades/_formulario.html.erb (42.6ms)
+  Rendered especialidades/nuevo.html.erb within layouts/application (48.4ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 167ms (Views: 161.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/especialidades/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:17 -0600
+Processing by EspecialidadesController#nuevo as HTML
+  Rendering especialidades/nuevo.html.erb within layouts/application
+  [1m[36mCarrera Load (1.5ms)[0m  [1m[34mSELECT `carreras`.* FROM `carreras`[0m
+  ↳ app/views/especialidades/_formulario.html.erb:20
+  Rendered especialidades/_formulario.html.erb (31.5ms)
+  Rendered especialidades/nuevo.html.erb within layouts/application (37.1ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 402ms (Views: 393.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/libros" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:19 -0600
+Processing by LibrosController#inicio as HTML
+  Rendering libros/inicio.html.erb within layouts/application
+  [1m[36mLibro Load (1.3ms)[0m  [1m[34mSELECT `libros`.* FROM `libros`[0m
+  ↳ app/views/libros/inicio.html.erb:12
+  [1m[36mAutor Load (1.8ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:16
+  [1m[36mEditorial Load (2.3ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:17
+  [1m[36mGenero Load (1.3ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:18
+  [1m[36mIdioma Load (1.5ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:19
+  Rendered libros/inicio.html.erb within layouts/application (296.4ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 447ms (Views: 377.6ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/libros/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:21 -0600
+Processing by LibrosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibro Load (2.3ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:7
+  Rendering libros/mostrar.html.erb within layouts/application
+  [1m[36mAutor Load (2.8ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:15
+  [1m[36mEditorial Load (2.9ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:20
+  [1m[36mGenero Load (2.3ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:25
+  [1m[36mIdioma Load (1.5ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:30
+  Rendered libros/mostrar.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 169ms (Views: 143.7ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/libros" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:23 -0600
+Processing by LibrosController#inicio as HTML
+  Rendering libros/inicio.html.erb within layouts/application
+  [1m[36mLibro Load (1.1ms)[0m  [1m[34mSELECT `libros`.* FROM `libros`[0m
+  ↳ app/views/libros/inicio.html.erb:12
+  [1m[36mAutor Load (1.8ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:16
+  [1m[36mEditorial Load (1.9ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:17
+  [1m[36mGenero Load (1.5ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:18
+  [1m[36mIdioma Load (1.7ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:19
+  Rendered libros/inicio.html.erb within layouts/application (88.6ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 219ms (Views: 206.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/libros/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:25 -0600
+Processing by LibrosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibro Load (1.3ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE (id = '1') ORDER BY `libros`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:43
+  Rendering libros/editar.html.erb within layouts/application
+  [1m[36mAutor Load (1.4ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/libros/_formulario.html.erb:16
+  [1m[36mEditorial Load (2.1ms)[0m  [1m[34mSELECT `editoriales`.* FROM `editoriales`[0m
+  ↳ app/views/libros/_formulario.html.erb:20
+  [1m[36mGenero Load (1.2ms)[0m  [1m[34mSELECT `generos`.* FROM `generos`[0m
+  ↳ app/views/libros/_formulario.html.erb:24
+  [1m[36mIdioma Load (1.4ms)[0m  [1m[34mSELECT `idiomas`.* FROM `idiomas`[0m
+  ↳ app/views/libros/_formulario.html.erb:28
+  Rendered libros/_formulario.html.erb (53.1ms)
+  Rendered libros/editar.html.erb within layouts/application (62.4ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 200ms (Views: 174.8ms | ActiveRecord: 7.5ms)
+
+
+Started PATCH "/libros/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:30 -0600
+Processing by LibrosController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TEyp9979XOImiK8xax4AqHnAyBMYcEccdT+UOZNjRiNbw3JOiRIhaYeMeCcmQ8+5OZbNJhW5KSu5tb/rz+lkQA==", "libro"=>{"id"=>"1", "isbn"=>"9788423919001", "titulo"=>" años de soledad edición", "autor_id"=>"1", "editorial_id"=>"1", "genero_id"=>"1", "idioma_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mLibro Load (3.8ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:51
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/libros_controller.rb:58
+  [1m[36mAutor Load (1.5ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:58
+  [1m[36mEditorial Load (2.4ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:58
+  [1m[36mGenero Load (1.3ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:58
+  [1m[36mIdioma Load (1.5ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:58
+  [1m[36mLibro Update (3.4ms)[0m  [1m[33mUPDATE `libros` SET `titulo` = ' años de soledad edición' WHERE `libros`.`id` = 1[0m
+  ↳ app/controllers/libros_controller.rb:58
+  [1m[35m (166.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/libros_controller.rb:58
+Redirected to http://localhost:3000/libros/1/mostrar
+Completed 302 Found in 297ms (ActiveRecord: 181.2ms)
+
+
+Started GET "/libros/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:31 -0600
+Processing by LibrosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibro Load (1.7ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:7
+  Rendering libros/mostrar.html.erb within layouts/application
+  [1m[36mAutor Load (1.6ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:15
+  [1m[36mEditorial Load (1.6ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:20
+  [1m[36mGenero Load (1.8ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:25
+  [1m[36mIdioma Load (0.8ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/mostrar.html.erb:30
+  Rendered libros/mostrar.html.erb within layouts/application (68.8ms)
+  Rendered layouts/_header.html.erb (20.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 236ms (Views: 207.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/libros" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:32 -0600
+Processing by LibrosController#inicio as HTML
+  Rendering libros/inicio.html.erb within layouts/application
+  [1m[36mLibro Load (2.7ms)[0m  [1m[34mSELECT `libros`.* FROM `libros`[0m
+  ↳ app/views/libros/inicio.html.erb:12
+  [1m[36mAutor Load (6.2ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:16
+  [1m[36mEditorial Load (1.3ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:17
+  [1m[36mGenero Load (2.1ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:18
+  [1m[36mIdioma Load (2.1ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:19
+  Rendered libros/inicio.html.erb within layouts/application (76.8ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 198ms (Views: 178.7ms | ActiveRecord: 14.4ms)
+
+
+Started DELETE "/libros/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:35 -0600
+Processing by LibrosController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"tGTnjGJXCuUphYVK+P3uP9t46tvWfVzFm7fGJemEYqG4vU39yrNawOwCdcl5i1aqqJnoZPbbwnWq2r4s88dCGg==", "id"=>"1"}
+  [1m[36mLibro Load (1.3ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:75
+  [1m[35m (4.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/libros_controller.rb:77
+  [1m[36mPrestamo Exists (3.5ms)[0m  [1m[34mSELECT  1 AS one FROM `prestamos` WHERE `prestamos`.`libro_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/libros_controller.rb:77
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/libros_controller.rb:77
+Redirected to http://localhost:3000/libros
+Completed 302 Found in 85ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/libros" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:35 -0600
+Processing by LibrosController#inicio as HTML
+  Rendering libros/inicio.html.erb within layouts/application
+  [1m[36mLibro Load (0.7ms)[0m  [1m[34mSELECT `libros`.* FROM `libros`[0m
+  ↳ app/views/libros/inicio.html.erb:12
+  [1m[36mAutor Load (1.7ms)[0m  [1m[34mSELECT  `autores`.* FROM `autores` WHERE `autores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:16
+  [1m[36mEditorial Load (1.2ms)[0m  [1m[34mSELECT  `editoriales`.* FROM `editoriales` WHERE `editoriales`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:17
+  [1m[36mGenero Load (2.3ms)[0m  [1m[34mSELECT  `generos`.* FROM `generos` WHERE `generos`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:18
+  [1m[36mIdioma Load (0.9ms)[0m  [1m[34mSELECT  `idiomas`.* FROM `idiomas` WHERE `idiomas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/libros/inicio.html.erb:19
+  Rendered libros/inicio.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 199ms (Views: 187.0ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/libros/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:56:38 -0600
+Processing by LibrosController#nuevo as HTML
+  Rendering libros/nuevo.html.erb within layouts/application
+  [1m[36mAutor Load (1.8ms)[0m  [1m[34mSELECT `autores`.* FROM `autores`[0m
+  ↳ app/views/libros/_formulario.html.erb:16
+  [1m[36mEditorial Load (1.4ms)[0m  [1m[34mSELECT `editoriales`.* FROM `editoriales`[0m
+  ↳ app/views/libros/_formulario.html.erb:20
+  [1m[36mGenero Load (2.4ms)[0m  [1m[34mSELECT `generos`.* FROM `generos`[0m
+  ↳ app/views/libros/_formulario.html.erb:24
+  [1m[36mIdioma Load (3.9ms)[0m  [1m[34mSELECT `idiomas`.* FROM `idiomas`[0m
+  ↳ app/views/libros/_formulario.html.erb:28
+  Rendered libros/_formulario.html.erb (59.4ms)
+  Rendered libros/nuevo.html.erb within layouts/application (65.2ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 186ms (Views: 165.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/personas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:22 -0600
+Processing by PersonasController#inicio as HTML
+  Rendering personas/inicio.html.erb within layouts/application
+  [1m[36mPersona Load (0.7ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/personas/inicio.html.erb:15
+  [1m[36mRol Load (0.9ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:24
+  [1m[36mEspecialidad Load (3.5ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:25
+  Rendered personas/inicio.html.erb within layouts/application (85.2ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 360ms (Views: 349.6ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/personas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:22 -0600
+Processing by PersonasController#inicio as HTML
+  Rendering personas/inicio.html.erb within layouts/application
+  [1m[36mPersona Load (0.8ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/personas/inicio.html.erb:15
+  [1m[36mRol Load (0.9ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:24
+  [1m[36mEspecialidad Load (0.9ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:25
+  Rendered personas/inicio.html.erb within layouts/application (39.1ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 154ms (Views: 146.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/personas/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:24 -0600
+Processing by PersonasController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (1.2ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:7
+  Rendering personas/mostrar.html.erb within layouts/application
+  [1m[36mRol Load (1.0ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/mostrar.html.erb:40
+  [1m[36mEspecialidad Load (0.9ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/mostrar.html.erb:45
+  Rendered personas/mostrar.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 141ms (Views: 121.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/personas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:26 -0600
+Processing by PersonasController#inicio as HTML
+  Rendering personas/inicio.html.erb within layouts/application
+  [1m[36mPersona Load (1.9ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/personas/inicio.html.erb:15
+  [1m[36mRol Load (10.3ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:24
+  [1m[36mEspecialidad Load (0.7ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:25
+  Rendered personas/inicio.html.erb within layouts/application (39.6ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 169ms (Views: 149.5ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/personas/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:28 -0600
+Processing by PersonasController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (7.3ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE (id = '1') ORDER BY `personas`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:40
+  Rendering personas/editar.html.erb within layouts/application
+  [1m[36mRol Load (1.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/personas/_formulario.html.erb:40
+  [1m[36mEspecialidad Load (0.8ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/personas/_formulario.html.erb:44
+  Rendered personas/_formulario.html.erb (59.0ms)
+  Rendered personas/editar.html.erb within layouts/application (65.1ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 193ms (Views: 161.0ms | ActiveRecord: 9.2ms)
+
+
+Started PATCH "/personas/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:59 -0600
+Processing by PersonasController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8CP/6A795zQj4eMtKYOQLas82BmcB4CEhU5eNnb32XDFAwaGgk2l+KB5sdJYK0USGFerw4fceuj4Hodki0QwpQ==", "persona"=>{"id"=>"1", "curp"=>"MEAJ930109HMCNRR01", "nombre"=>"Jairosadñfjdñlfj", "paterno"=>"Mendoza", "materno"=>"Arreola", "sexo"=>"H", "telefono"=>"1234567890", "direccion"=>"La teresona", "password_digest"=>"[FILTERED]", "rol_id"=>"2", "especialidad_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mPersona Load (0.8ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:46
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/personas_controller.rb:49
+  [1m[36mRol Load (1.0ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:49
+  [1m[36mEspecialidad Load (1.1ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:49
+  [1m[36mPersona Update (2.9ms)[0m  [1m[33mUPDATE `personas` SET `curp` = 'MEAJ930109HMCNRR01', `nombre` = 'Jairosadñfjdñlfj' WHERE `personas`.`id` = 1[0m
+  ↳ app/controllers/personas_controller.rb:49
+  [1m[35m (155.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/personas_controller.rb:49
+Redirected to http://localhost:3000/personas/1/mostrar
+Completed 302 Found in 213ms (ActiveRecord: 162.2ms)
+
+
+Started GET "/personas/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:58:59 -0600
+Processing by PersonasController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (1.2ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:7
+  Rendering personas/mostrar.html.erb within layouts/application
+  [1m[36mRol Load (0.9ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/mostrar.html.erb:40
+  [1m[36mEspecialidad Load (4.5ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/mostrar.html.erb:45
+  Rendered personas/mostrar.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 152ms (Views: 130.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/personas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:59:01 -0600
+Processing by PersonasController#inicio as HTML
+  Rendering personas/inicio.html.erb within layouts/application
+  [1m[36mPersona Load (0.9ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/personas/inicio.html.erb:15
+  [1m[36mRol Load (2.8ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:24
+  [1m[36mEspecialidad Load (0.7ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:25
+  Rendered personas/inicio.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 180ms (Views: 170.5ms | ActiveRecord: 4.4ms)
+
+
+Started DELETE "/personas/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:59:07 -0600
+Processing by PersonasController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"x9enLdqEvWO59c+Rbj3YCzykH6aY0uQYHMSK0YZZNFHLDg1ccmDtRnxyPxLvS2CeT0UdGbh0eqgtqfLYnBoU6g==", "id"=>"1"}
+  [1m[36mPersona Load (3.4ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:70
+  [1m[35m (2.2ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/personas_controller.rb:72
+  [1m[36mPrestamo Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `prestamos` WHERE `prestamos`.`persona_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/personas_controller.rb:72
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/personas_controller.rb:72
+Redirected to http://localhost:3000/personas
+Completed 302 Found in 52ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/personas" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:59:07 -0600
+Processing by PersonasController#inicio as HTML
+  Rendering personas/inicio.html.erb within layouts/application
+  [1m[36mPersona Load (1.8ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/personas/inicio.html.erb:15
+  [1m[36mRol Load (1.1ms)[0m  [1m[34mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:24
+  [1m[36mEspecialidad Load (0.8ms)[0m  [1m[34mSELECT  `especialidades`.* FROM `especialidades` WHERE `especialidades`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/personas/inicio.html.erb:25
+  Rendered personas/inicio.html.erb within layouts/application (29.7ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 151ms (Views: 143.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/personas/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 02:59:09 -0600
+Processing by PersonasController#nuevo as HTML
+  Rendering personas/nuevo.html.erb within layouts/application
+  [1m[36mRol Load (2.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles`[0m
+  ↳ app/views/personas/_formulario.html.erb:40
+  [1m[36mEspecialidad Load (0.8ms)[0m  [1m[34mSELECT `especialidades`.* FROM `especialidades`[0m
+  ↳ app/views/personas/_formulario.html.erb:44
+  Rendered personas/_formulario.html.erb (47.8ms)
+  Rendered personas/nuevo.html.erb within layouts/application (53.0ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 168ms (Views: 152.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/prestamos" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:25 -0600
+Processing by PrestamosController#inicio as HTML
+  Rendering prestamos/inicio.html.erb within layouts/application
+  [1m[36mPrestamo Load (1.1ms)[0m  [1m[34mSELECT `prestamos`.* FROM `prestamos`[0m
+  ↳ app/views/prestamos/inicio.html.erb:13
+  [1m[36mLibro Load (0.8ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:20
+  [1m[36mPersona Load (0.8ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:21
+  Rendered prestamos/inicio.html.erb within layouts/application (72.3ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 366ms (Views: 353.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/prestamos" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:25 -0600
+Processing by PrestamosController#inicio as HTML
+  Rendering prestamos/inicio.html.erb within layouts/application
+  [1m[36mPrestamo Load (2.9ms)[0m  [1m[34mSELECT `prestamos`.* FROM `prestamos`[0m
+  ↳ app/views/prestamos/inicio.html.erb:13
+  [1m[36mLibro Load (1.0ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:20
+  [1m[36mPersona Load (0.8ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:21
+  Rendered prestamos/inicio.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 173ms (Views: 164.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/prestamos/2/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:29 -0600
+Processing by PrestamosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrestamo Load (1.2ms)[0m  [1m[34mSELECT  `prestamos`.* FROM `prestamos` WHERE `prestamos`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/prestamos_controller.rb:7
+  Rendering prestamos/mostrar.html.erb within layouts/application
+  [1m[36mLibro Load (0.9ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/mostrar.html.erb:30
+  [1m[36mPersona Load (0.9ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/mostrar.html.erb:35
+  Rendered prestamos/mostrar.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 138ms (Views: 125.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/prestamos" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:32 -0600
+Processing by PrestamosController#inicio as HTML
+  Rendering prestamos/inicio.html.erb within layouts/application
+  [1m[36mPrestamo Load (2.5ms)[0m  [1m[34mSELECT `prestamos`.* FROM `prestamos`[0m
+  ↳ app/views/prestamos/inicio.html.erb:13
+  [1m[36mLibro Load (0.9ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:20
+  [1m[36mPersona Load (0.8ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:21
+  Rendered prestamos/inicio.html.erb within layouts/application (28.5ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 147ms (Views: 136.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/prestamos/2/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:34 -0600
+Processing by PrestamosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrestamo Load (1.4ms)[0m  [1m[34mSELECT  `prestamos`.* FROM `prestamos` WHERE (id = '2') ORDER BY `prestamos`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/prestamos_controller.rb:39
+  Rendering prestamos/editar.html.erb within layouts/application
+  [1m[36mLibro Load (1.1ms)[0m  [1m[34mSELECT `libros`.* FROM `libros`[0m
+  ↳ app/views/prestamos/_formulario.html.erb:28
+  [1m[36mPersona Load (1.1ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/prestamos/_formulario.html.erb:32
+  Rendered prestamos/_formulario.html.erb (41.6ms)
+  Rendered prestamos/editar.html.erb within layouts/application (48.3ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 177ms (Views: 161.3ms | ActiveRecord: 3.6ms)
+
+
+Started PATCH "/prestamos/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:38 -0600
+Processing by PrestamosController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O1C7EW2UEiNiJcHUjIDmuvbgIvYGBxHgCv8e07h82+6TovKdrkV2t8SyKb2QNtbH4MG1e6P1tAdN48DAQcF5Fg==", "prestamo"=>{"id"=>"2", "fechaPrestamo"=>"2020-01-02", "horaPrestamo"=>"05:00", "tipo"=>"Prestamo en sala", "fechaEntrega"=>"2020-01-01", "horaEntrega"=>"07:00", "libro_id"=>"1", "persona_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mPrestamo Load (1.0ms)[0m  [1m[34mSELECT  `prestamos`.* FROM `prestamos` WHERE `prestamos`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/prestamos_controller.rb:45
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/prestamos_controller.rb:50
+  [1m[36mLibro Load (1.0ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/prestamos_controller.rb:50
+  [1m[36mPersona Load (1.0ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/prestamos_controller.rb:50
+  [1m[36mPrestamo Update (0.7ms)[0m  [1m[33mUPDATE `prestamos` SET `fechaPrestamo` = '2020-01-02' WHERE `prestamos`.`id` = 2[0m
+  ↳ app/controllers/prestamos_controller.rb:50
+  [1m[35m (161.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/prestamos_controller.rb:50
+Redirected to http://localhost:3000/prestamos.2
+Completed 302 Found in 215ms (ActiveRecord: 166.4ms)
+
+
+Started GET "/prestamos.2" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:39 -0600
+Processing by PrestamosController#inicio as 
+  Rendering prestamos/inicio.html.erb within layouts/application
+  [1m[36mPrestamo Load (0.9ms)[0m  [1m[34mSELECT `prestamos`.* FROM `prestamos`[0m
+  ↳ app/views/prestamos/inicio.html.erb:13
+  [1m[36mLibro Load (0.7ms)[0m  [1m[34mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:20
+  [1m[36mPersona Load (1.4ms)[0m  [1m[34mSELECT  `personas`.* FROM `personas` WHERE `personas`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/prestamos/inicio.html.erb:21
+  Rendered prestamos/inicio.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 154ms (Views: 138.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/prestamos/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:01:42 -0600
+Processing by PrestamosController#nuevo as HTML
+  Rendering prestamos/nuevo.html.erb within layouts/application
+  [1m[36mLibro Load (0.9ms)[0m  [1m[34mSELECT `libros`.* FROM `libros`[0m
+  ↳ app/views/prestamos/_formulario.html.erb:28
+  [1m[36mPersona Load (0.8ms)[0m  [1m[34mSELECT `personas`.* FROM `personas`[0m
+  ↳ app/views/prestamos/_formulario.html.erb:32
+  Rendered prestamos/_formulario.html.erb (46.1ms)
+  Rendered prestamos/nuevo.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 160ms (Views: 149.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:08 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (1.0ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (46.0ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 357ms (Views: 333.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:09 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (0.9ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 115ms (Views: 108.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asociaciones/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:13 -0600
+Processing by AsociacionesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAsociacion Load (1.0ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE `asociaciones`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:7
+  Rendering asociaciones/mostrar.html.erb within layouts/application
+  Rendered asociaciones/mostrar.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 138ms (Views: 114.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:15 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (1.2ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 111ms (Views: 107.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asociaciones/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:18 -0600
+Processing by AsociacionesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAsociacion Load (2.4ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE (id = '1') ORDER BY `asociaciones`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:35
+  Rendering asociaciones/editar.html.erb within layouts/application
+  Rendered asociaciones/_formulario.html.erb (22.0ms)
+  Rendered asociaciones/editar.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 130ms (Views: 117.6ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/asociaciones/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:25 -0600
+Processing by AsociacionesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u1C2ee5laeFOJVofhYj5JEZn98NCO+31rO9u6EZ5SMYK/maeYdfF6ArmiQb+EUoVqSr2Kx0r0s+mvC6f66qsIw==", "asociacion"=>{"id"=>"1", "codigo"=>"20001", "acronimo"=>"ASALE edición", "genero"=>"Lingüistica editar", "objetivos"=>"Integridad, difusión y crecimiento del idioma", "fundacion"=>"1951-01-01", "fundador"=>"Congreso de academias de la lengua Española", "sede"=>"Madrid España", "operacion"=>"Internacional"}, "commit"=>"Guardar"}
+  [1m[36mAsociacion Load (1.4ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE `asociaciones`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:39
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:42
+  [1m[36mAsociacion Update (2.7ms)[0m  [1m[33mUPDATE `asociaciones` SET `acronimo` = 'ASALE edición' WHERE `asociaciones`.`id` = 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:42
+  [1m[35m (115.6ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:42
+Redirected to http://localhost:3000/asociaciones/1/mostrar
+Completed 302 Found in 154ms (ActiveRecord: 120.7ms)
+
+
+Started GET "/asociaciones/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:25 -0600
+Processing by AsociacionesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAsociacion Load (0.8ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE `asociaciones`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:7
+  Rendering asociaciones/mostrar.html.erb within layouts/application
+  Rendered asociaciones/mostrar.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 132ms (Views: 121.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:27 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (2.4ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 122.9ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/asociaciones/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:30 -0600
+Processing by AsociacionesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"OuPD91x6JVCfvFEX0p1HPlKMF7K0N7ajjR3Sw++RfvE2OmmG9J51dVo7oZRT6/+rIW0VDZSRKBO8cKrK9dJeSg==", "id"=>"1"}
+  [1m[36mAsociacion Load (2.2ms)[0m  [1m[34mSELECT  `asociaciones`.* FROM `asociaciones` WHERE `asociaciones`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:60
+  [1m[35m (0.5ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+  [1m[36mIdioma Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM `idiomas` WHERE `idiomas`.`asociacion_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/asociaciones_controller.rb:62
+Redirected to http://localhost:3000/asociaciones
+Completed 302 Found in 41ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/asociaciones" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:30 -0600
+Processing by AsociacionesController#inicio as HTML
+  Rendering asociaciones/inicio.html.erb within layouts/application
+  [1m[36mAsociacion Load (1.0ms)[0m  [1m[34mSELECT `asociaciones`.* FROM `asociaciones`[0m
+  ↳ app/views/asociaciones/inicio.html.erb:14
+  Rendered asociaciones/inicio.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 134ms (Views: 126.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/asociaciones/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:04:33 -0600
+Processing by AsociacionesController#nuevo as HTML
+  Rendering asociaciones/nuevo.html.erb within layouts/application
+  Rendered asociaciones/_formulario.html.erb (14.1ms)
+  Rendered asociaciones/nuevo.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 117ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asociaciones/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:06:46 -0600
+Processing by AsociacionesController#nuevo as HTML
+  Rendering asociaciones/nuevo.html.erb within layouts/application
+  Rendered asociaciones/_formulario.html.erb (21.4ms)
+  Rendered asociaciones/nuevo.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 316ms (Views: 311.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:06:48 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (0.7ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (39.5ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 166ms (Views: 146.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/coordinadores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:06:59 -0600
+Processing by CoordinadoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoordinador Load (1.3ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:7
+  Rendering coordinadores/mostrar.html.erb within layouts/application
+  Rendered coordinadores/mostrar.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 144ms (Views: 131.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:01 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (1.2ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 119ms (Views: 113.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/coordinadores/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:03 -0600
+Processing by CoordinadoresController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoordinador Load (1.8ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE (id = '1') ORDER BY `coordinadores`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:35
+  Rendering coordinadores/editar.html.erb within layouts/application
+  Rendered coordinadores/_formulario.html.erb (23.9ms)
+  Rendered coordinadores/editar.html.erb within layouts/application (33.9ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 139ms (Views: 125.8ms | ActiveRecord: 1.8ms)
+
+
+Started PATCH "/coordinadores/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:10 -0600
+Processing by CoordinadoresController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lojoxYukvB3XYb42dNhGQnnviiaFDbSeLhPzROb2bszsIrL6VX8I91X6ifvWP8+vHxFd3JVwoUFN0sGY8TocPw==", "coordinador"=>{"id"=>"1", "correo"=>"marcelo@mail.com", "nombre"=>"Marcelo edición", "paterno"=>"Romero", "materno"=>"Huertas", "direccion"=>"Toluca ", "telefonoCelular"=>"5555555555", "telefonoCasa"=>"1234567890", "especialidad"=>"Servidores"}, "commit"=>"Guardar"}
+  [1m[36mCoordinador Load (0.8ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:39
+  [1m[35m (1.7ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+  [1m[36mCoordinador Update (1.1ms)[0m  [1m[33mUPDATE `coordinadores` SET `nombre` = 'Marcelo edición' WHERE `coordinadores`.`id` = 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+  [1m[35m (117.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:42
+Redirected to http://localhost:3000/coordinadores/1/mostrar
+Completed 302 Found in 154ms (ActiveRecord: 121.3ms)
+
+
+Started GET "/coordinadores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:10 -0600
+Processing by CoordinadoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoordinador Load (0.7ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:7
+  Rendering coordinadores/mostrar.html.erb within layouts/application
+  Rendered coordinadores/mostrar.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 116ms (Views: 104.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:12 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (1.4ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 127ms (Views: 122.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/coordinadores/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:16 -0600
+Processing by CoordinadoresController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"IkGPUJs4mzYlyTL389o+lZWH5rvC7TQZP0RHwGv3YHAumCUhM9zLE+BOwnRyrIYA5mbkBOJLqqkOKT/JcbRAyw==", "id"=>"1"}
+  [1m[36mCoordinador Load (0.8ms)[0m  [1m[34mSELECT  `coordinadores`.* FROM `coordinadores` WHERE `coordinadores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:60
+  [1m[35m (1.2ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+  [1m[36mCarrera Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `carreras` WHERE `carreras`.`coordinador_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/coordinadores_controller.rb:62
+Redirected to http://localhost:3000/coordinadores
+Completed 302 Found in 44ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/coordinadores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:16 -0600
+Processing by CoordinadoresController#inicio as HTML
+  Rendering coordinadores/inicio.html.erb within layouts/application
+  [1m[36mCoordinador Load (0.6ms)[0m  [1m[34mSELECT `coordinadores`.* FROM `coordinadores`[0m
+  ↳ app/views/coordinadores/inicio.html.erb:14
+  Rendered coordinadores/inicio.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 136ms (Views: 130.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/coordinadores/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:07:18 -0600
+Processing by CoordinadoresController#nuevo as HTML
+  Rendering coordinadores/nuevo.html.erb within layouts/application
+  Rendered coordinadores/_formulario.html.erb (14.1ms)
+  Rendered coordinadores/nuevo.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 126ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:30 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (1.0ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (39.0ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 367ms (Views: 331.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:30 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (1.2ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 134ms (Views: 128.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/presidentes/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:33 -0600
+Processing by PresidentesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (1.2ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:7
+  Rendering presidentes/mostrar.html.erb within layouts/application
+  Rendered presidentes/mostrar.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 109ms (Views: 96.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:35 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (0.8ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 96.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/presidentes/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:39 -0600
+Processing by PresidentesController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (1.7ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE (id = '1') ORDER BY `presidentes`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:35
+  Rendering presidentes/editar.html.erb within layouts/application
+  Rendered presidentes/_formulario.html.erb (20.9ms)
+  Rendered presidentes/editar.html.erb within layouts/application (26.2ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 124ms (Views: 112.3ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/presidentes/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:53 -0600
+Processing by PresidentesController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/CQZpf0BqnS1kzRW6PukU+pUmuLluvlOeuAgZ1nfjLJCj90D5eEMrLh9taRl2na72RDZmMKb+mVdqfSFR0wyA==", "presidente"=>{"id"=>"1", "predecesor"=>"Carlos Slim Edición", "nacimiento"=>"1940-01-28", "residencia"=>"Ciudad de México", "nacionalidad"=>"Mexicano edición", "religion"=>"Catolica", "educadoEn"=>"UNAM1", "ocupacion"=>"Empresario", "distinciones"=>"Golden Plate Award"}, "commit"=>"Guardar"}
+  [1m[36mPresidente Load (1.3ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:39
+  [1m[35m (0.4ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:42
+  [1m[36mPresidente Update (1.3ms)[0m  [1m[33mUPDATE `presidentes` SET `predecesor` = 'Carlos Slim Edición' WHERE `presidentes`.`id` = 1[0m
+  ↳ app/controllers/presidentes_controller.rb:42
+  [1m[35m (122.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:42
+Redirected to http://localhost:3000/presidentes/1/mostrar
+Completed 302 Found in 166ms (ActiveRecord: 125.0ms)
+
+
+Started GET "/presidentes/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:53 -0600
+Processing by PresidentesController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPresidente Load (1.7ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:7
+  Rendering presidentes/mostrar.html.erb within layouts/application
+  Rendered presidentes/mostrar.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 147ms (Views: 134.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:08:55 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (1.1ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 124ms (Views: 115.5ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/presidentes/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:09:00 -0600
+Processing by PresidentesController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"sMhzaQywx1qKa3VPS/6tEW3yH2MRXg+rxrc1GpRVKb+8EdkYpFSXf0/shczKiBWEHhMd3DH4kRv32k0TjhYJBA==", "id"=>"1"}
+  [1m[36mPresidente Load (1.0ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:60
+  [1m[35m (1.3ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+  [1m[36mProveedor Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM `proveedores` WHERE `proveedores`.`presidente_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/presidentes_controller.rb:62
+Redirected to http://localhost:3000/presidentes
+Completed 302 Found in 78ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/presidentes" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:09:00 -0600
+Processing by PresidentesController#inicio as HTML
+  Rendering presidentes/inicio.html.erb within layouts/application
+  [1m[36mPresidente Load (0.9ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/presidentes/inicio.html.erb:14
+  Rendered presidentes/inicio.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (6.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 129ms (Views: 121.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/presidentes/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:09:02 -0600
+Processing by PresidentesController#nuevo as HTML
+  Rendering presidentes/nuevo.html.erb within layouts/application
+  Rendered presidentes/_formulario.html.erb (21.8ms)
+  Rendered presidentes/nuevo.html.erb within layouts/application (27.5ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 127ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:35 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (0.8ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (0.9ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (70.8ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 324ms (Views: 314.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:35 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (0.7ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.1ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (15.2ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 133ms (Views: 127.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/proveedores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:38 -0600
+Processing by ProveedoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedor Load (0.8ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:7
+  Rendering proveedores/mostrar.html.erb within layouts/application
+  Rendered proveedores/mostrar.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 107ms (Views: 94.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:41 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.0ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 120ms (Views: 113.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/proveedores/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:43 -0600
+Processing by ProveedoresController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE (id = '1') ORDER BY `proveedores`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:39
+  Rendering proveedores/editar.html.erb within layouts/application
+  [1m[36mPresidente Load (1.1ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/proveedores/_formulario.html.erb:44
+  Rendered proveedores/_formulario.html.erb (37.0ms)
+  Rendered proveedores/editar.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 168ms (Views: 154.8ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/proveedores/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:54 -0600
+Processing by ProveedoresController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QU6fPdiZX0Ho991ecGLV69+2+BJtq2/KWyFj2Fd0R0UjP751CWidi7hVSKQzMzpp238Bu1nFtLUh9jOQLjAcQg==", "proveedor"=>{"id"=>"1", "codigo"=>"10001", "tipo"=>"Sector editado", "industria"=>"Telmex", "formaLegal"=>"Sociedad por acciones", "fundacion"=>"1947", "servicio"=>"Telefonía e internet", "matriz"=>"America Movil edición", "sitioweb"=>"telmex.com", "empleados"=>"46247", "presidente_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:44
+  [1m[35m (0.9ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+  [1m[36mPresidente Load (1.0ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+  [1m[36mProveedor Update (0.7ms)[0m  [1m[33mUPDATE `proveedores` SET `tipo` = 'Sector editado' WHERE `proveedores`.`id` = 1[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+  [1m[35m (135.8ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:47
+Redirected to http://localhost:3000/proveedores/1/mostrar
+Completed 302 Found in 186ms (ActiveRecord: 139.1ms)
+
+
+Started GET "/proveedores/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:54 -0600
+Processing by ProveedoresController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedor Load (0.7ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:7
+  Rendering proveedores/mostrar.html.erb within layouts/application
+  Rendered proveedores/mostrar.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 129ms (Views: 120.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:10:56 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (0.8ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (1.0ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 124ms (Views: 118.2ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/proveedores/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:11:01 -0600
+Processing by ProveedoresController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"ikQT0zinzZvCQT6/18R/p+aEFdglp+p6xjO8ElVq2A6GnbmikEOdvgfGzjxWsscylWUXZwUBdMr3XsQbTyn4tQ==", "id"=>"1"}
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:68
+  [1m[35m (1.6ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+  [1m[36mEdificio Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `edificios` WHERE `edificios`.`proveedor_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/proveedores_controller.rb:70
+Redirected to http://localhost:3000/proveedores
+Completed 302 Found in 44ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/proveedores" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:11:01 -0600
+Processing by ProveedoresController#inicio as HTML
+  Rendering proveedores/inicio.html.erb within layouts/application
+  [1m[36mProveedor Load (0.6ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/proveedores/inicio.html.erb:16
+  [1m[36mPresidente Load (0.9ms)[0m  [1m[34mSELECT  `presidentes`.* FROM `presidentes` WHERE `presidentes`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/proveedores/inicio.html.erb:27
+  Rendered proveedores/inicio.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 136ms (Views: 127.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/proveedores/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:11:03 -0600
+Processing by ProveedoresController#nuevo as HTML
+  Rendering proveedores/nuevo.html.erb within layouts/application
+  [1m[36mPresidente Load (2.3ms)[0m  [1m[34mSELECT `presidentes`.* FROM `presidentes`[0m
+  ↳ app/views/proveedores/_formulario.html.erb:44
+  Rendered proveedores/_formulario.html.erb (71.3ms)
+  Rendered proveedores/nuevo.html.erb within layouts/application (78.2ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 161ms (Views: 154.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:16 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (0.9ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (1.0ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (30.1ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 331ms (Views: 324.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:16 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (0.6ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (0.7ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 116ms (Views: 108.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:20 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (1.0ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  [1m[36mProveedor Load (0.7ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/mostrar.html.erb:45
+  Rendered edificios/mostrar.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 102.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:22 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (0.9ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (1.7ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (26.3ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 123ms (Views: 116.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/edificios/1/editar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:25 -0600
+Processing by EdificiosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (0.6ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE (id = '1') ORDER BY `edificios`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:38
+  Rendering edificios/editar.html.erb within layouts/application
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (39.3ms)
+  Rendered edificios/editar.html.erb within layouts/application (43.9ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 148ms (Views: 129.0ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/edificios/actualizar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:39 -0600
+Processing by EdificiosController#actualizar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NfOOcFEInmqE37ZpJ2cooZcKTm0e9YYTeK8qH7Q72GZ8j6EWmJjp73rjfXlAH8w7JBMWYt+BKbS2SP8qtz7O0w==", "edificio"=>{"id"=>"1", "codigo"=>"5555", "direccion"=>"Toluca edición", "pagina"=>"edificio1.com", "telefono"=>"0987654321", "horaAbre"=>"07:00", "horaCierre"=>"19:00", "numeroSalones"=>"25", "numeroCubiculos"=>"10", "proveedor_id"=>"1"}, "commit"=>"Guardar"}
+  [1m[36mEdificio Load (0.8ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:43
+  [1m[35m (1.0ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[36mEdificio Update (1.2ms)[0m  [1m[33mUPDATE `edificios` SET `codigo` = '5555', `direccion` = 'Toluca edición' WHERE `edificios`.`id` = 1[0m
+  ↳ app/controllers/edificios_controller.rb:46
+  [1m[35m (154.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:46
+Redirected to http://localhost:3000/edificios/1/mostrar
+Completed 302 Found in 203ms (ActiveRecord: 158.9ms)
+
+
+Started GET "/edificios/1/mostrar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:39 -0600
+Processing by EdificiosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEdificio Load (1.3ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:7
+  Rendering edificios/mostrar.html.erb within layouts/application
+  [1m[36mProveedor Load (0.9ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/mostrar.html.erb:45
+  Rendered edificios/mostrar.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.erb (6.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 155ms (Views: 109.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:41 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (1.7ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (0.8ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 112ms (Views: 104.6ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/edificios/1/eliminar" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:45 -0600
+Processing by EdificiosController#eliminar as HTML
+  Parameters: {"authenticity_token"=>"ulYR4JOXGWepRMM97ubvNiwP8PyPfuiDZ1+Z0THG0am2j7uRO3NJQmzDM75vkFejX+7yQ6/YdjNWMuHYK4XxEg==", "id"=>"1"}
+  [1m[36mEdificio Load (0.8ms)[0m  [1m[34mSELECT  `edificios`.* FROM `edificios` WHERE `edificios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:66
+  [1m[35m (1.0ms)[0m  [1m[36mBEGIN TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[36mRol Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `roles` WHERE `roles`.`edificio_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/edificios_controller.rb:68
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  ↳ app/controllers/edificios_controller.rb:68
+Redirected to http://localhost:3000/edificios
+Completed 302 Found in 50ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/edificios" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:45 -0600
+Processing by EdificiosController#inicio as HTML
+  Rendering edificios/inicio.html.erb within layouts/application
+  [1m[36mEdificio Load (0.7ms)[0m  [1m[34mSELECT `edificios`.* FROM `edificios`[0m
+  ↳ app/views/edificios/inicio.html.erb:15
+  [1m[36mProveedor Load (1.3ms)[0m  [1m[34mSELECT  `proveedores`.* FROM `proveedores` WHERE `proveedores`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/edificios/inicio.html.erb:25
+  Rendered edificios/inicio.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 134ms (Views: 129.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/edificios/nuevo" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:13:47 -0600
+Processing by EdificiosController#nuevo as HTML
+  Rendering edificios/nuevo.html.erb within layouts/application
+  [1m[36mProveedor Load (0.8ms)[0m  [1m[34mSELECT `proveedores`.* FROM `proveedores`[0m
+  ↳ app/views/edificios/_formulario.html.erb:40
+  Rendered edificios/_formulario.html.erb (28.0ms)
+  Rendered edificios/nuevo.html.erb within layouts/application (40.7ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 127ms (Views: 118.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cerrar_sesion" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:14:01 -0600
+Processing by SesionesController#cerrar_sesion as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:14:01 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (3.3ms)
+Completed 200 OK in 92ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cerrar_sesion" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:14:01 -0600
+Processing by SesionesController#cerrar_sesion as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :login? rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 0:0:0:0:0:0:0:1 at 2021-01-14 03:14:01 -0600
+Processing by SesionesController#login as HTML
+  Rendering sesiones/login.html.erb within layouts/application_login
+  Rendered sesiones/login.html.erb within layouts/application_login (19.6ms)
+Completed 200 OK in 128ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+

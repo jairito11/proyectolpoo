@@ -1,0 +1,27 @@
+I"ï(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_carrera').validate({
+      rules: {
+        'carrera[nombre]': {
+          required: true,
+          minlength: 13
+        }
+      },
+      messages: {
+        'carrera[nombre]': {
+          required: 'carrera requerido',
+          minlength: 'Minimo 13 Caracteres'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

@@ -57,7 +57,7 @@ class RolesController < ApplicationController
       if @rol.destroy
         format.html { redirect_to inicio_rol_path, notice: 'Rol eliminado exitósamente' }
       else
-        format.html { redirect_to paises_inicio_path, notice: 'Rol no se pudo eliminar' }
+        format.html { redirect_to inicio_rol_path, notice: 'Rol no se pudo eliminar' }
       end
     end
   end
