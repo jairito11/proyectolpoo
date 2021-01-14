@@ -1,21 +1,45 @@
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <a class="navbar-brand " href="#">Proyecto</a>
-       <%= link_to "Autores", autores_path, class: "navbar-brand"%>
-       <%= link_to "Editoriales", editoriales_path, class: "navbar-brand"%>
-       <%= link_to "Generos", generos_path, class: "navbar-brand"%>
-       <%= link_to "Idiomas", idiomas_path, class: "navbar-brand"%>
-       <%= link_to "Carreras", carreras_path, class: "navbar-brand"%>
-       <%= link_to "Roles", inicio_rol_path, class: "navbar-brand"%>
-       <%= link_to "Especialidades", inicio_especialidades_path, class: "navbar-brand"%>
-       <%= link_to "Libros", inicio_libros_path, class: "navbar-brand"%>
-       <%= link_to "Personas", inicio_personas_path, class: "navbar-brand"%>
-       <%= link_to "Prestamos", inicio_prestamos_path, class: "navbar-brand"%>
-       <%= link_to "Asociaciones", inicio_asociaciones_path, class: "navbar-brand"%>
-       <%= link_to "Coordinadores", inicio_coordinadores_path, class: "navbar-brand"%>
-       <%= link_to "Presidentes", inicio_presidentes_path, class: "navbar-brand"%>
-       <%= link_to "Proveedores", inicio_proveedores_path, class: "navbar-brand"%>
-       <%= link_to "Edificios", inicio_edificios_path, class: "navbar-brand"%>
-      <div class="text-black">
+  <nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Biblioteca</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">  <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Catalogos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+       <%= link_to "Autores", autores_path, class: "dropdown-item"%>
+       <%= link_to "Editoriales", editoriales_path, class: "dropdown-item"%>
+       <%= link_to "Generos", generos_path, class: "dropdown-item"%>
+       <%= link_to "Idiomas", idiomas_path, class: "dropdown-item"%>
+       <%= link_to "Carreras", carreras_path, class: "dropdown-item"%>
+       <%= link_to "Roles", inicio_rol_path, class: "dropdown-item"%>
+       <%= link_to "Especialidades", inicio_especialidades_path, class: "dropdown-item"%>
+       <%= link_to "Libros", inicio_libros_path, class: "dropdown-item"%>
+       <%= link_to "Personas", inicio_personas_path, class: "dropdown-item"%>
+       <%= link_to "Prestamos", inicio_prestamos_path, class: "dropdown-item"%>
+       <%= link_to "Asociaciones", inicio_asociaciones_path, class: "dropdown-item"%>
+       <%= link_to "Coordinadores", inicio_coordinadores_path, class: "dropdown-item"%>
+       <%= link_to "Presidentes", inicio_presidentes_path, class: "dropdown-item"%>
+       <%= link_to "Proveedores", inicio_proveedores_path, class: "dropdown-item"%>
+       <%= link_to "Edificios", inicio_edificios_path, class: "dropdown-item"%>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="text-white">
               <strong> Bienvenido:</strong><%= session[:nombre]%> &nbsp; <%= link_to 'Salir', cerrar_sesion_path, class: 'btn btn-outline-success my-2 my-sm-0'%>
       </div>       
-    </nav>
+    </form>
+  </div>
+</nav>
