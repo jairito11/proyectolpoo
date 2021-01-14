@@ -28,9 +28,9 @@
         <td><%= carrera.estado %></td>
         <td><%= carrera.pais %></td>
         <td><%= carrera.coordinador.nombre+' '+carrera.coordinador.paterno %></td>
-        <td><%= link_to 'Show', carrera %></td>
-        <td><%= link_to 'Edit', edit_carrera_path(carrera) %></td>
-        <td><%= link_to 'Destroy', carrera, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', carrera %></td>
+        <td><%= link_to 'Editar', Editar_carrera_path(carrera) %></td>
+        <td><%= link_to 'Eliminar', carrera, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Carrera', new_carrera_path %>
+<%= link_to 'Nueva Carrera', Nueva_carrera_path %>

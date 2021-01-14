@@ -28,9 +28,9 @@
         <td><%= genero.fonologia %></td>
         <td><%= genero.contexto %></td>
         <td><%= genero.historia %></td>
-        <td><%= link_to 'Show', genero %></td>
-        <td><%= link_to 'Edit', edit_genero_path(genero) %></td>
-        <td><%= link_to 'Destroy', genero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', genero %></td>
+        <td><%= link_to 'Editar', edit_genero_path(genero) %></td>
+        <td><%= link_to 'Eliminar', genero, method: :delete, data: { confirm: '¿Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Genero', new_genero_path %>
+<%= link_to 'Nuevo Genero', new_genero_path %>

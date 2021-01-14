@@ -28,9 +28,9 @@
         <td><%= editorial.fundador %></td>
         <td><%= editorial.sede %></td>
         <td><%= editorial.fundacion %></td>
-        <td><%= link_to 'Show', editorial %></td>
-        <td><%= link_to 'Edit', edit_editorial_path(editorial) %></td>
-        <td><%= link_to 'Destroy', editorial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', editorial %></td>
+        <td><%= link_to 'Editar', edit_editorial_path(editorial) %></td>
+        <td><%= link_to 'Eliminar', editorial, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Editorial', new_editorial_path %>
+<%= link_to 'Nueva Editorial', new_editorial_path %>

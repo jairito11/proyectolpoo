@@ -30,9 +30,9 @@
         <td><%= autor.religion %></td>
         <td><%= autor.distinciones %></td>
         <td><%= autor.fechaNacimiento %></td>
-        <td><%= link_to 'Show', autor , :class => "btn bg-success text-white rounded" %></td>
-        <td><%= link_to 'Edit', edit_autor_path(autor) , :class => "btn bg-success text-white rounded" %></td>
-        <td><%= link_to 'Destroy', autor, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn bg-success text-white rounded" %></td>
+        <td><%= link_to 'Mostrar', autor , :class => "btn bg-success text-white rounded" %></td>
+        <td><%= link_to 'Editar', edit_autor_path(autor) , :class => "btn bg-success text-white rounded" %></td>
+        <td><%= link_to 'Eliminar', autor, method: :delete, data: { confirm: 'Estás seguro?' } , :class => "btn bg-success text-white rounded" %></td>
       </tr>
     <% end %>
   </tbody>

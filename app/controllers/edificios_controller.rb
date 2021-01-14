@@ -27,9 +27,9 @@ def inicio
     
     respond_to do |format|
       if @edificio.save
-        format.html { redirect_to inicio_edificios_path, notice: 'edificio creado exitosamente' }
+        format.html { redirect_to inicio_edificios_path, notice: 'Edificio creado exitosamente' }
       else
-        format.html { redirect_to inicio_edificios_path, notice: 'No pudo crearse el edificio' }
+        format.html { redirect_to inicio_edificios_path, notice: 'No pudo crearse el Edificio' }
       end
     end
   end
@@ -55,9 +55,9 @@ def inicio
       proveedor_id: params[:edificio][:proveedor_id])
     @proveedores = Proveedor.all
 
-        format.html { redirect_to mostrar_edificios_path(@edificio.id), notice: 'edificio actualizado exitosamente' }
+        format.html { redirect_to mostrar_edificios_path(@edificio.id), notice: 'Edificio actualizado exitosamente' }
       else
-        format.html { redirect_to inicio_edificios_path, notice: 'No pudo actualizarse el edificio' }
+        format.html { redirect_to inicio_edificios_path, notice: 'No pudo actualizarse el Edificio' }
       end
     end
   end
@@ -66,9 +66,9 @@ def inicio
       @edificio = Edificio.find(params[:id])
       respond_to do |format|
       if @edificio.destroy
-        format.html { redirect_to inicio_edificios_path, notice: 'edificio eliminado exitósamente' }
+        format.html { redirect_to inicio_edificios_path, notice: 'Edificio eliminado exitósamente' }
       else
-        format.html { redirect_to inicio_edificios_path, notice: 'edificio no se pudo eliminar' }
+        format.html { redirect_to inicio_edificios_path, notice: 'Edificio no se pudo eliminar' }
       end
     end
   end
