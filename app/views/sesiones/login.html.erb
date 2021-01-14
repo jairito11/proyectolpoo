@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<p id="alert"><%= alert %></p>
+
+<%= form_tag(login_post_path) do %>
+<div class="container">
+	<div class="col-sm-10 col-sm offset-1">
+		<form>
+			<tr class="form-group"><h1>Login</h1></tr>
+			<tr class="form-group">
+				<th>CURP</th>
+				<td><%= text_field_tag 'curp',"",class: 'form-control m-1 p-1', placeholder: 'Ingresa CURP' %></td>
+			</tr class="form-group">
+			<tr>
+				<th>Password</th>
+				<td><%= password_field_tag 'password_digest',"",class: 'form-control m-1 p-1', placeholder: 'Ingresa tu password' %></td>
+			</tr>
+			<tr class="form-group">
+				<th></th>
+				<td><%= submit_tag 'Ingresar', class: 'btn btn-primary '  %></td>
+			</tr>
+		</form>
+	</div>	
+</div>
+<%end%>

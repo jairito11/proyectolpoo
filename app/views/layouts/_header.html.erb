@@ -15,4 +15,7 @@
        <%= link_to "Presidentes", inicio_presidentes_path, class: "navbar-brand"%>
        <%= link_to "Proveedores", inicio_proveedores_path, class: "navbar-brand"%>
        <%= link_to "Edificios", inicio_edificios_path, class: "navbar-brand"%>
+      <div class="text-black">
+              <strong> Bienvenido:</strong><%= session[:nombre]%> &nbsp; <%= link_to 'Salir', cerrar_sesion_path, class: 'btn btn-outline-success my-2 my-sm-0'%>
+      </div>       
     </nav>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-=begin
+=begin  
+  get 'sesiones/login'
   get 'edificios/inicio'
   get 'edificios/mostrar'
   get 'edificios/nuevo'
@@ -135,4 +136,9 @@ Rails.application.routes.draw do
   match '/edificios/:id/editar' => 'edificios#editar', via: :get, :as => :editar_edificios
   match '/edificios/actualizar' => 'edificios#actualizar', via: :patch, :as => :actualizar_edificios
   match '/edificios/:id/eliminar' => 'edificios#eliminar', via: :delete, :as => :eliminar_edificios
+  ##########Login
+  match '/login' => 'sesiones#login', via: :get, :as => :login
+  match '/login' => 'sesiones#validar_usuario', via: :post, :as => :login_post
+  match '/cerrar_sesion' => 'sesiones#cerrar_sesion', via: :get, :as => :cerrar_sesion
+  
 end
