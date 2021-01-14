@@ -1,15 +1,17 @@
 <p id="notice"><%= notice %></p>
-<h1>Asociaciones</h1>
-<table>
+<div class="container">
+<div class="col-sm-10 col-sm offset-1">
+  <h1 class="text-center">Asociaciones</h1>
+<table class="bg-info rounded">
 	<tr>
-		<td>Codigo</td>
-		<td>Acronimo</td>
-		<td>Genero</td>
-		<td>Objetivos</td>
-		<td>Fundación</td>
-		<td>Fundador</td>
-		<td>Sede</td>
-		<td>Operación</td>
+		<th class="form-group">Codigo</th>
+		<th class="form-group">Acronimo</td>
+		<th class="form-group">Genero</th>
+		<th class="form-group">Objetivos</th>
+		<th class="form-group">Fundación</th>
+		<th class="form-group">Fundador</th>
+		<th class="form-group">Sede</th>
+		<th class="form-group">Operación</th>
 	</tr>
     <% @asociaciones.each do |asociacion| %>	
 		<tr>
@@ -21,10 +23,12 @@
 			<td><%= asociacion.fundador %></td>
 			<td><%= asociacion.sede %></td>
 			<td><%= asociacion.operacion %></td>
-			<td><%= link_to 'Mostrar', mostrar_asociaciones_path(asociacion.id) %></td>
-			<td><%= link_to 'Editar', editar_asociaciones_path(asociacion.id) %></td>
-			<td><%= link_to 'Eliminar', eliminar_asociaciones_path(asociacion.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+			<td><%= link_to 'Mostrar', mostrar_asociaciones_path(asociacion.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Editar', editar_asociaciones_path(asociacion.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Eliminar', eliminar_asociaciones_path(asociacion.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' }, :class => "btn bg-success text-white rounded"%></td>
 		</tr>
 	<% end %>
 </table>
+</div>
+</div>
 <%= link_to "Nueva Asociación", nuevo_asociaciones_path %> 

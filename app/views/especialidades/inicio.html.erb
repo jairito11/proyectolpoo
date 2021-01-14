@@ -1,11 +1,13 @@
 <p id="notice"><%= notice %></p>
-<h1>Especialidades</h1>
-<table>
+<div class="container">
+<div class="col-sm-10 col-sm offset-1">
+  <h1 class="text-center">Especialides<th class="form-group"></h1>
+<table class="bg-info rounded">
 	<tr>
-		<td>Clave</td>
-		<td>Nombre</td>
-		<td>Descripción</td>
-		<td>Carrera</td>
+		<th class="form-group">Clave</td>
+		<th class="form-group">Nombre</td>
+		<th class="form-group">Descripción</td>
+		<th class="form-group">Carrera</td>
 	</tr>
     <% @especialidades.each do |especialidad| %>	
 		<tr>
@@ -13,10 +15,12 @@
 			<td><%= especialidad.nombre %></td>
 			<td><%= especialidad.descripcion %></td>
 			<td><%= especialidad.carrera.nombre %></td> 
-			<td><%= link_to 'Mostrar', mostrar_especialidades_path(especialidad.id) %></td>
-			<td><%= link_to 'Editar', editar_especialidades_path(especialidad.id) %></td>
-			<td><%= link_to 'Eliminar', eliminar_especialidades_path(especialidad.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+			<td><%= link_to 'Mostrar', mostrar_especialidades_path(especialidad.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Editar', editar_especialidades_path(especialidad.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Eliminar', eliminar_especialidades_path(especialidad.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' }, :class => "btn bg-success text-white rounded"%></td>
 		</tr>
 	<% end %>
 </table>
+</div>
+</div>
 <%= link_to "Nueva Especialidad", nuevo_especialidades_path %>

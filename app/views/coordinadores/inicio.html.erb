@@ -1,15 +1,17 @@
 <p id="notice"><%= notice %></p>
-<h1>Coordinadores</h1>
-<table>
+<div class="container">
+<div class="col-sm-10 col-sm offset-1">
+  <h1 class="text-center">Coordinadores</h1>
+<table class="bg-info rounded">
 	<tr>
-		<td>Correo</td>
-		<td>Nombre</td>
-		<td>Paterno</td>
-		<td>Materno</td>
-		<td>Dirección</td>
-		<td>Telefono Celular</td>
-		<td>Telefono Casa</td>
-		<td>Especialidad</td>
+		<th class="form-group">Correo</td>
+		<th class="form-group">Nombre</td>
+		<th class="form-group">Paterno</td>
+		<th class="form-group">Materno</td>
+		<th class="form-group">Dirección</td>
+		<th class="form-group">Telefono Celular</td>
+		<th class="form-group">Telefono Casa</td>
+		<th class="form-group">Especialidad</td>
 	</tr>
     <% @coordinadores.each do |coordinador| %>	
 		<tr>
@@ -21,10 +23,12 @@
 			<td><%= coordinador.telefonoCelular %></td>
 			<td><%= coordinador.telefonoCasa %></td>
 			<td><%= coordinador.especialidad %></td>
-			<td><%= link_to 'Mostrar', mostrar_coordinadores_path(coordinador.id) %></td>
-			<td><%= link_to 'Editar', editar_coordinadores_path(coordinador.id) %></td>
-			<td><%= link_to 'Eliminar', eliminar_coordinadores_path(coordinador.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+			<td><%= link_to 'Mostrar', mostrar_coordinadores_path(coordinador.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Editar', editar_coordinadores_path(coordinador.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Eliminar', eliminar_coordinadores_path(coordinador.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' }, :class => "btn bg-success text-white rounded"%></td>
 		</tr>
 	<% end %>
 </table>
+</div>
+</div>
 <%= link_to "Nuevo Coordinador", nuevo_coordinadores_path %> 

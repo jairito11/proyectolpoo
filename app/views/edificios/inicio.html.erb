@@ -1,16 +1,18 @@
 <p id="notice"><%= notice %></p>
-<h1>Edificios</h1>
-<table>
+<div class="container">
+<div class="col-sm-10 col-sm offset-1">
+  <h1 class="text-center">Edificios</h1>
+<table class="bg-info rounded">
 	<tr>
-		<td>Codigo</td>
-		<td>Dirección</td>
-		<td>Página</td>
-		<td>Teléfono</td>
-		<td>Hora Apertura</td>
-		<td>Hora Cierre</td>
-		<td>Numero de salones</td>
-		<td>Numero de Cubiculos</td>
-		<td>Proveedor</td>
+		<th class="form-group">Codigo</td>
+		<th class="form-group">Dirección</td>
+		<th class="form-group">Página</td>
+		<th class="form-group">Teléfono</td>
+		<th class="form-group">Hora Apertura</td>
+		<th class="form-group">Hora Cierre</td>
+		<th class="form-group">Numero de salones</td>
+		<th class="form-group">Numero de Cubiculos</td>
+		<th class="form-group">Proveedor</td>
 	</tr>
     <% @edificios.each do |edificio| %>	
 		<tr>
@@ -23,10 +25,12 @@
 			<td><%= edificio.numeroSalones %></td>
 			<td><%= edificio.numeroCubiculos %></td>
 			<td><%= edificio.proveedor.codigo %></td>
-			<td><%= link_to 'Mostrar', mostrar_edificios_path(edificio.id) %></td>
-			<td><%= link_to 'Editar', editar_edificios_path(edificio.id) %></td>
-			<td><%= link_to 'Eliminar', eliminar_edificios_path(edificio.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' } %></td>
+			<td><%= link_to 'Mostrar', mostrar_edificios_path(edificio.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Editar', editar_edificios_path(edificio.id), :class => "btn bg-success text-white rounded"%></td>
+			<td><%= link_to 'Eliminar', eliminar_edificios_path(edificio.id), method: :delete, data: { confirm: '¿Estas seguro de eliminar?' }, :class => "btn bg-success text-white rounded"%></td>
 		</tr>
 	<% end %>
 </table>
+</div>
+</div>
 <%= link_to "Nuevo Edificio", nuevo_edificios_path %> 
