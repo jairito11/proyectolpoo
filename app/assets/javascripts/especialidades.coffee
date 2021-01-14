@@ -4,12 +4,32 @@
 ready = ->	
 	validator = $('#formulario_especialidad').validate
 		rules:
+			'especialidad[clave]':
+				required: true
+				number: true
 			'especialidad[nombre]':
 				required: true
-				minlength: 13
+				minlength: 3
+				maxlength: 30
+			'especialidad[descripcion]':
+				required: true
+				minlength: 3
+				maxlength: 30
+			'especialidad[carrera_id]':
+				required: true
 		messages:
+			'especialidad[clave]':
+				required: 'Campo requerido'
+				number: 'Solo datos númericos'
 			'especialidad[nombre]':
-				required: 'nombre requerido'
-				minlength: 'Minimo 13 Caracteres'
+				required: 'Campo requerido'
+				minlength: 'Tamaño mínimo 3'
+				maxlength: 'Tamaño máximo 30'
+			'especialidad[descripcion]':
+				required: 'Campo requerido'
+				minlength: 'Tamaño mínimo 3'
+				maxlength: 'Tamaño máximo 30'
+			'especialidad[carrera_id]':
+				required: 'Campo requerido'
 $(document).ready(ready)
 $(document).on('turbolinks:load', ready)

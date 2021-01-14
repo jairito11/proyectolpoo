@@ -48,9 +48,8 @@
 
   <div class="field">
     <%= form.label :asociacion_id %>
-    <%= form.number_field :asociacion_id %>
+    <%= form.select :asociacion_id, @asociaciones.collect {|e| [e.acronimo,e.id]}, {include_blank: "Selecciona uno."}%>
   </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>

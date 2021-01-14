@@ -76,5 +76,24 @@ class PersonasController < ApplicationController
       end
     end 
   end
+
+  def validar_rfc
+    @persona = Persona.where('curp = ?', params[:persona][:curp]).first
+
+    if params[:persona_id] == @persona.id
+      #Editar
+      if params[:persona][:curp] == @usuario.rfc
+        #no validar
+      else
+        #validar
+      end
+    else
+      #Insertar
+      #validar
+    end
+    respond_to do |format|
+      format.js{ render json: { validar: @usuario.nil? ? true : false }, content_type: 'text/json'}
+    end
+  end    
   
 end

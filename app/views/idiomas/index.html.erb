@@ -27,7 +27,7 @@
         <td><%= idioma.familia %></td>
         <td><%= idioma.dialectos %></td>
         <td><%= idioma.escritura %></td>
-        <td><%= idioma.asociacion_id %></td>
+        <td><%= idioma.asociacion.acronimo %></td>
         <td><%= link_to 'Mostrar', idioma %></td>
         <td><%= link_to 'Editar', edit_idioma_path(idioma) %></td>
         <td><%= link_to 'Eliminar', idioma, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>

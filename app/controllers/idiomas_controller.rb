@@ -15,16 +15,19 @@ class IdiomasController < ApplicationController
   # GET /idiomas/new
   def new
     @idioma = Idioma.new
+    @asociaciones = Asociacion.all
   end
 
   # GET /idiomas/1/edit
   def edit
+    @asociaciones = Asociacion.all
   end
 
   # POST /idiomas
   # POST /idiomas.json
   def create
     @idioma = Idioma.new(idioma_params)
+    @asociaciones = Asociacion.all
 
     respond_to do |format|
       if @idioma.save
@@ -40,6 +43,7 @@ class IdiomasController < ApplicationController
   # PATCH/PUT /idiomas/1
   # PATCH/PUT /idiomas/1.json
   def update
+    @asociaciones = Asociacion.all
     respond_to do |format|
       if @idioma.update(idioma_params)
         format.html { redirect_to @idioma, notice: 'Idioma fue actualizado correctamente.' }

@@ -1,0 +1,63 @@
+I"~(function() {
+  var ready;
+
+  ready = function() {
+    var validator;
+    return validator = $('#formulario_libro').validate({
+      rules: {
+        'libro[isbn]': {
+          required: true,
+          minlength: 13,
+          minlength: 13
+        },
+        'libro[titulo]': {
+          required: true,
+          minlength: 3,
+          minlength: 30
+        },
+        'libro[autor_id]': {
+          required: true
+        },
+        'libro[editorial_id]': {
+          required: true
+        },
+        'libro[genero_id]': {
+          required: true
+        },
+        'libro[idioma_id]': {
+          required: true
+        }
+      },
+      messages: {
+        'libro[isbn]': {
+          required: 'Campo requerido',
+          minlength: 'Tamaño mínimo 13',
+          minlength: 'Tamaño máximo 13'
+        },
+        'libro[titulo]': {
+          required: 'Campo requerido',
+          minlength: 'Tamaño mínimo 3',
+          minlength: 'Tamaño máximo 30'
+        },
+        'libro[autor_id]': {
+          required: 'Campo requerido'
+        },
+        'libro[editorial_id]': {
+          required: 'Campo requerido'
+        },
+        'libro[genero_id]': {
+          required: 'Campo requerido'
+        },
+        'libro[idioma_id]': {
+          required: 'Campo requerido'
+        }
+      }
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('turbolinks:load', ready);
+
+}).call(this);
+:ET

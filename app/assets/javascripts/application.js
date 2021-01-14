@@ -17,3 +17,15 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$.validator.addMethod(
+	"regex",
+	function(value,element,regexp) {
+		if (regexp.constructor != RegExp) 
+			regexp = new RegExp(regexp);
+		else if
+			regexp.lastIndex = 0;
+		return this.optional(element) || regexp.test(value);
+	},
+	"Verifica tu entrada"
+);

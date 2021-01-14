@@ -6,8 +6,70 @@ ready = ->
 		rules:
 			'edificio[codigo]':
 				required: true
+				minlength: 5
+				maxlength: 5
+			'edificio[direccion]':
+				required: true
+				minlength: 5
+				maxlength: 50
+			'edificio[pagina]':
+				required: true
+				minlength: 5
+				maxlength: 50
+			'edificio[telefono]':
+				required: true
+				minlength: 10
+				maxlength: 10
+				number: true
+			'edificio[horaAbre]':
+				required: true
+				minlength: 5
+				maxlength: 5
+			'edificio[horaCierre]':
+				required: true
+				minlength: 5
+				maxlength: 5
+			'edificio[numeroSalones]':
+				required: true
+				number: true
+			'edificio[numeroCubiculos]':
+				required: true
+				number: true
+			'edificio[proveedor_id]':
+				required: true	
 		messages:
 			'edificio[codigo]':
-				required: 'Codigo requerido'
+				required: 'Campo requerido'
+				minlength: 'El tamaño es de 5'
+				maxlength: 'El tamaño es de 5'
+			'edificio[direccion]':
+				required: 'Campo requerido'
+				minlength: 'Tamaño mínimo 5'
+				maxlength: 'Tamaño máximo 50'
+			'edificio[pagina]':
+				required: 'Campo requerido'
+				minlength: 'Tamaño mínimo 5'
+				maxlength: 'Tamaño máximo 50'
+			'edificio[telefono]':
+				required: 'Campo requerido'
+				minlength: 'El tamaño es de 10'
+				maxlength: 'El tamaño es de 10'
+				number: 'Ingresa el número de telefono'
+			'edificio[horaAbre]':
+				required: 'Campo requerido'
+				minlength: 'El tamaño es de 5'
+				maxlength: 'El tamaño es de 5'
+			'edificio[horaCierre]':
+				required: 'Campo requerido'
+				minlength: 'El tamaño es de 5'
+				maxlength: 'El tamaño es de 5'
+			'edificio[numeroSalones]':
+				required: 'Campo requerido'
+				number: 'Ingresa un número'
+			'edificio[numeroCubiculos]':
+				required: 'Campo requerido'
+				number: 'Ingresa un número'
+			'edificio[proveedor_id]':
+				required: 'Campo requerido'
 $(document).ready(ready)
 $(document).on('turbolinks:load', ready)

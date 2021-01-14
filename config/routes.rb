@@ -140,5 +140,7 @@ Rails.application.routes.draw do
   match '/login' => 'sesiones#login', via: :get, :as => :login
   match '/login' => 'sesiones#validar_usuario', via: :post, :as => :login_post
   match '/cerrar_sesion' => 'sesiones#cerrar_sesion', via: :get, :as => :cerrar_sesion
-  
+  #Buscador
+  #match '/buscar_persona' => 'usuarios#index', via: :post, :as => :buscar_usuario 
+  #match '/validar_curp' => 'personas#validar_curp', via: :get, :as => :validar_curp_personas
 end

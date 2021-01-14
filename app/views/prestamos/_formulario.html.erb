@@ -3,13 +3,13 @@
 			<th><%= f.label 'Fecha de prestamo' %></th>
 			<td>
 				<%=f.hidden_field :id %>
-				<%= f.text_field :fechaPrestamo %>
+				<%= f.text_field :fechaPrestamo, placeholder: "YYYY-mm-dd" %>
 				
 			</td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Hora de prestamo' %></th>
-			<td><%= f.text_field :horaPrestamo %></td>
+			<td><%= f.text_field :horaPrestamo, placeholder: "HH:MM" %></td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Tipo' %></th>
@@ -17,11 +17,11 @@
 		</tr>
 		<tr>
 			<th><%= f.label 'Fecha de entrega' %></th>
-			<td><%= f.text_field :fechaEntrega %></td>
+			<td><%= f.text_field :fechaEntrega, placeholder: "YYYY-mm-dd" %></td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Hora de entrega' %></th>
-			<td><%= f.text_field :horaEntrega %></td>
+			<td><%= f.text_field :horaEntrega, placeholder: "HH:MM" %></td>
 		</tr>
 		<tr>
 			<th><%= f.label 'Libro' %></th>
